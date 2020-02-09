@@ -221,834 +221,824 @@ suggested the initial design of the Mapping Discovery API in Servlet
 
 === [[a74]] Contents
 
-=== link:servlet.html#a74[Contents ix]
+=== link:servlet.html#a74[Contents]
 
-=== link:servlet.html#a357[Overview 1]
+=== link:servlet.html#a357[Overview]
 
-{empty}link:servlet.html#a358[1.1
-What is a Servlet? 1]
+{empty}link:servlet.html#a358[1.1 What is a Servlet?]
 
-{empty}link:servlet.html#a361[1.2
-What is a Servlet Container? 1]
+{empty}link:servlet.html#a361[1.2 What is a Servlet Container?]
 
-{empty}link:servlet.html#a368[1.3
-An Example 2]
+{empty}link:servlet.html#a368[1.3 An Example]
 
-{empty}link:servlet.html#a375[1.4
-Comparing Servlets with Other Technologies 3]
+{empty}link:servlet.html#a375[1.4 Comparing Servlets with Other Technologies]
 
-{empty}link:servlet.html#a382[1.5
-Relationship to Java Platform, Enterprise Edition 3]
+{empty}link:servlet.html#a382[1.5 Relationship to Java Platform, Enterprise Edition]
 
-{empty}link:servlet.html#a384[1.6
-Compatibility with Java Servlet Specification Version 2.5 4]
+{empty}link:servlet.html#a384[1.6 Compatibility with Java Servlet Specification Version 2.5]
 
-{empty}link:servlet.html#a386[1.6.1
-Processing annotations 4]
+{empty}link:servlet.html#a386[1.6.1 Processing annotations]
 
-=== link:servlet.html#a390[The Servlet Interface 5]
+=== link:servlet.html#a390[The Servlet Interface]
 
-{empty}link:servlet.html#a392[2.1
-Request Handling Methods 5]
+{empty}link:servlet.html#a392[2.1 Request Handling Methods]
 
-{empty}link:servlet.html#a397[2.1.1
-HTTP Specific Request Handling Methods 5]
+{empty}link:servlet.html#a397[2.1.1 HTTP Specific Request Handling Methods]
 
-{empty}link:servlet.html#a407[2.1.2
-Additional Methods 6]
+{empty}link:servlet.html#a407[2.1.2 Additional Methods]
 
-{empty}link:servlet.html#a410[2.1.3
-Conditional GET Support 6]
+{empty}link:servlet.html#a410[2.1.3 Conditional GET Support]
 
-{empty}link:servlet.html#a412[2.2
-Number of Instances 6]
+{empty}link:servlet.html#a412[2.2 Number of Instances]
 
-{empty}link:servlet.html#a416[2.2.1
-Note About The Single Thread Model 7]
+{empty}link:servlet.html#a416[2.2.1 Note About The Single Thread Model]
 
-{empty}link:servlet.html#a419[2.3
-Servlet Life Cycle 7]
+{empty}link:servlet.html#a419[2.3 Servlet Life Cycle]
 
-{empty}link:servlet.html#a421[2.3.1
-Loading and Instantiation 7]
+{empty}link:servlet.html#a421[2.3.1 Loading and Instantiation]
 
-{empty}link:servlet.html#a425[2.3.2
-Initialization 8]
+{empty}link:servlet.html#a425[2.3.2 Initialization]
 
-{empty}link:servlet.html#a427[2.3.2.1
-Error Conditions on Initialization 8]
+{empty}link:servlet.html#a427[2.3.2.1 Error Conditions on Initialization]
 
-{empty}link:servlet.html#a430[2.3.2.2
-Tool Considerations 8]
+{empty}link:servlet.html#a430[2.3.2.2 Tool Considerations]
 
-{empty}link:servlet.html#a432[2.3.3
-Request Handling 9]
+{empty}link:servlet.html#a432[2.3.3 Request Handling]
 
-{empty}link:servlet.html#a436[2.3.3.1
-Multithreading Issues 9]
+{empty}link:servlet.html#a436[2.3.3.1 Multithreading Issues]
 
-{empty}link:servlet.html#a440[2.3.3.2
-Exceptions During Request Handling 9]
+{empty}link:servlet.html#a440[2.3.3.2 Exceptions During Request Handling]
 
-{empty}link:servlet.html#a446[2.3.3.3
-Asynchronous processing 10]
+{empty}link:servlet.html#a446[2.3.3.3 Asynchronous processing]
 
-{empty}link:servlet.html#a534[2.3.3.4
-Thread Safety 20]
 
-{empty}link:servlet.html#a537[2.3.3.5
-Upgrade Processing 20]
+{empty}link:servlet.html#a534[2.3.3.4 Thread Safety]
 
-{empty}link:servlet.html#a545[2.3.4
-End of Service 21]
 
-=== link:servlet.html#a553[The Request 23]
+{empty}link:servlet.html#a537[2.3.3.5 Upgrade Processing]
 
-{empty}link:servlet.html#a555[3.1
-HTTP Protocol Parameters 23]
 
-{empty}link:servlet.html#a565[3.1.1
-When Parameters Are Available 24]
+{empty}link:servlet.html#a545[2.3.4 End of Service]
 
-{empty}link:servlet.html#a572[3.2
-File upload 24]
 
-{empty}link:servlet.html#a585[3.3
-Attributes 25]
+=== link:servlet.html#a553[The Request]
 
-{empty}link:servlet.html#a592[3.4
-Headers 25]
 
-{empty}link:servlet.html#a602[3.5
-Request Path Elements 26]
+{empty}link:servlet.html#a555[3.1 HTTP Protocol Parameters]
 
-{empty}link:servlet.html#a642[3.6
-Path Translation Methods 27]
 
-{empty}link:servlet.html#a648[3.7
-Non Blocking IO 28]
+{empty}link:servlet.html#a565[3.1.1 When Parameters Are Available]
 
-{empty}link:servlet.html#a662[3.8
-HTTP/2 Server Push 29]
 
-{empty}link:servlet.html#a668[3.9
-Cookies 30]
+{empty}link:servlet.html#a572[3.2 File upload]
 
-{empty}link:servlet.html#a670[3.10
-SSL Attributes 30]
 
-{empty}link:servlet.html#a687[3.11
-Internationalization 31]
+{empty}link:servlet.html#a585[3.3 Attributes]
 
-{empty}link:servlet.html#a694[3.12
-Request data encoding 31]
 
-{empty}link:servlet.html#a698[3.13
-Lifetime of the Request Object 32]
+{empty}link:servlet.html#a592[3.4 Headers]
 
-=== link:servlet.html#a704[Servlet Context 33]
 
-{empty}link:servlet.html#a706[4.1
-Introduction to the ServletContext Interface 33]
+{empty}link:servlet.html#a602[3.5 Request Path Elements]
 
-{empty}link:servlet.html#a709[4.2
-Scope of a ServletContext Interface 33]
 
-{empty}link:servlet.html#a712[4.3
-Initialization Parameters 34]
+{empty}link:servlet.html#a642[3.6 Path Translation Methods]
 
-{empty}link:servlet.html#a717[4.4
-Configuration methods 34]
 
-{empty}link:servlet.html#a720[4.4.1
-Programmatically adding and configuring Servlets 34]
+{empty}link:servlet.html#a648[3.7 Non Blocking IO]
 
-{empty}link:servlet.html#a722[4.4.1.1
-addServlet(String servletName, String className) 35]
 
-{empty}link:servlet.html#a724[4.4.1.2
-addServlet(String servletName, Servlet servlet) 35]
+{empty}link:servlet.html#a662[3.8 HTTP/2 Server Push]
 
-{empty}link:servlet.html#a726[4.4.1.3
-addServlet(String servletName, Class <? extends Servlet> servletClass)
-35]
 
-{empty}link:servlet.html#a728[4.4.1.4
-addJspFile(String servletName, String jspfile) 35]
+{empty}link:servlet.html#a668[3.9 Cookies]
 
-{empty}link:servlet.html#a730[4.4.1.5
-<T extends Servlet> T createServlet(Class<T> clazz) 35]
 
-{empty}link:servlet.html#a732[4.4.1.6
-ServletRegistration getServletRegistration(String servletName) 35]
+{empty}link:servlet.html#a670[3.10 SSL Attributes]
 
-{empty}link:servlet.html#a734[4.4.1.7
-Map<String, ? extends ServletRegistration> getServletRegistrations() 36]
 
-{empty}link:servlet.html#a736[4.4.2
-Programmatically adding and configuring Filters 36]
+{empty}link:servlet.html#a687[3.11 Internationalization]
 
-{empty}link:servlet.html#a737[4.4.2.1
-addFilter(String filterName, String className) 36]
 
-{empty}link:servlet.html#a739[4.4.2.2
-addFilter(String filterName, Filter filter) 36]
+{empty}link:servlet.html#a694[3.12 Request data encoding]
 
-{empty}link:servlet.html#a741[4.4.2.3
-addFilter(String filterName, Class <? extends Filter> filterClass) 36]
 
-{empty}link:servlet.html#a743[4.4.2.4
-<T extends Filter> T createFilter(Class<T> clazz) 36]
+{empty}link:servlet.html#a698[3.13 Lifetime of the Request Object]
 
-{empty}link:servlet.html#a745[4.4.2.5
-FilterRegistration getFilterRegistration(String filterName) 37]
 
-{empty}link:servlet.html#a747[4.4.2.6
-Map<String, ? extends FilterRegistration> getFilterRegistrations() 37]
+=== link:servlet.html#a704[Servlet Context]
 
-{empty}link:servlet.html#a749[4.4.3
-Programmatically adding and configuring Listeners 37]
 
-{empty}link:servlet.html#a750[4.4.3.1
-void addListener(String className) 37]
+{empty}link:servlet.html#a706[4.1 Introduction to the ServletContext Interface]
 
-{empty}link:servlet.html#a759[4.4.3.2
-<T extends EventListener> void addListener(T t) 38]
 
-{empty}link:servlet.html#a768[4.4.3.3
-void addListener(Class <? extends EventListener> listenerClass) 38]
+{empty}link:servlet.html#a709[4.2 Scope of a ServletContext Interface]
 
-{empty}link:servlet.html#a777[4.4.3.4
-<T extends EventListener> void createListener(Class<T> clazz) 39]
 
-{empty}link:servlet.html#a786[4.4.3.5
-Annotation processing requirements for programmatically added Servlets,
-Filters and Listeners 39]
+{empty}link:servlet.html#a712[4.3 Initialization Parameters]
 
-{empty}link:servlet.html#a791[4.4.4
-Programmatically configuring session time out 40]
 
-{empty}link:servlet.html#a795[4.4.5
-Programmatically configuring character encoding 40]
+{empty}link:servlet.html#a717[4.4 Configuration methods]
 
-{empty}link:servlet.html#a802[4.5
-Context Attributes 40]
 
-{empty}link:servlet.html#a808[4.5.1
-Context Attributes in a Distributed Container 41]
+{empty}link:servlet.html#a720[4.4.1 Programmatically adding and configuring Servlets]
 
-{empty}link:servlet.html#a810[4.6
-Resources 41]
 
-{empty}link:servlet.html#a817[4.7
-Multiple Hosts and Servlet Contexts 42]
+{empty}link:servlet.html#a722[4.4.1.1 addServlet(String servletName, String className)]
 
-{empty}link:servlet.html#a821[4.8
-Reloading Considerations 42]
 
-{empty}link:servlet.html#a824[4.8.1
-Temporary Working Directories 42]
+{empty}link:servlet.html#a724[4.4.1.2 addServlet(String servletName, Servlet servlet)]
 
-=== link:servlet.html#a829[The Response 45]
 
-{empty}link:servlet.html#a831[5.1
-Buffering 45]
+{empty}link:servlet.html#a726[4.4.1.3 addServlet(String servletName, Class <? extends Servlet> servletClass)]
 
-{empty}link:servlet.html#a848[5.2
-Headers 46]
 
-{empty}link:servlet.html#a866[5.3
-HTTP Trailer 47]
+{empty}link:servlet.html#a728[4.4.1.4 addJspFile(String servletName, String jspfile)]
 
-{empty}link:servlet.html#a872[5.4
-Non Blocking IO 48]
 
-{empty}link:servlet.html#a883[5.5
-Convenience Methods 49]
+{empty}link:servlet.html#a730[4.4.1.5 <T extends Servlet> T createServlet(Class<T> clazz)]
 
-{empty}link:servlet.html#a891[5.6
-Internationalization 49]
 
-{empty}link:servlet.html#a905[5.7
-Closure of Response Object 50]
+{empty}link:servlet.html#a732[4.4.1.6 ServletRegistration getServletRegistration(String servletName)]
 
-{empty}link:servlet.html#a913[5.8
-Lifetime of the Response Object 51]
 
-=== link:servlet.html#a918[Filtering 53]
+{empty}link:servlet.html#a734[4.4.1.7 Map<String, ? extends ServletRegistration> getServletRegistrations()]
 
-{empty}link:servlet.html#a922[6.1
-What is a filter? 53]
 
-{empty}link:servlet.html#a932[6.1.1
-Examples of Filtering Components 54]
+{empty}link:servlet.html#a736[4.4.2 Programmatically adding and configuring Filters]
 
-{empty}link:servlet.html#a943[6.2
-Main Concepts 54]
 
-{empty}link:servlet.html#a946[6.2.1
-Filter Lifecycle 54]
+{empty}link:servlet.html#a737[4.4.2.1 addFilter(String filterName, String className)]
 
-{empty}link:servlet.html#a962[6.2.2
-Wrapping Requests and Responses 56]
 
-{empty}link:servlet.html#a966[6.2.3
-Filter Environment 56]
+{empty}link:servlet.html#a739[4.4.2.2 addFilter(String filterName, Filter filter)]
 
-{empty}link:servlet.html#a968[6.2.4
-Configuration of Filters in a Web Application 56]
 
-{empty}link:servlet.html#a1027[6.2.5
-Filters and the RequestDispatcher 59]
+{empty}link:servlet.html#a741[4.4.2.3 addFilter(String filterName, Class <? extends Filter> filterClass)]
 
-=== link:servlet.html#a1069[Sessions 63]
 
-{empty}link:servlet.html#a1073[7.1
-Session Tracking Mechanisms 63]
+{empty}link:servlet.html#a743[4.4.2.4 <T extends Filter> T createFilter(Class<T> clazz)]
 
-{empty}link:servlet.html#a1075[7.1.1
-Cookies 63]
 
-{empty}link:servlet.html#a1080[7.1.2
-SSL Sessions 64]
+{empty}link:servlet.html#a745[4.4.2.5 FilterRegistration getFilterRegistration(String filterName)]
 
-{empty}link:servlet.html#a1082[7.1.3
-URL Rewriting 64]
 
-{empty}link:servlet.html#a1087[7.1.4
-Session Integrity 64]
+{empty}link:servlet.html#a747[4.4.2.6 Map<String, ? extends FilterRegistration> getFilterRegistrations()]
 
-{empty}link:servlet.html#a1089[7.2
-Creating a Session 64]
 
-{empty}link:servlet.html#a1098[7.3
-Session Scope 65]
+{empty}link:servlet.html#a749[4.4.3 Programmatically adding and configuring Listeners]
 
-{empty}link:servlet.html#a1103[7.4
-Binding Attributes into a Session 65]
 
-{empty}link:servlet.html#a1109[7.5
-Session Timeouts 66]
+{empty}link:servlet.html#a750[4.4.3.1 void addListener(String className)]
 
-{empty}link:servlet.html#a1113[7.6
-Last Accessed Times 66]
 
-{empty}link:servlet.html#a1115[7.7
-Important Session Semantics 67]
+{empty}link:servlet.html#a759[4.4.3.2 <T extends EventListener> void addListener(T t)]
 
-{empty}link:servlet.html#a1117[7.7.1
-Threading Issues 67]
 
-{empty}link:servlet.html#a1119[7.7.2
-Distributed Environments 67]
+{empty}link:servlet.html#a768[4.4.3.3 void addListener(Class <? extends EventListener> listenerClass)]
 
-{empty}link:servlet.html#a1131[7.7.3
-Client Semantics 68]
 
-=== link:servlet.html#a1135[Annotations and pluggability 69]
+{empty}link:servlet.html#a777[4.4.3.4 <T extends EventListener> void createListener(Class<T> clazz)]
 
-{empty}link:servlet.html#a1138[8.1
-Annotations and pluggability 69]
 
-{empty}link:servlet.html#a1196[8.1.1
-@WebServlet 71]
+{empty}link:servlet.html#a786[4.4.3.5 Annotation processing requirements for programmatically added Servlets, Filters and Listeners]
 
-{empty}link:servlet.html#a1215[8.1.2
-@WebFilter 72]
 
-{empty}link:servlet.html#a1227[8.1.3
-@WebInitParam 73]
+{empty}link:servlet.html#a791[4.4.4 Programmatically configuring session time out]
 
-{empty}link:servlet.html#a1229[8.1.4
-@WebListener 73]
 
-{empty}link:servlet.html#a1247[8.1.5
-@MultipartConfig 73]
+{empty}link:servlet.html#a795[4.4.5 Programmatically configuring character encoding]
 
-{empty}link:servlet.html#a1249[8.1.6
-Other annotations / conventions 74]
 
-{empty}link:servlet.html#a1253[8.2
-Pluggability 74]
+{empty}link:servlet.html#a802[4.5 Context Attributes]
 
-{empty}link:servlet.html#a1255[8.2.1
-Modularity of web.xml 74]
 
-{empty}link:servlet.html#a1279[8.2.2
-Ordering of web.xml and web-fragment.xml 76]
+{empty}link:servlet.html#a808[4.5.1 Context Attributes in a Distributed Container]
 
-{empty}link:servlet.html#a1418[8.2.3
-Assembling the descriptor from web.xml, web-fragment.xml and annotations
-81]
 
-{empty}link:servlet.html#a1716[8.2.4
-Shared libraries / runtimes pluggability 93]
+{empty}link:servlet.html#a810[4.6 Resources]
 
-{empty}link:servlet.html#a1737[8.3
-JSP container pluggability 95]
 
-{empty}link:servlet.html#a1743[8.4
-Processing annotations and fragments 96]
+{empty}link:servlet.html#a817[4.7 Multiple Hosts and Servlet Contexts]
 
-=== link:servlet.html#a1764[Dispatching Requests 97]
 
-{empty}link:servlet.html#a1768[9.1
-Obtaining a RequestDispatcher 97]
+{empty}link:servlet.html#a821[4.8 Reloading Considerations]
 
-{empty}link:servlet.html#a1776[9.1.1
-Query Strings in Request Dispatcher Paths 98]
 
-{empty}link:servlet.html#a1782[9.2
-Using a Request Dispatcher 98]
+{empty}link:servlet.html#a824[4.8.1 Temporary Working Directories]
 
-{empty}link:servlet.html#a1785[9.3
-The Include Method 99]
 
-{empty}link:servlet.html#a1790[9.3.1
-Included Request Parameters 99]
+=== link:servlet.html#a829[The Response]
 
-{empty}link:servlet.html#a1801[9.4
-The Forward Method 100]
 
-{empty}link:servlet.html#a1807[9.4.1
-Query String 100]
+{empty}link:servlet.html#a831[5.1 Buffering]
 
-{empty}link:servlet.html#a1809[9.4.2
-Forwarded Request Parameters 100]
 
-{empty}link:servlet.html#a1821[9.5
-Error Handling 101]
+{empty}link:servlet.html#a848[5.2 Headers]
 
-{empty}link:servlet.html#a1823[9.6
-Obtaining an AsyncContext 101]
 
-{empty}link:servlet.html#a1825[9.7
-The Dispatch Method 102]
+{empty}link:servlet.html#a866[5.3 HTTP Trailer]
 
-{empty}link:servlet.html#a1835[9.7.1
-Query String 102]
 
-{empty}link:servlet.html#a1837[9.7.2
-Dispatched Request Parameters 102]
+{empty}link:servlet.html#a872[5.4 Non Blocking IO]
 
-=== link:servlet.html#a1849[Web Applications 105]
 
-{empty}link:servlet.html#a1851[10.1
-Web Applications Within Web Servers 105]
+{empty}link:servlet.html#a883[5.5 Convenience Methods]
 
-{empty}link:servlet.html#a1855[10.2
-Relationship to ServletContext 105]
 
-{empty}link:servlet.html#a1857[10.3
-Elements of a Web Application 106]
+{empty}link:servlet.html#a891[5.6 Internationalization]
 
-{empty}link:servlet.html#a1865[10.4
-Deployment Hierarchies 106]
 
-{empty}link:servlet.html#a1867[10.5
-Directory Structure 106]
+{empty}link:servlet.html#a905[5.7 Closure of Response Object]
 
-{empty}link:servlet.html#a1876[10.5.1
-Example of Application Directory Structure 108]
 
-{empty}link:servlet.html#a1888[10.6
-Web Application Archive File 108]
+{empty}link:servlet.html#a913[5.8 Lifetime of the Response Object]
 
-{empty}link:servlet.html#a1891[10.7
-Web Application Deployment Descriptor 108]
 
-{empty}link:servlet.html#a1901[10.7.1
-Dependencies On Extensions 109]
+=== link:servlet.html#a918[Filtering]
 
-{empty}link:servlet.html#a1907[10.7.2
-Web Application Class Loader 109]
 
-{empty}link:servlet.html#a1909[10.8
-Replacing a Web Application 110]
+{empty}link:servlet.html#a922[6.1 What is a filter?]
 
-{empty}link:servlet.html#a1911[10.9
-Error Handling 110]
 
-{empty}link:servlet.html#a1913[10.9.1
-Request Attributes 110]
+{empty}link:servlet.html#a932[6.1.1 Examples of Filtering Components]
 
-{empty}link:servlet.html#a1936[10.9.2
-Error Pages 111]
 
-{empty}link:servlet.html#a1951[10.9.3
-Error Filters 112]
+{empty}link:servlet.html#a943[6.2 Main Concepts]
 
-{empty}link:servlet.html#a1953[10.10
-Welcome Files 113]
 
-{empty}link:servlet.html#a1981[10.11
-Web Application Environment 114]
+{empty}link:servlet.html#a946[6.2.1 Filter Lifecycle]
 
-{empty}link:servlet.html#a1984[10.12
-Web Application Deployment 114]
 
-{empty}link:servlet.html#a1990[10.13
-Inclusion of a web.xml Deployment Descriptor 115]
+{empty}link:servlet.html#a962[6.2.2 Wrapping Requests and Responses]
 
-=== link:servlet.html#a1995[Application Lifecycle Events 117]
 
-{empty}link:servlet.html#a1997[11.1
-Introduction 117]
+{empty}link:servlet.html#a966[6.2.3 Filter Environment]
 
-{empty}link:servlet.html#a1999[11.2
-Event Listeners 117]
 
-{empty}link:servlet.html#a2004[11.2.1
-Event Types and Listener Interfaces 118]
+{empty}link:servlet.html#a968[6.2.4 Configuration of Filters in a Web Application]
 
-{empty}link:servlet.html#a2058[11.2.2
-An Example of Listener Use 119]
 
-{empty}link:servlet.html#a2063[11.3
-Listener Class Configuration 119]
+{empty}link:servlet.html#a1027[6.2.5 Filters and the RequestDispatcher]
 
-{empty}link:servlet.html#a2064[11.3.1
-Provision of Listener Classes 119]
 
-{empty}link:servlet.html#a2066[11.3.2
-Deployment Declarations 120]
+=== link:servlet.html#a1069[Sessions]
 
-{empty}link:servlet.html#a2068[11.3.3
-Listener Registration 120]
 
-{empty}link:servlet.html#a2070[11.3.4
-Notifications At Shutdown 120]
+{empty}link:servlet.html#a1073[7.1 Session Tracking Mechanisms]
 
-{empty}link:servlet.html#a2072[11.4
-Deployment Descriptor Example 120]
 
-{empty}link:servlet.html#a2088[11.5
-Listener Instances and Threading 121]
+{empty}link:servlet.html#a1075[7.1.1 Cookies]
 
-{empty}link:servlet.html#a2091[11.6
-Listener Exceptions 121]
 
-{empty}link:servlet.html#a2095[11.7
-Distributed Containers 122]
+{empty}link:servlet.html#a1080[7.1.2 SSL Sessions]
 
-{empty}link:servlet.html#a2097[11.8
-Session Events 122]
 
-=== link:servlet.html#a2101[Mapping Requests to Servlets 123]
+{empty}link:servlet.html#a1082[7.1.3 URL Rewriting]
 
-{empty}link:servlet.html#a2104[12.1
-Use of URL Paths 123]
 
-{empty}link:servlet.html#a2114[12.2
-Specification of Mappings 124]
+{empty}link:servlet.html#a1087[7.1.4 Session Integrity]
 
-{empty}link:servlet.html#a2123[12.2.1
-Implicit Mappings 124]
 
-{empty}link:servlet.html#a2126[12.2.2
-Example Mapping Set 125]
+{empty}link:servlet.html#a1089[7.2 Creating a Session]
 
-{empty}link:servlet.html#a2160[12.3
-Runtime Discovery of Mappings 125]
 
-{empty}link:servlet.html#a2163[12.3.1
-Runtime Discovery of Servlet Mappings 126]
+{empty}link:servlet.html#a1098[7.3 Session Scope]
 
-=== link:servlet.html#a2166[Security 127]
 
-{empty}link:servlet.html#a2169[13.1
-Introduction 127]
+{empty}link:servlet.html#a1103[7.4 Binding Attributes into a Session]
 
-{empty}link:servlet.html#a2176[13.2
-Declarative Security 128]
 
-{empty}link:servlet.html#a2180[13.3
-Programmatic Security 128]
+{empty}link:servlet.html#a1109[7.5 Session Timeouts]
 
-{empty}link:servlet.html#a2206[13.4
-Programmatic Security Policy Configuration 130]
 
-{empty}link:servlet.html#a2208[13.4.1
-@ServletSecurity Annotation 130]
+{empty}link:servlet.html#a1113[7.6 Last Accessed Times]
 
-{empty}link:servlet.html#a2287[13.4.1.1
-Examples 133]
 
-{empty}link:servlet.html#a2323[13.4.1.2
-Mapping @ServletSecurity to security-constraint 134]
+{empty}link:servlet.html#a1115[7.7 Important Session Semantics]
 
-{empty}link:servlet.html#a2361[13.4.1.3
-Mapping @HttpConstraint and @HttpMethodConstraint to XML. 136]
 
-{empty}link:servlet.html#a2395[13.4.2
-setServletSecurity of ServletRegistration.Dynamic 138]
+{empty}link:servlet.html#a1117[7.7.1 Threading Issues]
 
-{empty}link:servlet.html#a2404[13.5
-Roles 138]
 
-{empty}link:servlet.html#a2409[13.6
-Authentication 139]
+{empty}link:servlet.html#a1119[7.7.2 Distributed Environments]
 
-{empty}link:servlet.html#a2415[13.6.1
-HTTP Basic Authentication 139]
 
-{empty}link:servlet.html#a2418[13.6.2
-HTTP Digest Authentication 139]
+{empty}link:servlet.html#a1131[7.7.3 Client Semantics]
 
-{empty}link:servlet.html#a2420[13.6.3
-Form Based Authentication 140]
 
-{empty}link:servlet.html#a2437[13.6.3.1
-Login Form Notes 141]
+=== link:servlet.html#a1135[Annotations and pluggability]
 
-{empty}link:servlet.html#a2447[13.6.4
-HTTPS Client Authentication 142]
 
-{empty}link:servlet.html#a2449[13.6.5
-Additional Container Authentication Mechanisms 142]
+{empty}link:servlet.html#a1138[8.1 Annotations and pluggability]
 
-{empty}link:servlet.html#a2453[13.7
-Server Tracking of Authentication Information 142]
 
-{empty}link:servlet.html#a2459[13.8
-Specifying Security Constraints 143]
+{empty}link:servlet.html#a1196[8.1.1 @WebServlet]
 
-{empty}link:servlet.html#a2472[13.8.1
-Combining Constraints 144]
 
-{empty}link:servlet.html#a2477[13.8.2
-Example 145]
+{empty}link:servlet.html#a1215[8.1.2 @WebFilter]
 
-{empty}link:servlet.html#a2581[13.8.3
-Processing Requests 147]
 
-{empty}link:servlet.html#a2585[13.8.4
-Uncovered HTTP Protocol Methods 148]
+{empty}link:servlet.html#a1227[8.1.3 @WebInitParam]
 
-{empty}link:servlet.html#a2622[13.8.4.1
-Rules for Security Constraint Configuration 150]
 
-{empty}link:servlet.html#a2627[13.8.4.2
-Handling Uncovered HTTP Methods 150]
+{empty}link:servlet.html#a1229[8.1.4 @WebListener]
 
-{empty}link:servlet.html#a2635[13.9
-Default Policies 151]
 
-{empty}link:servlet.html#a2637[13.10
-Login and Logout 152]
+{empty}link:servlet.html#a1247[8.1.5 @MultipartConfig]
 
-=== link:servlet.html#a2643[Deployment Descriptor 153]
 
-{empty}link:servlet.html#a2648[14.1
-Deployment Descriptor Elements 153]
+{empty}link:servlet.html#a1249[8.1.6 Other annotations / conventions]
 
-{empty}link:servlet.html#a2661[14.2
-Rules for Processing the Deployment Descriptor 154]
 
-{empty}link:servlet.html#a2673[14.3
-Deployment Descriptor 155]
+{empty}link:servlet.html#a1253[8.2 Pluggability]
 
-{empty}link:servlet.html#a2676[14.4
-Deployment Descriptor Diagram 155]
 
-{empty}link:servlet.html#a2794[14.5
-Examples 178]
+{empty}link:servlet.html#a1255[8.2.1 Modularity of web.xml]
 
-{empty}link:servlet.html#a2796[14.5.1
-A Basic Example 179]
 
-{empty}link:servlet.html#a2836[14.5.2
-An Example of Security 180]
+{empty}link:servlet.html#a1279[8.2.2 Ordering of web.xml and web-fragment.xml]
 
-=== link:servlet.html#a2881[Requirements related to other Specifications 183]
 
-{empty}link:servlet.html#a2885[15.1
-Sessions 183]
+{empty}link:servlet.html#a1418[8.2.3 Assembling the descriptor from web.xml, web-fragment.xml and annotations]
 
-{empty}link:servlet.html#a2887[15.2
-Web Applications 183]
 
-{empty}link:servlet.html#a2888[15.2.1
-Web Application Class Loader 183]
+{empty}link:servlet.html#a1716[8.2.4 Shared libraries / runtimes pluggability]
 
-{empty}link:servlet.html#a2890[15.2.2
-Web Application Environment 184]
 
-{empty}link:servlet.html#a2905[15.2.3
-JNDI Name for Web Module Context Root URL 184]
+{empty}link:servlet.html#a1737[8.3 JSP container pluggability]
 
-{empty}link:servlet.html#a2924[15.3
-Security 185]
 
-{empty}link:servlet.html#a2926[15.3.1
-Propagation of Security Identity in EJB™ Calls 185]
+{empty}link:servlet.html#a1743[8.4 Processing annotations and fragments]
 
-{empty}link:servlet.html#a2933[15.3.2
-Container Authorization Requirements 186]
 
-{empty}link:servlet.html#a2935[15.3.3
-Container Authentication Requirements 186]
+=== link:servlet.html#a1764[Dispatching Requests]
 
-{empty}link:servlet.html#a2937[15.4
-Deployment 186]
 
-{empty}link:servlet.html#a2939[15.4.1
-Deployment Descriptor Elements 187]
+{empty}link:servlet.html#a1768[9.1 Obtaining a RequestDispatcher]
 
-{empty}link:servlet.html#a2948[15.4.2
-Packaging and Deployment of JAX-WS Components 187]
 
-{empty}link:servlet.html#a2965[15.4.3
-Rules for Processing the Deployment Descriptor 188]
+{empty}link:servlet.html#a1776[9.1.1 Query Strings in Request Dispatcher Paths]
 
-{empty}link:servlet.html#a2967[15.5
-Annotations and Resource Injection 188]
 
-{empty}link:servlet.html#a2997[15.5.1
-@DeclareRoles 190]
+{empty}link:servlet.html#a1782[9.2 Using a Request Dispatcher]
 
-{empty}link:servlet.html#a3015[15.5.2
-@EJB Annotation 191]
 
-{empty}link:servlet.html#a3021[15.5.3
-@EJBs Annotation 191]
+{empty}link:servlet.html#a1785[9.3 The Include Method]
 
-{empty}link:servlet.html#a3030[15.5.4
-@Resource Annotation 192]
 
-{empty}link:servlet.html#a3043[15.5.5
-@PersistenceContext Annotation 192]
+{empty}link:servlet.html#a1790[9.3.1 Included Request Parameters]
 
-{empty}link:servlet.html#a3050[15.5.6
-@PersistenceContexts Annotation 193]
 
-{empty}link:servlet.html#a3052[15.5.7
-@PersistenceUnit Annotation 193]
+{empty}link:servlet.html#a1801[9.4 The Forward Method]
 
-{empty}link:servlet.html#a3059[15.5.8
-@PersistenceUnits Annotation 193]
 
-{empty}link:servlet.html#a3061[15.5.9
-@PostConstruct Annotation 193]
+{empty}link:servlet.html#a1807[9.4.1 Query String]
 
-{empty}link:servlet.html#a3072[15.5.10
-@PreDestroy Annotation 194]
 
-{empty}link:servlet.html#a3083[15.5.11
-@Resources Annotation 195]
+{empty}link:servlet.html#a1809[9.4.2 Forwarded Request Parameters]
 
-{empty}link:servlet.html#a3096[15.5.12
-@RunAs Annotation 195]
 
-{empty}link:servlet.html#a3121[15.5.13
-@WebServiceRef Annotation 196]
+{empty}link:servlet.html#a1821[9.5 Error Handling]
 
-{empty}link:servlet.html#a3127[15.5.14
-@WebServiceRefs Annotation 196]
 
-{empty}link:servlet.html#a3129[15.5.15
-Contexts and Dependency Injection for Java EE requirements 197]
+{empty}link:servlet.html#a1823[9.6 Obtaining an AsyncContext]
 
-=== link:servlet.html#a3133[Change Log 199]
 
-{empty}link:servlet.html#a3135[A.1
-Changes Since Servlet 3.1 199]
+{empty}link:servlet.html#a1825[9.7 The Dispatch Method]
 
-{empty}link:servlet.html#a3159[A.2
-Changes since Servlet 3.0 201]
 
-{empty}link:servlet.html#a3199[A.3
-Changes since Servlet 3.0 Proposed Final Draft 203]
+{empty}link:servlet.html#a1835[9.7.1 Query String]
 
-{empty}link:servlet.html#a3204[A.4
-Changes since Servlet 3.0 Public Review 203]
 
-{empty}link:servlet.html#a3213[A.5
-Changes since Servlet 3.0 EDR 204]
+{empty}link:servlet.html#a1837[9.7.2 Dispatched Request Parameters]
 
-{empty}link:servlet.html#a3217[A.6
-Changes since Servlet 2.5 MR6 204]
 
-{empty}link:servlet.html#a3223[A.7
-Changes since Servlet 2.5 MR 5 205]
+=== link:servlet.html#a1849[Web Applications]
 
-{empty}link:servlet.html#a3224[A.7.1
-Clarify SRV 8.4 "The Forward Method" 205]
 
-{empty}link:servlet.html#a3229[A.7.2
-Update Deployment descriptor "http-method values allowed" 205]
+{empty}link:servlet.html#a1851[10.1 Web Applications Within Web Servers]
 
-{empty}link:servlet.html#a3234[A.7.3
-Clarify SRV 7.7.1 "Threading Issues" 205]
 
-{empty}link:servlet.html#a3239[A.8
-Changes Since Servlet 2.5 MR 2 206]
+{empty}link:servlet.html#a1855[10.2 Relationship to ServletContext]
 
-{empty}link:servlet.html#a3240[A.8.1
-Updated Annotation Requirements for Java EE containers 206]
 
-{empty}link:servlet.html#a3242[A.8.2
-Updated Java Enterprise Edition Requirements 206]
+{empty}link:servlet.html#a1857[10.3 Elements of a Web Application]
 
-{empty}link:servlet.html#a3244[A.8.3
-Clarified HttpServletRequest.getRequestURL() 206]
 
-{empty}link:servlet.html#a3248[A.8.4
-Removal of IllegalStateException from HttpSession.getId() 207]
+{empty}link:servlet.html#a1865[10.4 Deployment Hierarchies]
 
-{empty}link:servlet.html#a3250[A.8.5
-ServletContext.getContextPath() 207]
 
-{empty}link:servlet.html#a3258[A.8.6
-Requirement for web.xml in web applications 207]
+{empty}link:servlet.html#a1867[10.5 Directory Structure]
 
-{empty}link:servlet.html#a3261[A.9
-Changes Since Servlet 2.4 208]
 
-{empty}link:servlet.html#a3262[A.9.1
-Session Clarification 208]
+{empty}link:servlet.html#a1876[10.5.1 Example of Application Directory Structure]
 
-{empty}link:servlet.html#a3269[A.9.2
-Filter All Dispatches 208]
 
-{empty}link:servlet.html#a3279[A.9.3
-Multiple Occurrences of Servlet Mappings 209]
+{empty}link:servlet.html#a1888[10.6 Web Application Archive File]
 
-{empty}link:servlet.html#a3291[A.9.4
-Multiple Occurrences Filter Mappings 209]
 
-{empty}link:servlet.html#a3320[A.9.5
-Support Alternative HTTP Methods with Authorization Constraints 210]
+{empty}link:servlet.html#a1891[10.7 Web Application Deployment Descriptor]
 
-{empty}link:servlet.html#a3351[A.9.6
-Minimum J2SE Requirement 211]
 
-{empty}link:servlet.html#a3353[A.9.7
-Annotations and Resource Injection 211]
+{empty}link:servlet.html#a1901[10.7.1 Dependencies On Extensions]
 
-{empty}link:servlet.html#a3355[A.9.8
-SRV.9.9 ("Error Handling") Requirement Removed 212]
 
-{empty}link:servlet.html#a3362[A.9.9
-HttpServletRequest.isRequestedSessionIdValid() Clarification 212]
+{empty}link:servlet.html#a1907[10.7.2 Web Application Class Loader]
 
-{empty}link:servlet.html#a3365[A.9.10
-SRV.5.5 ("Closure of Response Object") Clarification 212]
 
-{empty}link:servlet.html#a3371[A.9.11
-ServletRequest.setCharacterEncoding() Clarified 213]
+{empty}link:servlet.html#a1909[10.8 Replacing a Web Application]
 
-{empty}link:servlet.html#a3373[A.9.12
-Java Enterprise Edition Requirements 213]
 
-{empty}link:servlet.html#a3375[A.9.13
-Servlet 2.4 MR Change Log Updates Added 213]
+{empty}link:servlet.html#a1911[10.9 Error Handling]
 
-{empty}link:servlet.html#a3377[A.9.14
-Synchronized Access Session Object Clarified 213]
 
-{empty}link:servlet.html#a3379[A.10
-Changes Since Servlet 2.3 213]
+{empty}link:servlet.html#a1913[10.9.1 Request Attributes]
+
+
+{empty}link:servlet.html#a1936[10.9.2 Error Pages]
+
+
+{empty}link:servlet.html#a1951[10.9.3 Error Filters]
+
+
+{empty}link:servlet.html#a1953[10.10 Welcome Files]
+
+
+{empty}link:servlet.html#a1981[10.11 Web Application Environment]
+
+
+{empty}link:servlet.html#a1984[10.12 Web Application Deployment]
+
+
+{empty}link:servlet.html#a1990[10.13 Inclusion of a web.xml Deployment Descriptor]
+
+
+=== link:servlet.html#a1995[Application Lifecycle Events]
+
+
+{empty}link:servlet.html#a1997[11.1 Introduction]
+
+
+{empty}link:servlet.html#a1999[11.2 Event Listeners]
+
+
+{empty}link:servlet.html#a2004[11.2.1 Event Types and Listener Interfaces]
+
+
+{empty}link:servlet.html#a2058[11.2.2 An Example of Listener Use]
+
+
+{empty}link:servlet.html#a2063[11.3 Listener Class Configuration]
+
+
+{empty}link:servlet.html#a2064[11.3.1 Provision of Listener Classes]
+
+
+{empty}link:servlet.html#a2066[11.3.2 Deployment Declarations]
+
+
+{empty}link:servlet.html#a2068[11.3.3 Listener Registration]
+
+
+{empty}link:servlet.html#a2070[11.3.4 Notifications At Shutdown]
+
+
+{empty}link:servlet.html#a2072[11.4 Deployment Descriptor Example]
+
+
+{empty}link:servlet.html#a2088[11.5 Listener Instances and Threading]
+
+
+{empty}link:servlet.html#a2091[11.6 Listener Exceptions]
+
+
+{empty}link:servlet.html#a2095[11.7 Distributed Containers]
+
+
+{empty}link:servlet.html#a2097[11.8 Session Events]
+
+
+=== link:servlet.html#a2101[Mapping Requests to Servlets]
+
+
+{empty}link:servlet.html#a2104[12.1 Use of URL Paths]
+
+
+{empty}link:servlet.html#a2114[12.2 Specification of Mappings]
+
+
+{empty}link:servlet.html#a2123[12.2.1 Implicit Mappings]
+
+
+{empty}link:servlet.html#a2126[12.2.2 Example Mapping Set]
+
+
+{empty}link:servlet.html#a2160[12.3 Runtime Discovery of Mappings]
+
+
+{empty}link:servlet.html#a2163[12.3.1 Runtime Discovery of Servlet Mappings]
+
+
+=== link:servlet.html#a2166[Security]
+
+
+{empty}link:servlet.html#a2169[13.1 Introduction]
+
+
+{empty}link:servlet.html#a2176[13.2 Declarative Security]
+
+
+{empty}link:servlet.html#a2180[13.3 Programmatic Security]
+
+
+{empty}link:servlet.html#a2206[13.4 Programmatic Security Policy Configuration]
+
+
+{empty}link:servlet.html#a2208[13.4.1 @ServletSecurity Annotation]
+
+
+{empty}link:servlet.html#a2287[13.4.1.1 Examples]
+
+
+{empty}link:servlet.html#a2323[13.4.1.2 Mapping @ServletSecurity to security-constraint]
+
+
+{empty}link:servlet.html#a2361[13.4.1.3 Mapping @HttpConstraint and @HttpMethodConstraint to XML.]
+
+
+{empty}link:servlet.html#a2395[13.4.2 setServletSecurity of ServletRegistration.Dynamic]
+
+
+{empty}link:servlet.html#a2404[13.5 Roles]
+
+
+{empty}link:servlet.html#a2409[13.6 Authentication]
+
+
+{empty}link:servlet.html#a2415[13.6.1 HTTP Basic Authentication]
+
+
+{empty}link:servlet.html#a2418[13.6.2 HTTP Digest Authentication]
+
+
+{empty}link:servlet.html#a2420[13.6.3 Form Based Authentication]
+
+
+{empty}link:servlet.html#a2437[13.6.3.1 Login Form Notes]
+
+
+{empty}link:servlet.html#a2447[13.6.4 HTTPS Client Authentication]
+
+
+{empty}link:servlet.html#a2449[13.6.5 Additional Container Authentication Mechanisms]
+
+
+{empty}link:servlet.html#a2453[13.7 Server Tracking of Authentication Information]
+
+
+{empty}link:servlet.html#a2459[13.8 Specifying Security Constraints]
+
+
+{empty}link:servlet.html#a2472[13.8.1 Combining Constraints]
+
+
+{empty}link:servlet.html#a2477[13.8.2 Example]
+
+
+{empty}link:servlet.html#a2581[13.8.3 Processing Requests]
+
+
+{empty}link:servlet.html#a2585[13.8.4 Uncovered HTTP Protocol Methods]
+
+
+{empty}link:servlet.html#a2622[13.8.4.1 Rules for Security Constraint Configuration]
+
+
+{empty}link:servlet.html#a2627[13.8.4.2 Handling Uncovered HTTP Methods]
+
+
+{empty}link:servlet.html#a2635[13.9 Default Policies]
+
+
+{empty}link:servlet.html#a2637[13.10 Login and Logout]
+
+
+=== link:servlet.html#a2643[Deployment Descriptor]
+
+
+{empty}link:servlet.html#a2648[14.1 Deployment Descriptor Elements]
+
+
+{empty}link:servlet.html#a2661[14.2 Rules for Processing the Deployment Descriptor]
+
+
+{empty}link:servlet.html#a2673[14.3 Deployment Descriptor]
+
+
+{empty}link:servlet.html#a2676[14.4 Deployment Descriptor Diagram]
+
+
+{empty}link:servlet.html#a2794[14.5 Examples]
+
+
+{empty}link:servlet.html#a2796[14.5.1 A Basic Example]
+
+
+{empty}link:servlet.html#a2836[14.5.2 An Example of Security]
+
+
+=== link:servlet.html#a2881[Requirements related to other Specifications]
+
+
+{empty}link:servlet.html#a2885[15.1 Sessions]
+
+
+{empty}link:servlet.html#a2887[15.2 Web Applications]
+
+
+{empty}link:servlet.html#a2888[15.2.1 Web Application Class Loader]
+
+
+{empty}link:servlet.html#a2890[15.2.2 Web Application Environment]
+
+
+{empty}link:servlet.html#a2905[15.2.3 JNDI Name for Web Module Context Root URL]
+
+
+{empty}link:servlet.html#a2924[15.3 Security]
+
+
+{empty}link:servlet.html#a2926[15.3.1 Propagation of Security Identity in EJB™ Calls]
+
+
+{empty}link:servlet.html#a2933[15.3.2 Container Authorization Requirements]
+
+
+{empty}link:servlet.html#a2935[15.3.3 Container Authentication Requirements]
+
+
+{empty}link:servlet.html#a2937[15.4 Deployment]
+
+
+{empty}link:servlet.html#a2939[15.4.1 Deployment Descriptor Elements]
+
+
+{empty}link:servlet.html#a2948[15.4.2 Packaging and Deployment of JAX-WS Components]
+
+
+{empty}link:servlet.html#a2965[15.4.3 Rules for Processing the Deployment Descriptor]
+
+
+{empty}link:servlet.html#a2967[15.5 Annotations and Resource Injection]
+
+
+{empty}link:servlet.html#a2997[15.5.1 @DeclareRoles]
+
+
+{empty}link:servlet.html#a3015[15.5.2 @EJB Annotation]
+
+
+{empty}link:servlet.html#a3021[15.5.3 @EJBs Annotation]
+
+
+{empty}link:servlet.html#a3030[15.5.4 @Resource Annotation]
+
+
+{empty}link:servlet.html#a3043[15.5.5 @PersistenceContext Annotation]
+
+
+{empty}link:servlet.html#a3050[15.5.6 @PersistenceContexts Annotation]
+
+
+{empty}link:servlet.html#a3052[15.5.7 @PersistenceUnit Annotation]
+
+
+{empty}link:servlet.html#a3059[15.5.8 @PersistenceUnits Annotation]
+
+
+{empty}link:servlet.html#a3061[15.5.9 @PostConstruct Annotation]
+
+
+{empty}link:servlet.html#a3072[15.5.10 @PreDestroy Annotation]
+
+
+{empty}link:servlet.html#a3083[15.5.11 @Resources Annotation]
+
+
+{empty}link:servlet.html#a3096[15.5.12 @RunAs Annotation]
+
+
+{empty}link:servlet.html#a3121[15.5.13 @WebServiceRef Annotation]
+
+
+{empty}link:servlet.html#a3127[15.5.14 @WebServiceRefs Annotation]
+
+
+{empty}link:servlet.html#a3129[15.5.15 Contexts and Dependency Injection for Java EE requirements]
+
+
+=== link:servlet.html#a3133[Change Log]
+
+
+{empty}link:servlet.html#a3135[A.1 Changes Since Servlet 3.1]
+
+
+{empty}link:servlet.html#a3159[A.2 Changes since Servlet 3.0]
+
+
+{empty}link:servlet.html#a3199[A.3 Changes since Servlet 3.0 Proposed Final Draft]
+
+
+{empty}link:servlet.html#a3204[A.4 Changes since Servlet 3.0 Public Review]
+
+
+{empty}link:servlet.html#a3213[A.5 Changes since Servlet 3.0 EDR]
+
+
+{empty}link:servlet.html#a3217[A.6 Changes since Servlet 2.5 MR6]
+
+
+{empty}link:servlet.html#a3223[A.7 Changes since Servlet 2.5 MR 5]
+
+
+{empty}link:servlet.html#a3224[A.7.1 Clarify SRV 8.4 "The Forward Method"]
+
+
+{empty}link:servlet.html#a3229[A.7.2 Update Deployment descriptor "http-method values allowed"]
+
+
+{empty}link:servlet.html#a3234[A.7.3 Clarify SRV 7.7.1 "Threading Issues"]
+
+
+{empty}link:servlet.html#a3239[A.8 Changes Since Servlet 2.5 MR 2]
+
+
+{empty}link:servlet.html#a3240[A.8.1 Updated Annotation Requirements for Java EE containers]
+
+
+{empty}link:servlet.html#a3242[A.8.2 Updated Java Enterprise Edition Requirements]
+
+
+{empty}link:servlet.html#a3244[A.8.3 Clarified HttpServletRequest.getRequestURL()]
+
+
+{empty}link:servlet.html#a3248[A.8.4 Removal of IllegalStateException from HttpSession.getId()]
+
+
+{empty}link:servlet.html#a3250[A.8.5 ServletContext.getContextPath()]
+
+
+{empty}link:servlet.html#a3258[A.8.6 Requirement for web.xml in web applications]
+
+
+{empty}link:servlet.html#a3261[A.9 Changes Since Servlet 2.4]
+
+
+{empty}link:servlet.html#a3262[A.9.1 Session Clarification]
+
+
+{empty}link:servlet.html#a3269[A.9.2 Filter All Dispatches]
+
+
+{empty}link:servlet.html#a3279[A.9.3 Multiple Occurrences of Servlet Mappings]
+
+
+{empty}link:servlet.html#a3291[A.9.4 Multiple Occurrences Filter Mappings]
+
+
+{empty}link:servlet.html#a3320[A.9.5 Support Alternative HTTP Methods with Authorization Constraints]
+
+
+{empty}link:servlet.html#a3351[A.9.6 Minimum J2SE Requirement]
+
+
+{empty}link:servlet.html#a3353[A.9.7 Annotations and Resource Injection]
+
+
+{empty}link:servlet.html#a3355[A.9.8 SRV.9.9 ("Error Handling") Requirement Removed]
+
+
+{empty}link:servlet.html#a3362[A.9.9 HttpServletRequest.isRequestedSessionIdValid() Clarification]
+
+
+{empty}link:servlet.html#a3365[A.9.10 SRV.5.5 ("Closure of Response Object") Clarification]
+
+
+{empty}link:servlet.html#a3371[A.9.11 ServletRequest.setCharacterEncoding() Clarified]
+
+
+{empty}link:servlet.html#a3373[A.9.12 Java Enterprise Edition Requirements]
+
+
+{empty}link:servlet.html#a3375[A.9.13 Servlet 2.4 MR Change Log Updates Added]
+
+
+{empty}link:servlet.html#a3377[A.9.14 Synchronized Access Session Object Clarified]
+
+
+{empty}link:servlet.html#a3379[A.10 Changes Since Servlet 2.3]
+
 
 === [[a357]] Overview
 
@@ -8650,7 +8640,8 @@ does not send user passwords over the network. In HTTP Digest
 authentication the client sends a one-way cryptographic hash of the
 password (and additional data). Although passwords are not sent on the
 wire, HTTP Digest authentication requires that clear text password
-equivalentslink:#a3529[10] be avaialble to the authenticating
+equivalentslink:#a3529[]
+ be avaialble to the authenticating
 container so that it can validate received authenticators by calculating
 the expected digest. Servlet containers SHOULD support HTTP_DIGEST
 authentication.
@@ -9182,7 +9173,8 @@ accepted and dispatched to the associated servlet.
 on which the request was received must satisfy at least one of the
 supported connection types defined by the constraints. If this rule is
 not satisfied, the container shall reject the request and redirect it to
-the HTTPS port.link:#a3530[11]
+the HTTPS port.link:#a3530[]
+
 
 The authentication characteristics of the
 request must satisfy any authentication and role requirements defined by
@@ -12434,7 +12426,8 @@ U
 A compact string representation of resources
 available via the network. Once the resource represented by a URL has
 been accessed, various operations may be performed on that
-resource.link:#a3531[12] A URL is a type of uniform resource
+resource.link:#a3531[]
+ A URL is a type of uniform resource
 identifier (URI). URLs are typically of the form:
 
  _<protocol>//<servername>/<resource>_
