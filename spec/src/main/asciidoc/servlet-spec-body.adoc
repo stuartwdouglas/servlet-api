@@ -221,823 +221,823 @@ suggested the initial design of the Mapping Discovery API in Servlet
 
 === [[a74]] Contents
 
-=== link:servlet.html#a74[Contents]
+=== <<#a74,Contents>>
 
-=== link:servlet.html#a357[Overview]
+=== <<#a357,Overview>>
 
-{empty}link:servlet.html#a358[1.1 What is a Servlet?]
+{empty}<<#a358,1.1 What is a Servlet?>>
 
-{empty}link:servlet.html#a361[1.2 What is a Servlet Container?]
+{empty}<<#a361,1.2 What is a Servlet Container?>>
 
-{empty}link:servlet.html#a368[1.3 An Example]
+{empty}<<#a368,1.3 An Example>>
 
-{empty}link:servlet.html#a375[1.4 Comparing Servlets with Other Technologies]
+{empty}<<#a375,1.4 Comparing Servlets with Other Technologies>>
 
-{empty}link:servlet.html#a382[1.5 Relationship to Java Platform, Enterprise Edition]
+{empty}<<#a382,1.5 Relationship to Java Platform, Enterprise Edition>>
 
-{empty}link:servlet.html#a384[1.6 Compatibility with Java Servlet Specification Version 2.5]
+{empty}<<#a384,1.6 Compatibility with Java Servlet Specification Version 2.5>>
 
-{empty}link:servlet.html#a386[1.6.1 Processing annotations]
+{empty}<<#a386,1.6.1 Processing annotations>>
 
-=== link:servlet.html#a390[The Servlet Interface]
+=== <<#a390,The Servlet Interface>>
 
-{empty}link:servlet.html#a392[2.1 Request Handling Methods]
+{empty}<<#a392,2.1 Request Handling Methods>>
 
-{empty}link:servlet.html#a397[2.1.1 HTTP Specific Request Handling Methods]
+{empty}<<#a397,2.1.1 HTTP Specific Request Handling Methods>>
 
-{empty}link:servlet.html#a407[2.1.2 Additional Methods]
+{empty}<<#a407,2.1.2 Additional Methods>>
 
-{empty}link:servlet.html#a410[2.1.3 Conditional GET Support]
+{empty}<<#a410,2.1.3 Conditional GET Support>>
 
-{empty}link:servlet.html#a412[2.2 Number of Instances]
+{empty}<<#a412,2.2 Number of Instances>>
 
-{empty}link:servlet.html#a416[2.2.1 Note About The Single Thread Model]
+{empty}<<#a416,2.2.1 Note About The Single Thread Model>>
 
-{empty}link:servlet.html#a419[2.3 Servlet Life Cycle]
+{empty}<<#a419,2.3 Servlet Life Cycle>>
 
-{empty}link:servlet.html#a421[2.3.1 Loading and Instantiation]
+{empty}<<#a421,2.3.1 Loading and Instantiation>>
 
-{empty}link:servlet.html#a425[2.3.2 Initialization]
+{empty}<<#a425,2.3.2 Initialization>>
 
-{empty}link:servlet.html#a427[2.3.2.1 Error Conditions on Initialization]
+{empty}<<#a427,2.3.2.1 Error Conditions on Initialization>>
 
-{empty}link:servlet.html#a430[2.3.2.2 Tool Considerations]
+{empty}<<#a430,2.3.2.2 Tool Considerations>>
 
-{empty}link:servlet.html#a432[2.3.3 Request Handling]
+{empty}<<#a432,2.3.3 Request Handling>>
 
-{empty}link:servlet.html#a436[2.3.3.1 Multithreading Issues]
+{empty}<<#a436,2.3.3.1 Multithreading Issues>>
 
-{empty}link:servlet.html#a440[2.3.3.2 Exceptions During Request Handling]
+{empty}<<#a440,2.3.3.2 Exceptions During Request Handling>>
 
-{empty}link:servlet.html#a446[2.3.3.3 Asynchronous processing]
+{empty}<<#a446,2.3.3.3 Asynchronous processing>>
 
 
-{empty}link:servlet.html#a534[2.3.3.4 Thread Safety]
+{empty}<<#a534,2.3.3.4 Thread Safety>>
 
 
-{empty}link:servlet.html#a537[2.3.3.5 Upgrade Processing]
+{empty}<<#a537,2.3.3.5 Upgrade Processing>>
 
 
-{empty}link:servlet.html#a545[2.3.4 End of Service]
+{empty}<<#a545,2.3.4 End of Service>>
 
 
-=== link:servlet.html#a553[The Request]
+=== <<#a553,The Request>>
 
 
-{empty}link:servlet.html#a555[3.1 HTTP Protocol Parameters]
+{empty}<<#a555,3.1 HTTP Protocol Parameters>>
 
 
-{empty}link:servlet.html#a565[3.1.1 When Parameters Are Available]
+{empty}<<#a565,3.1.1 When Parameters Are Available>>
 
 
-{empty}link:servlet.html#a572[3.2 File upload]
+{empty}<<#a572,3.2 File upload>>
 
 
-{empty}link:servlet.html#a585[3.3 Attributes]
+{empty}<<#a585,3.3 Attributes>>
 
 
-{empty}link:servlet.html#a592[3.4 Headers]
+{empty}<<#a592,3.4 Headers>>
 
 
-{empty}link:servlet.html#a602[3.5 Request Path Elements]
+{empty}<<#a602,3.5 Request Path Elements>>
 
 
-{empty}link:servlet.html#a642[3.6 Path Translation Methods]
+{empty}<<#a642,3.6 Path Translation Methods>>
 
 
-{empty}link:servlet.html#a648[3.7 Non Blocking IO]
+{empty}<<#a648,3.7 Non Blocking IO>>
 
 
-{empty}link:servlet.html#a662[3.8 HTTP/2 Server Push]
+{empty}<<#a662,3.8 HTTP/2 Server Push>>
 
 
-{empty}link:servlet.html#a668[3.9 Cookies]
+{empty}<<#a668,3.9 Cookies>>
 
 
-{empty}link:servlet.html#a670[3.10 SSL Attributes]
+{empty}<<#a670,3.10 SSL Attributes>>
 
 
-{empty}link:servlet.html#a687[3.11 Internationalization]
+{empty}<<#a687,3.11 Internationalization>>
 
 
-{empty}link:servlet.html#a694[3.12 Request data encoding]
+{empty}<<#a694,3.12 Request data encoding>>
 
 
-{empty}link:servlet.html#a698[3.13 Lifetime of the Request Object]
+{empty}<<#a698,3.13 Lifetime of the Request Object>>
 
 
-=== link:servlet.html#a704[Servlet Context]
+=== <<#a704,Servlet Context>>
 
 
-{empty}link:servlet.html#a706[4.1 Introduction to the ServletContext Interface]
+{empty}<<#a706,4.1 Introduction to the ServletContext Interface>>
 
 
-{empty}link:servlet.html#a709[4.2 Scope of a ServletContext Interface]
+{empty}<<#a709,4.2 Scope of a ServletContext Interface>>
 
 
-{empty}link:servlet.html#a712[4.3 Initialization Parameters]
+{empty}<<#a712,4.3 Initialization Parameters>>
 
 
-{empty}link:servlet.html#a717[4.4 Configuration methods]
+{empty}<<#a717,4.4 Configuration methods>>
 
 
-{empty}link:servlet.html#a720[4.4.1 Programmatically adding and configuring Servlets]
+{empty}<<#a720,4.4.1 Programmatically adding and configuring Servlets>>
 
 
-{empty}link:servlet.html#a722[4.4.1.1 addServlet(String servletName, String className)]
+{empty}<<#a722,4.4.1.1 addServlet(String servletName, String className)>>
 
 
-{empty}link:servlet.html#a724[4.4.1.2 addServlet(String servletName, Servlet servlet)]
+{empty}<<#a724,4.4.1.2 addServlet(String servletName, Servlet servlet)>>
 
 
-{empty}link:servlet.html#a726[4.4.1.3 addServlet(String servletName, Class <? extends Servlet> servletClass)]
+{empty}<<#a726,4.4.1.3 addServlet(String servletName, Class <? extends Servlet> servletClass)>>
 
 
-{empty}link:servlet.html#a728[4.4.1.4 addJspFile(String servletName, String jspfile)]
+{empty}<<#a728,4.4.1.4 addJspFile(String servletName, String jspfile)>>
 
 
-{empty}link:servlet.html#a730[4.4.1.5 <T extends Servlet> T createServlet(Class<T> clazz)]
+{empty}<<#a730,4.4.1.5 <T extends Servlet> T createServlet(Class<T> clazz)>>
 
 
-{empty}link:servlet.html#a732[4.4.1.6 ServletRegistration getServletRegistration(String servletName)]
+{empty}<<#a732,4.4.1.6 ServletRegistration getServletRegistration(String servletName)>>
 
 
-{empty}link:servlet.html#a734[4.4.1.7 Map<String, ? extends ServletRegistration> getServletRegistrations()]
+{empty}<<#a734,4.4.1.7 Map<String, ? extends ServletRegistration> getServletRegistrations()>>
 
 
-{empty}link:servlet.html#a736[4.4.2 Programmatically adding and configuring Filters]
+{empty}<<#a736,4.4.2 Programmatically adding and configuring Filters>>
 
 
-{empty}link:servlet.html#a737[4.4.2.1 addFilter(String filterName, String className)]
+{empty}<<#a737,4.4.2.1 addFilter(String filterName, String className)>>
 
 
-{empty}link:servlet.html#a739[4.4.2.2 addFilter(String filterName, Filter filter)]
+{empty}<<#a739,4.4.2.2 addFilter(String filterName, Filter filter)>>
 
 
-{empty}link:servlet.html#a741[4.4.2.3 addFilter(String filterName, Class <? extends Filter> filterClass)]
+{empty}<<#a741,4.4.2.3 addFilter(String filterName, Class <? extends Filter> filterClass)>>
 
 
-{empty}link:servlet.html#a743[4.4.2.4 <T extends Filter> T createFilter(Class<T> clazz)]
+{empty}<<#a743,4.4.2.4 <T extends Filter> T createFilter(Class<T> clazz)>>
 
 
-{empty}link:servlet.html#a745[4.4.2.5 FilterRegistration getFilterRegistration(String filterName)]
+{empty}<<#a745,4.4.2.5 FilterRegistration getFilterRegistration(String filterName)>>
 
 
-{empty}link:servlet.html#a747[4.4.2.6 Map<String, ? extends FilterRegistration> getFilterRegistrations()]
+{empty}<<#a747,4.4.2.6 Map<String, ? extends FilterRegistration> getFilterRegistrations()>>
 
 
-{empty}link:servlet.html#a749[4.4.3 Programmatically adding and configuring Listeners]
+{empty}<<#a749,4.4.3 Programmatically adding and configuring Listeners>>
 
 
-{empty}link:servlet.html#a750[4.4.3.1 void addListener(String className)]
+{empty}<<#a750,4.4.3.1 void addListener(String className)>>
 
 
-{empty}link:servlet.html#a759[4.4.3.2 <T extends EventListener> void addListener(T t)]
+{empty}<<#a759,4.4.3.2 <T extends EventListener> void addListener(T t)>>
 
 
-{empty}link:servlet.html#a768[4.4.3.3 void addListener(Class <? extends EventListener> listenerClass)]
+{empty}<<#a768,4.4.3.3 void addListener(Class <? extends EventListener> listenerClass)>>
 
 
-{empty}link:servlet.html#a777[4.4.3.4 <T extends EventListener> void createListener(Class<T> clazz)]
+{empty}<<#a777,4.4.3.4 <T extends EventListener> void createListener(Class<T> clazz)>>
 
 
-{empty}link:servlet.html#a786[4.4.3.5 Annotation processing requirements for programmatically added Servlets, Filters and Listeners]
+{empty}<<#a786,4.4.3.5 Annotation processing requirements for programmatically added Servlets, Filters and Listeners>>
 
 
-{empty}link:servlet.html#a791[4.4.4 Programmatically configuring session time out]
+{empty}<<#a791,4.4.4 Programmatically configuring session time out>>
 
 
-{empty}link:servlet.html#a795[4.4.5 Programmatically configuring character encoding]
+{empty}<<#a795,4.4.5 Programmatically configuring character encoding>>
 
 
-{empty}link:servlet.html#a802[4.5 Context Attributes]
+{empty}<<#a802,4.5 Context Attributes>>
 
 
-{empty}link:servlet.html#a808[4.5.1 Context Attributes in a Distributed Container]
+{empty}<<#a808,4.5.1 Context Attributes in a Distributed Container>>
 
 
-{empty}link:servlet.html#a810[4.6 Resources]
+{empty}<<#a810,4.6 Resources>>
 
 
-{empty}link:servlet.html#a817[4.7 Multiple Hosts and Servlet Contexts]
+{empty}<<#a817,4.7 Multiple Hosts and Servlet Contexts>>
 
 
-{empty}link:servlet.html#a821[4.8 Reloading Considerations]
+{empty}<<#a821,4.8 Reloading Considerations>>
 
 
-{empty}link:servlet.html#a824[4.8.1 Temporary Working Directories]
+{empty}<<#a824,4.8.1 Temporary Working Directories>>
 
 
-=== link:servlet.html#a829[The Response]
+=== <<#a829,The Response>>
 
 
-{empty}link:servlet.html#a831[5.1 Buffering]
+{empty}<<#a831,5.1 Buffering>>
 
 
-{empty}link:servlet.html#a848[5.2 Headers]
+{empty}<<#a848,5.2 Headers>>
 
 
-{empty}link:servlet.html#a866[5.3 HTTP Trailer]
+{empty}<<#a866,5.3 HTTP Trailer>>
 
 
-{empty}link:servlet.html#a872[5.4 Non Blocking IO]
+{empty}<<#a872,5.4 Non Blocking IO>>
 
 
-{empty}link:servlet.html#a883[5.5 Convenience Methods]
+{empty}<<#a883,5.5 Convenience Methods>>
 
 
-{empty}link:servlet.html#a891[5.6 Internationalization]
+{empty}<<#a891,5.6 Internationalization>>
 
 
-{empty}link:servlet.html#a905[5.7 Closure of Response Object]
+{empty}<<#a905,5.7 Closure of Response Object>>
 
 
-{empty}link:servlet.html#a913[5.8 Lifetime of the Response Object]
+{empty}<<#a913,5.8 Lifetime of the Response Object>>
 
 
-=== link:servlet.html#a918[Filtering]
+=== <<#a918,Filtering>>
 
 
-{empty}link:servlet.html#a922[6.1 What is a filter?]
+{empty}<<#a922,6.1 What is a filter?>>
 
 
-{empty}link:servlet.html#a932[6.1.1 Examples of Filtering Components]
+{empty}<<#a932,6.1.1 Examples of Filtering Components>>
 
 
-{empty}link:servlet.html#a943[6.2 Main Concepts]
+{empty}<<#a943,6.2 Main Concepts>>
 
 
-{empty}link:servlet.html#a946[6.2.1 Filter Lifecycle]
+{empty}<<#a946,6.2.1 Filter Lifecycle>>
 
 
-{empty}link:servlet.html#a962[6.2.2 Wrapping Requests and Responses]
+{empty}<<#a962,6.2.2 Wrapping Requests and Responses>>
 
 
-{empty}link:servlet.html#a966[6.2.3 Filter Environment]
+{empty}<<#a966,6.2.3 Filter Environment>>
 
 
-{empty}link:servlet.html#a968[6.2.4 Configuration of Filters in a Web Application]
+{empty}<<#a968,6.2.4 Configuration of Filters in a Web Application>>
 
 
-{empty}link:servlet.html#a1027[6.2.5 Filters and the RequestDispatcher]
+{empty}<<#a1027,6.2.5 Filters and the RequestDispatcher>>
 
 
-=== link:servlet.html#a1069[Sessions]
+=== <<#a1069,Sessions>>
 
 
-{empty}link:servlet.html#a1073[7.1 Session Tracking Mechanisms]
+{empty}<<#a1073,7.1 Session Tracking Mechanisms>>
 
 
-{empty}link:servlet.html#a1075[7.1.1 Cookies]
+{empty}<<#a1075,7.1.1 Cookies>>
 
 
-{empty}link:servlet.html#a1080[7.1.2 SSL Sessions]
+{empty}<<#a1080,7.1.2 SSL Sessions>>
 
 
-{empty}link:servlet.html#a1082[7.1.3 URL Rewriting]
+{empty}<<#a1082,7.1.3 URL Rewriting>>
 
 
-{empty}link:servlet.html#a1087[7.1.4 Session Integrity]
+{empty}<<#a1087,7.1.4 Session Integrity>>
 
 
-{empty}link:servlet.html#a1089[7.2 Creating a Session]
+{empty}<<#a1089,7.2 Creating a Session>>
 
 
-{empty}link:servlet.html#a1098[7.3 Session Scope]
+{empty}<<#a1098,7.3 Session Scope>>
 
 
-{empty}link:servlet.html#a1103[7.4 Binding Attributes into a Session]
+{empty}<<#a1103,7.4 Binding Attributes into a Session>>
 
 
-{empty}link:servlet.html#a1109[7.5 Session Timeouts]
+{empty}<<#a1109,7.5 Session Timeouts>>
 
 
-{empty}link:servlet.html#a1113[7.6 Last Accessed Times]
+{empty}<<#a1113,7.6 Last Accessed Times>>
 
 
-{empty}link:servlet.html#a1115[7.7 Important Session Semantics]
+{empty}<<#a1115,7.7 Important Session Semantics>>
 
 
-{empty}link:servlet.html#a1117[7.7.1 Threading Issues]
+{empty}<<#a1117,7.7.1 Threading Issues>>
 
 
-{empty}link:servlet.html#a1119[7.7.2 Distributed Environments]
+{empty}<<#a1119,7.7.2 Distributed Environments>>
 
 
-{empty}link:servlet.html#a1131[7.7.3 Client Semantics]
+{empty}<<#a1131,7.7.3 Client Semantics>>
 
 
-=== link:servlet.html#a1135[Annotations and pluggability]
+=== <<#a1135,Annotations and pluggability>>
 
 
-{empty}link:servlet.html#a1138[8.1 Annotations and pluggability]
+{empty}<<#a1138,8.1 Annotations and pluggability>>
 
 
-{empty}link:servlet.html#a1196[8.1.1 @WebServlet]
+{empty}<<#a1196,8.1.1 @WebServlet>>
 
 
-{empty}link:servlet.html#a1215[8.1.2 @WebFilter]
+{empty}<<#a1215,8.1.2 @WebFilter>>
 
 
-{empty}link:servlet.html#a1227[8.1.3 @WebInitParam]
+{empty}<<#a1227,8.1.3 @WebInitParam>>
 
 
-{empty}link:servlet.html#a1229[8.1.4 @WebListener]
+{empty}<<#a1229,8.1.4 @WebListener>>
 
 
-{empty}link:servlet.html#a1247[8.1.5 @MultipartConfig]
+{empty}<<#a1247,8.1.5 @MultipartConfig>>
 
 
-{empty}link:servlet.html#a1249[8.1.6 Other annotations / conventions]
+{empty}<<#a1249,8.1.6 Other annotations / conventions>>
 
 
-{empty}link:servlet.html#a1253[8.2 Pluggability]
+{empty}<<#a1253,8.2 Pluggability>>
 
 
-{empty}link:servlet.html#a1255[8.2.1 Modularity of web.xml]
+{empty}<<#a1255,8.2.1 Modularity of web.xml>>
 
 
-{empty}link:servlet.html#a1279[8.2.2 Ordering of web.xml and web-fragment.xml]
+{empty}<<#a1279,8.2.2 Ordering of web.xml and web-fragment.xml>>
 
 
-{empty}link:servlet.html#a1418[8.2.3 Assembling the descriptor from web.xml, web-fragment.xml and annotations]
+{empty}<<#a1418,8.2.3 Assembling the descriptor from web.xml, web-fragment.xml and annotations>>
 
 
-{empty}link:servlet.html#a1716[8.2.4 Shared libraries / runtimes pluggability]
+{empty}<<#a1716,8.2.4 Shared libraries / runtimes pluggability>>
 
 
-{empty}link:servlet.html#a1737[8.3 JSP container pluggability]
+{empty}<<#a1737,8.3 JSP container pluggability>>
 
 
-{empty}link:servlet.html#a1743[8.4 Processing annotations and fragments]
+{empty}<<#a1743,8.4 Processing annotations and fragments>>
 
 
-=== link:servlet.html#a1764[Dispatching Requests]
+=== <<#a1764,Dispatching Requests>>
 
 
-{empty}link:servlet.html#a1768[9.1 Obtaining a RequestDispatcher]
+{empty}<<#a1768,9.1 Obtaining a RequestDispatcher>>
 
 
-{empty}link:servlet.html#a1776[9.1.1 Query Strings in Request Dispatcher Paths]
+{empty}<<#a1776,9.1.1 Query Strings in Request Dispatcher Paths>>
 
 
-{empty}link:servlet.html#a1782[9.2 Using a Request Dispatcher]
+{empty}<<#a1782,9.2 Using a Request Dispatcher>>
 
 
-{empty}link:servlet.html#a1785[9.3 The Include Method]
+{empty}<<#a1785,9.3 The Include Method>>
 
 
-{empty}link:servlet.html#a1790[9.3.1 Included Request Parameters]
+{empty}<<#a1790,9.3.1 Included Request Parameters>>
 
 
-{empty}link:servlet.html#a1801[9.4 The Forward Method]
+{empty}<<#a1801,9.4 The Forward Method>>
 
 
-{empty}link:servlet.html#a1807[9.4.1 Query String]
+{empty}<<#a1807,9.4.1 Query String>>
 
 
-{empty}link:servlet.html#a1809[9.4.2 Forwarded Request Parameters]
+{empty}<<#a1809,9.4.2 Forwarded Request Parameters>>
 
 
-{empty}link:servlet.html#a1821[9.5 Error Handling]
+{empty}<<#a1821,9.5 Error Handling>>
 
 
-{empty}link:servlet.html#a1823[9.6 Obtaining an AsyncContext]
+{empty}<<#a1823,9.6 Obtaining an AsyncContext>>
 
 
-{empty}link:servlet.html#a1825[9.7 The Dispatch Method]
+{empty}<<#a1825,9.7 The Dispatch Method>>
 
 
-{empty}link:servlet.html#a1835[9.7.1 Query String]
+{empty}<<#a1835,9.7.1 Query String>>
 
 
-{empty}link:servlet.html#a1837[9.7.2 Dispatched Request Parameters]
+{empty}<<#a1837,9.7.2 Dispatched Request Parameters>>
 
 
-=== link:servlet.html#a1849[Web Applications]
+=== <<#a1849,Web Applications>>
 
 
-{empty}link:servlet.html#a1851[10.1 Web Applications Within Web Servers]
+{empty}<<#a1851,10.1 Web Applications Within Web Servers>>
 
 
-{empty}link:servlet.html#a1855[10.2 Relationship to ServletContext]
+{empty}<<#a1855,10.2 Relationship to ServletContext>>
 
 
-{empty}link:servlet.html#a1857[10.3 Elements of a Web Application]
+{empty}<<#a1857,10.3 Elements of a Web Application>>
 
 
-{empty}link:servlet.html#a1865[10.4 Deployment Hierarchies]
+{empty}<<#a1865,10.4 Deployment Hierarchies>>
 
 
-{empty}link:servlet.html#a1867[10.5 Directory Structure]
+{empty}<<#a1867,10.5 Directory Structure>>
 
 
-{empty}link:servlet.html#a1876[10.5.1 Example of Application Directory Structure]
+{empty}<<#a1876,10.5.1 Example of Application Directory Structure>>
 
 
-{empty}link:servlet.html#a1888[10.6 Web Application Archive File]
+{empty}<<#a1888,10.6 Web Application Archive File>>
 
 
-{empty}link:servlet.html#a1891[10.7 Web Application Deployment Descriptor]
+{empty}<<#a1891,10.7 Web Application Deployment Descriptor>>
 
 
-{empty}link:servlet.html#a1901[10.7.1 Dependencies On Extensions]
+{empty}<<#a1901,10.7.1 Dependencies On Extensions>>
 
 
-{empty}link:servlet.html#a1907[10.7.2 Web Application Class Loader]
+{empty}<<#a1907,10.7.2 Web Application Class Loader>>
 
 
-{empty}link:servlet.html#a1909[10.8 Replacing a Web Application]
+{empty}<<#a1909,10.8 Replacing a Web Application>>
 
 
-{empty}link:servlet.html#a1911[10.9 Error Handling]
+{empty}<<#a1911,10.9 Error Handling>>
 
 
-{empty}link:servlet.html#a1913[10.9.1 Request Attributes]
+{empty}<<#a1913,10.9.1 Request Attributes>>
 
 
-{empty}link:servlet.html#a1936[10.9.2 Error Pages]
+{empty}<<#a1936,10.9.2 Error Pages>>
 
 
-{empty}link:servlet.html#a1951[10.9.3 Error Filters]
+{empty}<<#a1951,10.9.3 Error Filters>>
 
 
-{empty}link:servlet.html#a1953[10.10 Welcome Files]
+{empty}<<#a1953,10.10 Welcome Files>>
 
 
-{empty}link:servlet.html#a1981[10.11 Web Application Environment]
+{empty}<<#a1981,10.11 Web Application Environment>>
 
 
-{empty}link:servlet.html#a1984[10.12 Web Application Deployment]
+{empty}<<#a1984,10.12 Web Application Deployment>>
 
 
-{empty}link:servlet.html#a1990[10.13 Inclusion of a web.xml Deployment Descriptor]
+{empty}<<#a1990,10.13 Inclusion of a web.xml Deployment Descriptor>>
 
 
-=== link:servlet.html#a1995[Application Lifecycle Events]
+=== <<#a1995,Application Lifecycle Events>>
 
 
-{empty}link:servlet.html#a1997[11.1 Introduction]
+{empty}<<#a1997,11.1 Introduction>>
 
 
-{empty}link:servlet.html#a1999[11.2 Event Listeners]
+{empty}<<#a1999,11.2 Event Listeners>>
 
 
-{empty}link:servlet.html#a2004[11.2.1 Event Types and Listener Interfaces]
+{empty}<<#a2004,11.2.1 Event Types and Listener Interfaces>>
 
 
-{empty}link:servlet.html#a2058[11.2.2 An Example of Listener Use]
+{empty}<<#a2058,11.2.2 An Example of Listener Use>>
 
 
-{empty}link:servlet.html#a2063[11.3 Listener Class Configuration]
+{empty}<<#a2063,11.3 Listener Class Configuration>>
 
 
-{empty}link:servlet.html#a2064[11.3.1 Provision of Listener Classes]
+{empty}<<#a2064,11.3.1 Provision of Listener Classes>>
 
 
-{empty}link:servlet.html#a2066[11.3.2 Deployment Declarations]
+{empty}<<#a2066,11.3.2 Deployment Declarations>>
 
 
-{empty}link:servlet.html#a2068[11.3.3 Listener Registration]
+{empty}<<#a2068,11.3.3 Listener Registration>>
 
 
-{empty}link:servlet.html#a2070[11.3.4 Notifications At Shutdown]
+{empty}<<#a2070,11.3.4 Notifications At Shutdown>>
 
 
-{empty}link:servlet.html#a2072[11.4 Deployment Descriptor Example]
+{empty}<<#a2072,11.4 Deployment Descriptor Example>>
 
 
-{empty}link:servlet.html#a2088[11.5 Listener Instances and Threading]
+{empty}<<#a2088,11.5 Listener Instances and Threading>>
 
 
-{empty}link:servlet.html#a2091[11.6 Listener Exceptions]
+{empty}<<#a2091,11.6 Listener Exceptions>>
 
 
-{empty}link:servlet.html#a2095[11.7 Distributed Containers]
+{empty}<<#a2095,11.7 Distributed Containers>>
 
 
-{empty}link:servlet.html#a2097[11.8 Session Events]
+{empty}<<#a2097,11.8 Session Events>>
 
 
-=== link:servlet.html#a2101[Mapping Requests to Servlets]
+=== <<#a2101,Mapping Requests to Servlets>>
 
 
-{empty}link:servlet.html#a2104[12.1 Use of URL Paths]
+{empty}<<#a2104,12.1 Use of URL Paths>>
 
 
-{empty}link:servlet.html#a2114[12.2 Specification of Mappings]
+{empty}<<#a2114,12.2 Specification of Mappings>>
 
 
-{empty}link:servlet.html#a2123[12.2.1 Implicit Mappings]
+{empty}<<#a2123,12.2.1 Implicit Mappings>>
 
 
-{empty}link:servlet.html#a2126[12.2.2 Example Mapping Set]
+{empty}<<#a2126,12.2.2 Example Mapping Set>>
 
 
-{empty}link:servlet.html#a2160[12.3 Runtime Discovery of Mappings]
+{empty}<<#a2160,12.3 Runtime Discovery of Mappings>>
 
 
-{empty}link:servlet.html#a2163[12.3.1 Runtime Discovery of Servlet Mappings]
+{empty}<<#a2163,12.3.1 Runtime Discovery of Servlet Mappings>>
 
 
-=== link:servlet.html#a2166[Security]
+=== <<#a2166,Security>>
 
 
-{empty}link:servlet.html#a2169[13.1 Introduction]
+{empty}<<#a2169,13.1 Introduction>>
 
 
-{empty}link:servlet.html#a2176[13.2 Declarative Security]
+{empty}<<#a2176,13.2 Declarative Security>>
 
 
-{empty}link:servlet.html#a2180[13.3 Programmatic Security]
+{empty}<<#a2180,13.3 Programmatic Security>>
 
 
-{empty}link:servlet.html#a2206[13.4 Programmatic Security Policy Configuration]
+{empty}<<#a2206,13.4 Programmatic Security Policy Configuration>>
 
 
-{empty}link:servlet.html#a2208[13.4.1 @ServletSecurity Annotation]
+{empty}<<#a2208,13.4.1 @ServletSecurity Annotation>>
 
 
-{empty}link:servlet.html#a2287[13.4.1.1 Examples]
+{empty}<<#a2287,13.4.1.1 Examples>>
 
 
-{empty}link:servlet.html#a2323[13.4.1.2 Mapping @ServletSecurity to security-constraint]
+{empty}<<#a2323,13.4.1.2 Mapping @ServletSecurity to security-constraint>>
 
 
-{empty}link:servlet.html#a2361[13.4.1.3 Mapping @HttpConstraint and @HttpMethodConstraint to XML.]
+{empty}<<#a2361,13.4.1.3 Mapping @HttpConstraint and @HttpMethodConstraint to XML.>>
 
 
-{empty}link:servlet.html#a2395[13.4.2 setServletSecurity of ServletRegistration.Dynamic]
+{empty}<<#a2395,13.4.2 setServletSecurity of ServletRegistration.Dynamic>>
 
 
-{empty}link:servlet.html#a2404[13.5 Roles]
+{empty}<<#a2404,13.5 Roles>>
 
 
-{empty}link:servlet.html#a2409[13.6 Authentication]
+{empty}<<#a2409,13.6 Authentication>>
 
 
-{empty}link:servlet.html#a2415[13.6.1 HTTP Basic Authentication]
+{empty}<<#a2415,13.6.1 HTTP Basic Authentication>>
 
 
-{empty}link:servlet.html#a2418[13.6.2 HTTP Digest Authentication]
+{empty}<<#a2418,13.6.2 HTTP Digest Authentication>>
 
 
-{empty}link:servlet.html#a2420[13.6.3 Form Based Authentication]
+{empty}<<#a2420,13.6.3 Form Based Authentication>>
 
 
-{empty}link:servlet.html#a2437[13.6.3.1 Login Form Notes]
+{empty}<<#a2437,13.6.3.1 Login Form Notes>>
 
 
-{empty}link:servlet.html#a2447[13.6.4 HTTPS Client Authentication]
+{empty}<<#a2447,13.6.4 HTTPS Client Authentication>>
 
 
-{empty}link:servlet.html#a2449[13.6.5 Additional Container Authentication Mechanisms]
+{empty}<<#a2449,13.6.5 Additional Container Authentication Mechanisms>>
 
 
-{empty}link:servlet.html#a2453[13.7 Server Tracking of Authentication Information]
+{empty}<<#a2453,13.7 Server Tracking of Authentication Information>>
 
 
-{empty}link:servlet.html#a2459[13.8 Specifying Security Constraints]
+{empty}<<#a2459,13.8 Specifying Security Constraints>>
 
 
-{empty}link:servlet.html#a2472[13.8.1 Combining Constraints]
+{empty}<<#a2472,13.8.1 Combining Constraints>>
 
 
-{empty}link:servlet.html#a2477[13.8.2 Example]
+{empty}<<#a2477,13.8.2 Example>>
 
 
-{empty}link:servlet.html#a2581[13.8.3 Processing Requests]
+{empty}<<#a2581,13.8.3 Processing Requests>>
 
 
-{empty}link:servlet.html#a2585[13.8.4 Uncovered HTTP Protocol Methods]
+{empty}<<#a2585,13.8.4 Uncovered HTTP Protocol Methods>>
 
 
-{empty}link:servlet.html#a2622[13.8.4.1 Rules for Security Constraint Configuration]
+{empty}<<#a2622,13.8.4.1 Rules for Security Constraint Configuration>>
 
 
-{empty}link:servlet.html#a2627[13.8.4.2 Handling Uncovered HTTP Methods]
+{empty}<<#a2627,13.8.4.2 Handling Uncovered HTTP Methods>>
 
 
-{empty}link:servlet.html#a2635[13.9 Default Policies]
+{empty}<<#a2635,13.9 Default Policies>>
 
 
-{empty}link:servlet.html#a2637[13.10 Login and Logout]
+{empty}<<#a2637,13.10 Login and Logout>>
 
 
-=== link:servlet.html#a2643[Deployment Descriptor]
+=== <<#a2643,Deployment Descriptor>>
 
 
-{empty}link:servlet.html#a2648[14.1 Deployment Descriptor Elements]
+{empty}<<#a2648,14.1 Deployment Descriptor Elements>>
 
 
-{empty}link:servlet.html#a2661[14.2 Rules for Processing the Deployment Descriptor]
+{empty}<<#a2661,14.2 Rules for Processing the Deployment Descriptor>>
 
 
-{empty}link:servlet.html#a2673[14.3 Deployment Descriptor]
+{empty}<<#a2673,14.3 Deployment Descriptor>>
 
 
-{empty}link:servlet.html#a2676[14.4 Deployment Descriptor Diagram]
+{empty}<<#a2676,14.4 Deployment Descriptor Diagram>>
 
 
-{empty}link:servlet.html#a2794[14.5 Examples]
+{empty}<<#a2794,14.5 Examples>>
 
 
-{empty}link:servlet.html#a2796[14.5.1 A Basic Example]
+{empty}<<#a2796,14.5.1 A Basic Example>>
 
 
-{empty}link:servlet.html#a2836[14.5.2 An Example of Security]
+{empty}<<#a2836,14.5.2 An Example of Security>>
 
 
-=== link:servlet.html#a2881[Requirements related to other Specifications]
+=== <<#a2881,Requirements related to other Specifications>>
 
 
-{empty}link:servlet.html#a2885[15.1 Sessions]
+{empty}<<#a2885,15.1 Sessions>>
 
 
-{empty}link:servlet.html#a2887[15.2 Web Applications]
+{empty}<<#a2887,15.2 Web Applications>>
 
 
-{empty}link:servlet.html#a2888[15.2.1 Web Application Class Loader]
+{empty}<<#a2888,15.2.1 Web Application Class Loader>>
 
 
-{empty}link:servlet.html#a2890[15.2.2 Web Application Environment]
+{empty}<<#a2890,15.2.2 Web Application Environment>>
 
 
-{empty}link:servlet.html#a2905[15.2.3 JNDI Name for Web Module Context Root URL]
+{empty}<<#a2905,15.2.3 JNDI Name for Web Module Context Root URL>>
 
 
-{empty}link:servlet.html#a2924[15.3 Security]
+{empty}<<#a2924,15.3 Security>>
 
 
-{empty}link:servlet.html#a2926[15.3.1 Propagation of Security Identity in EJB™ Calls]
+{empty}<<#a2926,15.3.1 Propagation of Security Identity in EJB™ Calls>>
 
 
-{empty}link:servlet.html#a2933[15.3.2 Container Authorization Requirements]
+{empty}<<#a2933,15.3.2 Container Authorization Requirements>>
 
 
-{empty}link:servlet.html#a2935[15.3.3 Container Authentication Requirements]
+{empty}<<#a2935,15.3.3 Container Authentication Requirements>>
 
 
-{empty}link:servlet.html#a2937[15.4 Deployment]
+{empty}<<#a2937,15.4 Deployment>>
 
 
-{empty}link:servlet.html#a2939[15.4.1 Deployment Descriptor Elements]
+{empty}<<#a2939,15.4.1 Deployment Descriptor Elements>>
 
 
-{empty}link:servlet.html#a2948[15.4.2 Packaging and Deployment of JAX-WS Components]
+{empty}<<#a2948,15.4.2 Packaging and Deployment of JAX-WS Components>>
 
 
-{empty}link:servlet.html#a2965[15.4.3 Rules for Processing the Deployment Descriptor]
+{empty}<<#a2965,15.4.3 Rules for Processing the Deployment Descriptor>>
 
 
-{empty}link:servlet.html#a2967[15.5 Annotations and Resource Injection]
+{empty}<<#a2967,15.5 Annotations and Resource Injection>>
 
 
-{empty}link:servlet.html#a2997[15.5.1 @DeclareRoles]
+{empty}<<#a2997,15.5.1 @DeclareRoles>>
 
 
-{empty}link:servlet.html#a3015[15.5.2 @EJB Annotation]
+{empty}<<#a3015,15.5.2 @EJB Annotation>>
 
 
-{empty}link:servlet.html#a3021[15.5.3 @EJBs Annotation]
+{empty}<<#a3021,15.5.3 @EJBs Annotation>>
 
 
-{empty}link:servlet.html#a3030[15.5.4 @Resource Annotation]
+{empty}<<#a3030,15.5.4 @Resource Annotation>>
 
 
-{empty}link:servlet.html#a3043[15.5.5 @PersistenceContext Annotation]
+{empty}<<#a3043,15.5.5 @PersistenceContext Annotation>>
 
 
-{empty}link:servlet.html#a3050[15.5.6 @PersistenceContexts Annotation]
+{empty}<<#a3050,15.5.6 @PersistenceContexts Annotation>>
 
 
-{empty}link:servlet.html#a3052[15.5.7 @PersistenceUnit Annotation]
+{empty}<<#a3052,15.5.7 @PersistenceUnit Annotation>>
 
 
-{empty}link:servlet.html#a3059[15.5.8 @PersistenceUnits Annotation]
+{empty}<<#a3059,15.5.8 @PersistenceUnits Annotation>>
 
 
-{empty}link:servlet.html#a3061[15.5.9 @PostConstruct Annotation]
+{empty}<<#a3061,15.5.9 @PostConstruct Annotation>>
 
 
-{empty}link:servlet.html#a3072[15.5.10 @PreDestroy Annotation]
+{empty}<<#a3072,15.5.10 @PreDestroy Annotation>>
 
 
-{empty}link:servlet.html#a3083[15.5.11 @Resources Annotation]
+{empty}<<#a3083,15.5.11 @Resources Annotation>>
 
 
-{empty}link:servlet.html#a3096[15.5.12 @RunAs Annotation]
+{empty}<<#a3096,15.5.12 @RunAs Annotation>>
 
 
-{empty}link:servlet.html#a3121[15.5.13 @WebServiceRef Annotation]
+{empty}<<#a3121,15.5.13 @WebServiceRef Annotation>>
 
 
-{empty}link:servlet.html#a3127[15.5.14 @WebServiceRefs Annotation]
+{empty}<<#a3127,15.5.14 @WebServiceRefs Annotation>>
 
 
-{empty}link:servlet.html#a3129[15.5.15 Contexts and Dependency Injection for Java EE requirements]
+{empty}<<#a3129,15.5.15 Contexts and Dependency Injection for Java EE requirements>>
 
 
-=== link:servlet.html#a3133[Change Log]
+=== <<#a3133,Change Log>>
 
 
-{empty}link:servlet.html#a3135[A.1 Changes Since Servlet 3.1]
+{empty}<<#a3135,A.1 Changes Since Servlet 3.1>>
 
 
-{empty}link:servlet.html#a3159[A.2 Changes since Servlet 3.0]
+{empty}<<#a3159,A.2 Changes since Servlet 3.0>>
 
 
-{empty}link:servlet.html#a3199[A.3 Changes since Servlet 3.0 Proposed Final Draft]
+{empty}<<#a3199,A.3 Changes since Servlet 3.0 Proposed Final Draft>>
 
 
-{empty}link:servlet.html#a3204[A.4 Changes since Servlet 3.0 Public Review]
+{empty}<<#a3204,A.4 Changes since Servlet 3.0 Public Review>>
 
 
-{empty}link:servlet.html#a3213[A.5 Changes since Servlet 3.0 EDR]
+{empty}<<#a3213,A.5 Changes since Servlet 3.0 EDR>>
 
 
-{empty}link:servlet.html#a3217[A.6 Changes since Servlet 2.5 MR6]
+{empty}<<#a3217,A.6 Changes since Servlet 2.5 MR6>>
 
 
-{empty}link:servlet.html#a3223[A.7 Changes since Servlet 2.5 MR 5]
+{empty}<<#a3223,A.7 Changes since Servlet 2.5 MR 5>>
 
 
-{empty}link:servlet.html#a3224[A.7.1 Clarify SRV 8.4 "The Forward Method"]
+{empty}<<#a3224,A.7.1 Clarify SRV 8.4 "The Forward Method">>
 
 
-{empty}link:servlet.html#a3229[A.7.2 Update Deployment descriptor "http-method values allowed"]
+{empty}<<#a3229,A.7.2 Update Deployment descriptor "http-method values allowed">>
 
 
-{empty}link:servlet.html#a3234[A.7.3 Clarify SRV 7.7.1 "Threading Issues"]
+{empty}<<#a3234,A.7.3 Clarify SRV 7.7.1 "Threading Issues">>
 
 
-{empty}link:servlet.html#a3239[A.8 Changes Since Servlet 2.5 MR 2]
+{empty}<<#a3239,A.8 Changes Since Servlet 2.5 MR 2>>
 
 
-{empty}link:servlet.html#a3240[A.8.1 Updated Annotation Requirements for Java EE containers]
+{empty}<<#a3240,A.8.1 Updated Annotation Requirements for Java EE containers>>
 
 
-{empty}link:servlet.html#a3242[A.8.2 Updated Java Enterprise Edition Requirements]
+{empty}<<#a3242,A.8.2 Updated Java Enterprise Edition Requirements>>
 
 
-{empty}link:servlet.html#a3244[A.8.3 Clarified HttpServletRequest.getRequestURL()]
+{empty}<<#a3244,A.8.3 Clarified HttpServletRequest.getRequestURL()>>
 
 
-{empty}link:servlet.html#a3248[A.8.4 Removal of IllegalStateException from HttpSession.getId()]
+{empty}<<#a3248,A.8.4 Removal of IllegalStateException from HttpSession.getId()>>
 
 
-{empty}link:servlet.html#a3250[A.8.5 ServletContext.getContextPath()]
+{empty}<<#a3250,A.8.5 ServletContext.getContextPath()>>
 
 
-{empty}link:servlet.html#a3258[A.8.6 Requirement for web.xml in web applications]
+{empty}<<#a3258,A.8.6 Requirement for web.xml in web applications>>
 
 
-{empty}link:servlet.html#a3261[A.9 Changes Since Servlet 2.4]
+{empty}<<#a3261,A.9 Changes Since Servlet 2.4>>
 
 
-{empty}link:servlet.html#a3262[A.9.1 Session Clarification]
+{empty}<<#a3262,A.9.1 Session Clarification>>
 
 
-{empty}link:servlet.html#a3269[A.9.2 Filter All Dispatches]
+{empty}<<#a3269,A.9.2 Filter All Dispatches>>
 
 
-{empty}link:servlet.html#a3279[A.9.3 Multiple Occurrences of Servlet Mappings]
+{empty}<<#a3279,A.9.3 Multiple Occurrences of Servlet Mappings>>
 
 
-{empty}link:servlet.html#a3291[A.9.4 Multiple Occurrences Filter Mappings]
+{empty}<<#a3291,A.9.4 Multiple Occurrences Filter Mappings>>
 
 
-{empty}link:servlet.html#a3320[A.9.5 Support Alternative HTTP Methods with Authorization Constraints]
+{empty}<<#a3320,A.9.5 Support Alternative HTTP Methods with Authorization Constraints>>
 
 
-{empty}link:servlet.html#a3351[A.9.6 Minimum J2SE Requirement]
+{empty}<<#a3351,A.9.6 Minimum J2SE Requirement>>
 
 
-{empty}link:servlet.html#a3353[A.9.7 Annotations and Resource Injection]
+{empty}<<#a3353,A.9.7 Annotations and Resource Injection>>
 
 
-{empty}link:servlet.html#a3355[A.9.8 SRV.9.9 ("Error Handling") Requirement Removed]
+{empty}<<#a3355,A.9.8 SRV.9.9 ("Error Handling") Requirement Removed>>
 
 
-{empty}link:servlet.html#a3362[A.9.9 HttpServletRequest.isRequestedSessionIdValid() Clarification]
+{empty}<<#a3362,A.9.9 HttpServletRequest.isRequestedSessionIdValid() Clarification>>
 
 
-{empty}link:servlet.html#a3365[A.9.10 SRV.5.5 ("Closure of Response Object") Clarification]
+{empty}<<#a3365,A.9.10 SRV.5.5 ("Closure of Response Object") Clarification>>
 
 
-{empty}link:servlet.html#a3371[A.9.11 ServletRequest.setCharacterEncoding() Clarified]
+{empty}<<#a3371,A.9.11 ServletRequest.setCharacterEncoding() Clarified>>
 
 
-{empty}link:servlet.html#a3373[A.9.12 Java Enterprise Edition Requirements]
+{empty}<<#a3373,A.9.12 Java Enterprise Edition Requirements>>
 
 
-{empty}link:servlet.html#a3375[A.9.13 Servlet 2.4 MR Change Log Updates Added]
+{empty}<<#a3375,A.9.13 Servlet 2.4 MR Change Log Updates Added>>
 
 
-{empty}link:servlet.html#a3377[A.9.14 Synchronized Access Session Object Clarified]
+{empty}<<#a3377,A.9.14 Synchronized Access Session Object Clarified>>
 
 
-{empty}link:servlet.html#a3379[A.10 Changes Since Servlet 2.3]
+{empty}<<#a3379,A.10 Changes Since Servlet 2.3>>
 
 
 === [[a357]] Overview
@@ -1273,10 +1273,9 @@ resources.
 Number of Instances
 
 The servlet declaration which is either via
-the annotation as described in link:servlet.html#a1136[See
-Annotations and pluggability] or part of the deployment descriptor of
+the annotation as described in <<#a1136,See Annotations and pluggability>> or part of the deployment descriptor of
 the Web application containing the servlet, as described in
-link:servlet.html#a2644[See Deployment Descriptor], controls how
+<<#a2644,See Deployment Descriptor>>, controls how
 the servlet container provides instances of the servlet.
 
 For a servlet not hosted in a distributed
@@ -1354,7 +1353,7 @@ object allows the servlet to access name-value initialization parameters
 from the Web application’s configuration information. The configuration
 object also gives the servlet access to an object (implementing the
 _ServletContext_ interface) that describes the servlet’s runtime
-environment. See link:servlet.html#a705[See Servlet Context]
+environment. See <<#a705,See Servlet Context>>
 for more information about the _ServletContext_ interface.
 
 === [[a427]]Error Conditions on Initialization
@@ -1497,10 +1496,8 @@ either in the same thread or by dispatching to a resource in the
 container using the _AsyncContext_ .
 
 Java Enterprise Edition features such as
-link:servlet.html#a2890[See Web
-Application Environment] and
-link:servlet.html#a2926[See
-Propagation of Security Identity in EJB™ Calls] are available only to
+<<#a2890,See Web Application Environment>> and
+<<#a2926,See Propagation of Security Identity in EJB™ Calls>> are available only to
 threads executing the initial request or when the request is dispatched
 to the container via the _AsyncContext.dispatch_ method. Java Enterprise
 Edition features may be available to other threads operating directly on
@@ -1737,8 +1734,7 @@ interpreted as relative to the _ServletContext_ that initialized the
 _AsyncContext_ . All path related query methods of the request MUST
 reflect the dispatch target, while the original request URI, context
 path, path info and query string may be obtained from the request
-attributes as defined in link:servlet.html#a1837[See Dispatched
-Request Parameters]. These attributes MUST always reflect the original
+attributes as defined in <<#a1837,See Dispatched Request Parameters>>. These attributes MUST always reflect the original
 path elements, even after multiple dispatches.
 
  _public void dispatch()_ - Provided as a
@@ -1748,9 +1744,9 @@ _startAsync(ServletRequest, ServletResponse)_ and the request passed is
 an instance of _HttpServletRequest_ , then the dispatch is to the URI
 returned by _HttpServletRequest.getRequestURI()_ . Otherwise the
 dispatch is to the URI of the request when it was last dispatched by the
-container. The examples link:servlet.html#a480[See] ,
-link:servlet.html#a485[See] and
-link:servlet.html#a492[See] shown below demonstrate what the
+container. The examples <<#a480,See>> ,
+<<#a485,See>> and
+<<#a492,See>> shown below demonstrate what the
 target URI of dispatch would be in the different cases.
 
 [[a480]]
@@ -2006,9 +2002,7 @@ safe.
 If a thread created by the application uses
 the container-managed objects, such as the request or response object,
 those objects must be accessed only within the object’s life cycle as
-defined in sections link:servlet.html#a699[See Lifetime of the
-Request Object] and link:servlet.html#a914[See Lifetime of the
-Response Object] respectively. Be aware that other than the _startAsync_
+defined in sections <<#a699,See Lifetime of the Request Object>> and <<#a914,See Lifetime of the Response Object>> respectively. Be aware that other than the _startAsync_
 , and _complete_ methods, the request and response objects are not
 thread safe. If those objects were accessed in the multiple threads, the
 access should be synchronized or be done through a wrapper to add the
@@ -2110,8 +2104,7 @@ HTTP Protocol Parameters
 Request parameters for the servlet are the
 strings sent by the client to a servlet container as part of its
 request. When the request is an _HttpServletRequest_ object, and
-conditions set out in link:servlet.html#a565[See When
-Parameters Are Available] are met, the container populates the
+conditions set out in <<#a565,See When Parameters Are Available>> are met, the container populates the
 parameters from the URI query string and POST-ed data.
 
 The parameters are stored as a set of
@@ -2181,7 +2174,7 @@ is met.
 
 The servlet handling the request is annotated
 with the _@MultipartConfig_ as defined in
-link:servlet.html#a1247[See @MultipartConfig].
+<<#a1247,See @MultipartConfig>>.
 
 Deployment descriptors contain a
 _multipart-config_ element for the servlet handling the request.
@@ -2420,9 +2413,8 @@ simultaneously be handled by the Web Container. Non-blocking IO in the
 Servlet container allows developers to read data as it becomes available
 or write data when possible to do so. Non-blocking IO only works with
 async request processing in Servlets and Filters (as defined in
-link:servlet.html#a446[See Asynchronous processing]), and
-upgrade processing (as defined in link:servlet.html#a537[See
-Upgrade Processing]). Otherwise, an _IllegalStateException_ must be
+<<#a446,See Asynchronous processing>>), and
+upgrade processing (as defined in <<#a537,See Upgrade Processing>>). Otherwise, an _IllegalStateException_ must be
 thrown when _ServletInputStream.setReadListener_ or
 _ServletOutputStream.setWriteListener_ is invoked.
 
@@ -2504,8 +2496,7 @@ _javax.servlet.http.HttpServletRequest.newPushBuilder()_ and class
 _javax.servlet.http.PushBuilder_ for the normative specification. The
 remainder of this section calls out implementation requirements with
 respect to the section titled “Server Push” in the HTTP/2 specification
-version referenced in link:servlet.html#a26[See Other
-Important References].
+version referenced in <<#a26,See Other Important References>>.
 
 Unless explicitly excluded, Servlet 5.0
 containers must support server push as specified in the HTTP/2
@@ -3035,8 +3026,7 @@ Resource injection on all components
 (Servlets, Filters and Listeners) added programmatically or created
 programmatically, other than the ones added via the methods that takes
 an instance, will only be supported when the component is a CDI Managed
-Bean. For details please refer to link:servlet.html#a3129[See
-Contexts and Dependency Injection for Java EE requirements].
+Bean. For details please refer to <<#a3129,See Contexts and Dependency Injection for Java EE requirements>>.
 
 === [[a791]]Programmatically configuring session time out
 
@@ -3101,7 +3091,7 @@ which they were created. This prevents _ServletContext_ attributes from
 being a shared memory store in a distributed container. When information
 needs to be shared between servlets running in a distributed
 environment, the information should be placed into a session (See
-link:servlet.html#a1070[See Sessions]”), stored in a database,
+<<#a1070,See Sessions>>”), stored in a database,
 or set in an Enterprise JavaBeans™ component.
 
 === [[a810]]
@@ -3138,8 +3128,7 @@ These methods are not used to obtain dynamic
 content. For example, in a container supporting the JavaServer Pages™
 specificationlink:#a3524[5], a method call of the form
 _getResource("/index.jsp")_ would return the JSP source code and not the
-processed output. See link:servlet.html#a1765[See Dispatching
-Requests]” for more information about accessing dynamic content.
+processed output. See <<#a1765,See Dispatching Requests>>” for more information about accessing dynamic content.
 
 The full listing of the resources in the Web
 application can be accessed using the _getResourcePaths(String path)_
@@ -3382,14 +3371,13 @@ Non Blocking IO
 
 Non-blocking IO only works with async request
 processing in Servlets and Filters (as defined in
-link:servlet.html#a446[See Asynchronous processing]), and
-upgrade processing (as defined in link:servlet.html#a537[See
-Upgrade Processing]). Otherwise, an _IllegalStateException_ must be
+<<#a446,See Asynchronous processing>>), and
+upgrade processing (as defined in <<#a537,See Upgrade Processing>>). Otherwise, an _IllegalStateException_ must be
 thrown when _ServletInputStream.setReadListener_ or
 _ServletOutputStream.setWriteListener_ is invoked. To support
 non-blocking writes in the Web container, in addition to the changes
 made in the _ServletRequest_ as described in
-link:servlet.html#a649[See Non Blocking IO],
+<<#a649,See Non Blocking IO>>,
 the following changes have been made to handle response related classes
 / interfaces.
 
@@ -3602,8 +3590,7 @@ conventions and semantics for their implementation.
 
 API documentation for servlet filters is
 provided online. The configuration syntax for filters is given by the
-deployment descriptor schema in link:servlet.html#a2644[See
-Deployment Descriptor]. The reader should use these sources as
+deployment descriptor schema in <<#a2644,See Deployment Descriptor>>. The reader should use these sources as
 references when reading this chapter.
 
 === [[a922]]
@@ -3806,7 +3793,7 @@ of the filter chain must execute in the same invocation thread.
 
 A filter is defined either via the
 _@WebFilter_ annotation as defined in
-link:servlet.html#a1215[See @WebFilter] of the specification or
+<<#a1215,See @WebFilter>> of the specification or
 in the deployment descriptor using the _<filter>_ element. In this
 element, the programmer declares the following:
 
@@ -3887,8 +3874,7 @@ request URI matches the ‘ _/*_ ’ URL pattern.
 When processing a _<filter-mapping>_ element
 using the _<url-pattern>_ style, the container must determine whether
 the _<url-pattern>_ matches the request URI using the path mapping rules
-defined in link:servlet.html#a2102[See Mapping Requests to
-Servlets].
+defined in <<#a2102,See Mapping Requests to Servlets>>.
 
 The order the container uses in building the
 chain of filters to be applied for a particular request URI is as
@@ -3982,8 +3968,7 @@ chain means that the container, when receiving an incoming request,
 processes the request as follows:
 
 Identifies the target Web resource according
-to the rules of link:servlet.html#a2115[See Specification of
-Mappings].
+to the rules of <<#a2115,See Specification of Mappings>>.
 
 If there are filters matched by servlet name
 and the Web resource has a _<servlet-name>_ , the container builds the
@@ -3994,8 +3979,7 @@ target Web resource.
 
 If there are filters using _<url-pattern>_
 matching and the _<url-pattern>_ matches the request URI according to
-the rules of link:servlet.html#a2115[See Specification of
-Mappings], the container builds the chain of _<url-pattern>_ matched
+the rules of <<#a2115,See Specification of Mappings>>, the container builds the chain of _<url-pattern>_ matched
 filters in the same order as declared in the deployment descriptor. The
 last filter in this chain is the last _<url-pattern>_ matching filter in
 the deployment descriptor for this request URI. The last filter in this
@@ -4037,15 +4021,14 @@ This is indicated by a _<dispatcher>_ element
 with value _INCLUDE_ .
 
 The request is being processed with the error
-page mechanism specified in link:servlet.html#a1912[See Error
-Handling] to an error resource matching the _<url-pattern>_ .
+page mechanism specified in <<#a1912,See Error Handling>> to an error resource matching the _<url-pattern>_ .
 
 This is indicated by a _<dispatcher>_ element
 with the value _ERROR_ .
 
 The request is being processed with the async
 context dispatch mechanism specified in
-link:servlet.html#a446[See Asynchronous processing] to a web
+<<#a446,See Asynchronous processing>> to a web
 component using a _dispatch_ call.
 
 This is indicated by a _<dispatcher>_ element
@@ -4368,8 +4351,7 @@ the attribute objects themselves. This will protect the attribute
 collection inside the _HttpSession_ object from concurrent access,
 eliminating the opportunity for an application to cause that collection
 to become corrupted. Unless explicitly stated elsewhere in the
-specification (for example link:servlet.html#a1117[See Threading
-Issues] for session objects), objects vended from the request or
+specification (for example <<#a1117,See Threading Issues>> for session objects), objects vended from the request or
 response must be assumed to be non thread safe. This includes, but is
 not limited to the _PrintWriter_ returned from
 _ServletResponse.getWriter()_ and the _OutputStream_ returned from
@@ -4480,11 +4462,8 @@ If the value of the “ _metadata-complete_ ”
 attribute is specified as _true_ , the deployment tool must ignore any
 annotations that specify such deployment information in the class files
 packaged in the web application. Please see
-link:servlet.html#a1418[See Assembling the descriptor from
-web.xml, web-fragment.xml and annotations],
-link:servlet.html#a1744[See Processing annotations and
-fragments] and link:servlet.html#a2993[See Handling of
-metadata-complete] for additional details on the handling of “
+<<#a1418,See Assembling the descriptor from web.xml, web-fragment.xml and annotations>>,
+<<#a1744,See Processing annotations and fragments>> and <<#a2993,See Handling of metadata-complete>> for additional details on the handling of “
 _metadata-complete_ ”.
 
 If the “ _metadata-complete_ ” attribute is
@@ -4630,8 +4609,7 @@ specify at least one url pattern to be deployed. If the same servlet
 class is declared in the deployment descriptor under a different name, a
 new instance of the servlet MUST be instantiated. If the same servlet
 class is added with a different name to the _ServletContext_ via the
-programmatic API defined in link:servlet.html#a720[See
-Programmatically adding and configuring Servlets], the attribute values
+programmatic API defined in <<#a720,See Programmatically adding and configuring Servlets>>, the attribute values
 declared via the _@WebServlet_ annotation MUST be ignored and a new
 instance of the servlet with the name specified MUST be created.
 
@@ -4784,8 +4762,7 @@ _java.io.File.isAbsolute_ .
 === [[a1249]]Other annotations / conventions
 
 In addition to these annotations all the
-annotations defined in link:servlet.html#a2968[See Annotations
-and Resource Injection] will continue to work in the context of these
+annotations defined in <<#a2968,See Annotations and Resource Injection>> will continue to work in the context of these
 new annotations.
 
 By default all applications will have
@@ -5341,8 +5318,7 @@ they had been specified in the same web.xml.
 
 {empty}The order in which configuration
 settings of web fragments are added to those in the main web.xml is as
-specified above in link:servlet.html#a1279[See Ordering of
-web.xml and web-fragment.xml]
+specified above in <<#a1279,See Ordering of web.xml and web-fragment.xml>>
 
 The _metadata-complete_ attribute when set to
 _true_ in the main _web.xml_ , is considered complete and scanning of
@@ -6306,7 +6282,7 @@ _String_ argument describing a path within the scope of the
 _ServletContext_ . This path must be relative to the root of the
 _ServletContext_ and begin with a ‘ _/_ ’, or be empty. The method uses
 the path to look up a servlet, using the servlet path matching rules in
-link:servlet.html#a2102[See Mapping Requests to Servlets], wraps
+<<#a2102,See Mapping Requests to Servlets>>, wraps
 it with a _RequestDispatcher_ object, and returns the resulting object.
 If no servlet can be resolved based on the given path, a
 _RequestDispatcher_ is provided that returns the content for that path.
@@ -6724,7 +6700,7 @@ present both in the root context and in the _META-INF/resources_
 directory of a JAR file in the _WEB-INF/lib_ directory of the
 application, then the file that is available in the root context MUST be
 used. The rules for matching URLs to context path are laid out in
-link:servlet.html#a2102[See Mapping Requests to Servlets]. Since
+<<#a2102,See Mapping Requests to Servlets>>. Since
 the context path of an application determines the URL namespace of the
 contents of the Web application, Web containers must reject Web
 applications defining a context path that could cause potential
@@ -6832,7 +6808,7 @@ _SC_NOT_FOUND_ (404) response.
 Web Application Deployment Descriptor
 
 The Web application deployment descriptor (see
-link:servlet.html#a2644[See Deployment Descriptor]”) includes
+<<#a2644,See Deployment Descriptor>>”) includes
 the following types of configuration and deployment information:
 
  _ServletContext_ Init Parameters
@@ -6947,7 +6923,7 @@ The request path and attributes are set as if
 a _RequestDispatcher.forward_ to the error resource had been performed.
 
 The request attributes in
-link:servlet.html#a1919[See Request Attributes and their types]
+<<#a1919,See Request Attributes and their types>>
 must be set.
 
 === [[a1919]]Request Attributes and their types
@@ -7059,20 +7035,18 @@ the error page mechanism.
 
 {empty}If the application is using
 asynchronous operations as described in
-link:servlet.html#a446[See Asynchronous processing], it is the
+<<#a446,See Asynchronous processing>>, it is the
 application’s responsibility to handle all errors in application created
 threads. The container MAY take care of the errors from the thread
 issued via _AsyncContext.start_ . For handling errors that occur during
-_AsyncContext.dispatch_ see link:servlet.html#a505[See Any
-errors or exceptions that may occur during the execution of the dispatch
-methods MUST be caught and handled by the container as follows:]
+_AsyncContext.dispatch_ see <<#a505,See Any errors or exceptions that may occur during the execution of the dispatch methods MUST be caught and handled by the container as follows:>>
 
 === [[a1951]]Error Filters
 
 The error page mechanism operates on the
 original unwrapped/unfiltered request and response objects created by
 the container. The mechanism described in
-link:servlet.html#a1027[See Filters and the RequestDispatcher]”
+<<#a1027,See Filters and the RequestDispatcher>>”
 may be used to specify filters that are applied before an error response
 is generated.
 
@@ -7180,7 +7154,7 @@ passed to the “default” servlet, if any. If no “default” servlet is
 mapped, the request may cause a _404 not found_ , may cause a directory
 listing including _shop.jsp_ and _register.jsp_ , or may cause other
 behavior defined by the container. See
-link:servlet.html#a2115[See Specification of Mappings]” for the
+<<#a2115,See Specification of Mappings>>” for the
 definition of “default” servlet.
 
 All of the above static content can also be
@@ -7196,8 +7170,7 @@ Web Application Environment
 Servlet containers that are not part of a Java
 EE technology-compliant implementation are encouraged, but not required,
 to implement the application environment functionality described in
-link:servlet.html#a2890[See Web
-Application Environment] and the Java EE specification. If they do not
+<<#a2890,See Web Application Environment>> and the Java EE specification. If they do not
 implement the facilities required to support this environment, upon
 deploying an application that relies on them, the container should
 provide a warning.
@@ -7454,8 +7427,7 @@ implement and the order in which they appear in the deployment
 descriptor. During web application execution, listeners for the given
 events are mostly invoked in their registration orders, but there are
 some exceptions. For instance, _HttpSessionListener.destroy_ are invoked
-in reverse order. See link:servlet.html#a1418[See Assembling the
-descriptor from web.xml, web-fragment.xml and annotations]” for details.
+in reverse order. See <<#a1418,See Assembling the descriptor from web.xml, web-fragment.xml and annotations>>” for details.
 
 === [[a2070]]Notifications At Shutdown
 
@@ -7546,7 +7518,7 @@ the call tree of another component in the application. An example of
 this is a servlet that sets a session attribute, where the session
 listener throws an unhandled exception. The container must allow
 unhandled exceptions to be handled by the error page mechanism described
-in link:servlet.html#a1912[See Error Handling]”. If there is no
+in <<#a1912,See Error Handling>>”. If there is no
 error page specified for those exceptions, the container must ensure to
 send a response back with status 500. In this case no more listeners
 under that event are called.
@@ -7621,7 +7593,7 @@ configuration to change this encoding or enable more fine-grained
 encoding such as using a different encoding for the path and query
 string portions of the URL. Note that the encoding used to process the
 remainder of the request, after the URL, can be configured as specified
-in link:servlet.html#a695[See Request data encoding].
+in <<#a695,See Request data encoding>>.
 
 The Web container next must locate the servlet
 to process the request using the path mapping procedure described below.
@@ -7784,10 +7756,7 @@ The method _getHttpServletMapping()_ on
 _HttpServletRequest_ returns an _HttpServletMapping_ implementation that
 provides information for the mapping that caused the current _Servlet_
 to be invoked. Please see the javadocs for the normative specification.
-Please see sections link:servlet.html#a1790[See Included Request
-Parameters]link:servlet.html#a1809[See Forwarded Request
-Parameters] and link:servlet.html#a1837[See Dispatched Request
-Parameters] for relevant request attributes. As with the included and
+Please see sections <<#a1790,See Included Request Parameters>><<#a1809,See Forwarded Request Parameters>> and <<#a1837,See Dispatched Request Parameters>> for relevant request attributes. As with the included and
 forwarded request parameters, the _HttpServletMapping_ is not available
 for servlets that have been obtained with a call to
 _ServletContext.getNamedDispatcher()_ . __
@@ -8332,8 +8301,7 @@ element. The _url-pattern_ elements defined by the corresponding servlet
 the presence and value of any contained _auth-constraint_ and
 _user-data-constraint_ elements would be determined by the mapping of
 the _@HttpConstraint_ value as defined in
-link:servlet.html#a2361[See Mapping @HttpConstraint and
-@HttpMethodConstraint to XML.]
+<<#a2361,See Mapping @HttpConstraint and @HttpMethodConstraint to XML.>>
 
 mapping @ServletSecurity with no contained
 @HttpMethodConstraint
@@ -8378,8 +8346,7 @@ both constraints, and the presence and value of any contained
 _auth-constraint_ and _user-data-constraint_ elements would be
 determined by the mapping of the associated _@HttpConstraint_ and
 _@HttpMethodConstraint_ values as defined in
-link:servlet.html#a2361[See Mapping @HttpConstraint and
-@HttpMethodConstraint to XML.]
+<<#a2361,See Mapping @HttpConstraint and @HttpMethodConstraint to XML.>>
 
 mapping @ServletSecurity with contained
 @HttpMethodConstraint
@@ -8540,8 +8507,7 @@ setServletSecurity(ServletSecurityElement arg);_
 The _javax.servlet.ServletSecurityElement_
 argument to _setServletSecurity_ is analogous in structure and model to
 the _ServletSecurity_ interface of the _@ServletSecurity_ annotation. As
-such, the mappings defined in link:servlet.html#a2323[See
-Mapping @ServletSecurity to security-constraint], apply analogously to
+such, the mappings defined in <<#a2323,See Mapping @ServletSecurity to security-constraint>>, apply analogously to
 the mapping of a _ServletSecurityElement_ with contained
 _HttpConstraintElement_ and _HttpMethodConstraintElement_ values, to its
 equivalent _security-constraint_ representation.
@@ -9079,7 +9045,7 @@ a|
 
 The translation of this hypothetical
 deployment descriptor would yield the constraints defined in
-link:servlet.html#a2544[See Security Constraint Table].
+<<#a2544,See Security Constraint Table>>.
 
 === [[a2544]]Security Constraint Table
 
@@ -9159,7 +9125,7 @@ not constrained
 
 When a Servlet container receives a request,
 it shall use the algorithm described in
-link:servlet.html#a2105[See Use of URL Paths] to select the
+<<#a2105,See Use of URL Paths>> to select the
 constraints (if any) defined on the _url-pattern_ that is the best match
 to the request URI. If no constraints are selected, the container shall
 accept the request. Otherwise the container shall determine if the HTTP
@@ -9211,7 +9177,7 @@ The examples that follow depict the three
 ways in which HTTP protocol methods may be left uncovered. The
 determination of whether methods are uncovered is made after all the
 constraints that apply to a _url-pattern_ have been combined as
-described in link:servlet.html#a2472[See Combining Constraints].
+described in <<#a2472,See Combining Constraints>>.
 
 A _security-constraint_ names one or more
 HTTP methods in _http-metho_ d elements. All HTTP methods other than
@@ -10645,7 +10611,7 @@ namespace
 
 All of the above requirements can be met
 using the pluggability mechanism defined in
-link:servlet.html#a1254[See Pluggability].
+<<#a1254,See Pluggability>>.
 
 === [[a2965]]Rules for Processing the Deployment Descriptor
 
@@ -10676,8 +10642,7 @@ section 5 titled “Resources, Naming, and Injection.”
 Annotations must be supported on the
 following container managed classes that implement the following
 interfaces and are declared in the web application deployment descriptor
-or using the annotations defined in link:servlet.html#a1139[See
-Annotations and pluggability] or added programmatically.
+or using the annotations defined in <<#a1139,See Annotations and pluggability>> or added programmatically.
 
 === Components and Interfaces supporting Annotations and Resource Injection
 
@@ -11113,8 +11078,7 @@ The example above shows how a servlet uses the
 _@RunAs_ annotation to propagate the security identity “ _Admin_ ” to an
 EJB component when the _myCart.getTotal()_ method is called. For further
 details on propagating identities see
-link:servlet.html#a2926[See
-Propagation of Security Identity in EJB™ Calls].
+<<#a2926,See Propagation of Security Identity in EJB™ Calls>>.
 
 For further details on the _@RunAs_ annotation
 refer to the Common Annotations for the Java™ Platform™ specification
@@ -11172,10 +11136,9 @@ Community ProcessSM (JCP).
 Changes Since Servlet 3.1
 
 Requirement to support HTTP/2, see
-link:servlet.html#a362[See What is a Servlet Container?] and
-link:servlet.html#a359[See What is a Servlet?]. This includes
-HTTP/2 server push, see link:servlet.html#a663[See HTTP/2
-Server Push].
+<<#a362,See What is a Servlet Container?>> and
+<<#a359,See What is a Servlet?>>. This includes
+HTTP/2 server push, see <<#a663,See HTTP/2 Server Push>>.
 
 Modify javadoc for _ServletContext
 getAttribute()_ and _getInitParameter()_ , specify that
@@ -11195,16 +11158,14 @@ _HttpServletResponse_ , _HttpServletResponseWrapper_ , _HttpSession_ ,
 _HttpSessionContext_ , _HttpUtils_ .
 
 Add _default-context-path_ in the schema of
-_web.xml_ and the description in link:servlet.html#a2788[See
-default-context-path Element] and the figure,
-link:servlet.html#a2681[See web-app Element Structure].
+_web.xml_ and the description in <<#a2788,See default-context-path Element>> and the figure,
+<<#a2681,See web-app Element Structure>>.
 
-Modify link:servlet.html#a1117[See
-Threading Issues] to clarify non-thread safety of objects vended from
+Modify <<#a1117,See Threading Issues>> to clarify non-thread safety of objects vended from
 requests and responses.
 
 Clarify _metadata-complete_ in
-link:servlet.html#a1139[See Annotations and pluggability].
+<<#a1139,See Annotations and pluggability>>.
 
 Add _default_ to methods in
 _ServletContextAttributeListener_ , _ServletContextListener_ ,
@@ -11216,9 +11177,7 @@ Add _javax.servlet.GenericFilter_ and
 _javax.servlet.http.HttpFilter_
 
 Clarify the merging of _<distributable>_ in
-_web.xml_ and _web-fragment.xml_ in link:servlet.html#a1418[See
-Assembling the descriptor from web.xml, web-fragment.xml and
-annotations].
+_web.xml_ and _web-fragment.xml_ in <<#a1418,See Assembling the descriptor from web.xml, web-fragment.xml and annotations>>.
 
 Modify javadoc for
 _ServletContext.getEffectiveSessionTrackingModes()_ without specifying
@@ -11229,32 +11188,27 @@ for Servlet API.
 
 Add _getSessionTimeout_ and
 _setSessionTimeout_ in _ServletContext_ . See javadoc,
-link:servlet.html#a791[See Programmatically configuring session
-time out] and link:servlet.html#a1110[See Session Timeouts].
+<<#a791,See Programmatically configuring session time out>> and <<#a1110,See Session Timeouts>>.
 
 Add _addJspFile()_ in _ServletContext_ . See
-javadoc, link:servlet.html#a728[See addJspFile(String
-servletName, String jspfile)] and link:servlet.html#a734[See
-Map<String, ? extends ServletRegistration> getServletRegistrations()].
+javadoc, <<#a728,See addJspFile(String servletName, String jspfile)>> and <<#a734,See Map<String, ? extends ServletRegistration> getServletRegistrations()>>.
 
 {empty}Add _request-character-encoding_ and
 _response-character-encoding_ in the schema of _web.xml_ . See the
 corresponding descriptions of the elements in
-link:servlet.html#a2790[See request-character-encoding Element]
-and link:servlet.html#a2792[See response-character-encoding
-Element]
+<<#a2790,See request-character-encoding Element>>
+and <<#a2792,See response-character-encoding Element>>
 
 Add _getRequestCharacterEncoding_ ,
 _setRequestCharacterEncoding,_ _getResponseCharacterEncoding_ and
 _setResponseCharacterEncoding_ in _ServletContext_ . Update the
 corresponding javadoc of _ServletContext_ , _ServletRequest_ and
-_ServletResponse_ . See link:servlet.html#a795[See
-Programmatically configuring character encoding],
-link:servlet.html#a695[See Request data encoding] and
-link:servlet.html#a892[See Internationalization].
+_ServletResponse_ . See <<#a795,See Programmatically configuring character encoding>>,
+<<#a695,See Request data encoding>> and
+<<#a892,See Internationalization>>.
 
 Describe mapping discovery API. See
-link:servlet.html#a2161[See Runtime Discovery of Mappings].
+<<#a2161,See Runtime Discovery of Mappings>>.
 
 Update the javadoc of _Registration_ ,
 _ServletContext_ , _ServletRegistration_ for the behaviors of returned
@@ -11263,17 +11217,17 @@ sets.
 Clarify the behaviors of _complete_ and
 _dispatch_ in _AsyncContext_ before the container-initiated dispatch
 that called _startAsync_ has returned to the container. See
-link:servlet.html#a469[See AsyncContext].
+<<#a469,See AsyncContext>>.
 
 Clarify interpretation of fileName parameter
 for method _Part.write()_ . See the javadoc for details.
 
 Clarify encoding used for reading the request
-URL. See link:servlet.html#a2105[See Use of URL Paths] for
+URL. See <<#a2105,See Use of URL Paths>> for
 details.
 
 Specified support for HTTP trailer. See
-link:servlet.html#a867[See HTTP Trailer] for details. Add
+<<#a867,See HTTP Trailer>> for details. Add
 _getTrailerFields_ and _isTrailerFieldsReady_ in _HttpServletRequest_ ,
 and _getTrailerFields_ and _setTrailerFields_ in _HttpServletResponse_ .
 See the corresponding javadoc.
@@ -11283,12 +11237,10 @@ See the corresponding javadoc.
 
 Changes since Servlet 3.0
 
-link:servlet.html#a385[See
-Compatibility with Java Servlet Specification Version 2.5]. Remove
+<<#a385,See Compatibility with Java Servlet Specification Version 2.5>>. Remove
 subsection 1.6.1 “Listener ordering”.
 
-link:servlet.html#a446[See
-Asynchronous processing]. And javadoc of _AsyncContext_ .
+<<#a446,See Asynchronous processing>>. And javadoc of _AsyncContext_ .
 
 Clarified the behavior of
 _AsyncListener.onStartAsync_ .
@@ -11304,119 +11256,82 @@ Specify the default async time out value.
 Clarified the behavior of _AsyncListener_
 when there is an error.
 
-Added link:servlet.html#a537[See
-Upgrade Processing], and new classes _ProtocolHandler_ and
+Added <<#a537,See Upgrade Processing>>, and new classes _ProtocolHandler_ and
 _WebConnection_ .
 
-link:servlet.html#a573[See File
-upload]. Clarified when _multi-part/form-data_ are processed.
+<<#a573,See File upload>>. Clarified when _multi-part/form-data_ are processed.
 
 Added Asynchronous IO in
-link:servlet.html#a649[See Non Blocking IO]
-and link:servlet.html#a914[See Lifetime of the Response
-Object].
+<<#a649,See Non Blocking IO>>
+and <<#a914,See Lifetime of the Response Object>>.
 
-Clarified link:servlet.html#a718[See
-Configuration methods] that the ServletContextListener must be declared
+Clarified <<#a718,See Configuration methods>> that the ServletContextListener must be declared
 in the descriptor or annotated with @WebListener
 
 Added _HttpSessionIdListener_ to the list
-listeners in link:servlet.html#a750[See void addListener(String
-className)], link:servlet.html#a759[See <T extends
-EventListener> void addListener(T t)],
-link:servlet.html#a768[See void addListener(Class <? extends
-EventListener> listenerClass)], link:servlet.html#a777[See <T
-extends EventListener> void createListener(Class<T> clazz)],
-link:servlet.html#a1229[See @WebListener] and
-link:servlet.html#a2968[See Annotations and Resource Injection].
+listeners in <<#a750,See void addListener(String className)>>, <<#a759,See <T extends EventListener> void addListener(T t)>>,
+<<#a768,See void addListener(Class <? extends EventListener> listenerClass)>>, <<#a777,See <T extends EventListener> void createListener(Class<T> clazz)>>,
+<<#a1229,See @WebListener>> and
+<<#a2968,See Annotations and Resource Injection>>.
 
-link:servlet.html#a786[See
-Annotation processing requirements for programmatically added Servlets,
-Filters and Listeners]. Update the reference.
+<<#a786,See Annotation processing requirements for programmatically added Servlets, Filters and Listeners>>. Update the reference.
 
-link:servlet.html#a818[See Multiple
-Hosts and Servlet Contexts]. Add _ServletContext.getVirtualServerName_
+<<#a818,See Multiple Hosts and Servlet Contexts>>. Add _ServletContext.getVirtualServerName_
 method.
 
-link:servlet.html#a832[See
-Buffering]. And javadoc of _ServletResponse_ . +
+<<#a832,See Buffering>>. And javadoc of _ServletResponse_ . +
 Clarified the behavior of _ServletResponse.reset_ .
 
-link:servlet.html#a849[See Headers].
+<<#a849,See Headers>>.
 Update X-Powered-By header.
 
-link:servlet.html#a946[See Filter
-Lifecycle] (4). Required filters and servlet processing in the same
+<<#a946,See Filter Lifecycle>> (4). Required filters and servlet processing in the same
 thread.
 
-link:servlet.html#a1090[See Creating
-a Session]. Add change session id.
+<<#a1090,See Creating a Session>>. Add change session id.
 
-link:servlet.html#a1139[See
-Annotations and pluggability], link:servlet.html#a1255[See
-Modularity of web.xml] and link:servlet.html#a386[See
-Processing annotations]. Clarify the behavior of _metadata-complete_ .
+<<#a1139,See Annotations and pluggability>>, <<#a1255,See Modularity of web.xml>> and <<#a386,See Processing annotations>>. Clarify the behavior of _metadata-complete_ .
 
-link:servlet.html#a1196[See
-@WebServlet]. Programmatically adding servlet with a name different from
+<<#a1196,See @WebServlet>>. Programmatically adding servlet with a name different from
 that specified in annotation.
 
-link:servlet.html#a1279[See Ordering
-of web.xml and web-fragment.xml] and link:servlet.html#a1716[See
-Shared libraries / runtimes pluggability]. The processing of
+<<#a1279,See Ordering of web.xml and web-fragment.xml>> and <<#a1716,See Shared libraries / runtimes pluggability>>. The processing of
 _HandlesTypes_ annotation is applied irrespective to setting of
 _metadata-complete_ .
 
-link:servlet.html#a1418[See
-Assembling the descriptor from web.xml, web-fragment.xml and
-annotations]. Clarify the order in which listeners are invoked.
+<<#a1418,See Assembling the descriptor from web.xml, web-fragment.xml and annotations>>. Clarify the order in which listeners are invoked.
 
-link:servlet.html#a1716[See Shared
-libraries / runtimes pluggability]Clarify the creation of instance of
+<<#a1716,See Shared libraries / runtimes pluggability>>Clarify the creation of instance of
 _ServletCotnainerInitilizer_ .
 
-link:servlet.html#a1802[See The
-Forward Method]. Clarified the behavior of the response when the request
+<<#a1802,See The Forward Method>>. Clarified the behavior of the response when the request
 is put in asynchronous mode.
 
-link:servlet.html#a2018[See HTTP
-Session Events]. Add a “Changes to id” events.
+<<#a2018,See HTTP Session Events>>. Add a “Changes to id” events.
 
-link:servlet.html#a1936[See Error
-Pages] and link:servlet.html#a2677[See Deployment Descriptor
-Diagram]. Add description for default error page.
+<<#a1936,See Error Pages>> and <<#a2677,See Deployment Descriptor Diagram>>. Add description for default error page.
 
-link:servlet.html#a2068[See Listener
-Registration]. Clarify on ordering.
+<<#a2068,See Listener Registration>>. Clarify on ordering.
 
-link:servlet.html#a2115[See
-Specification of Mappings]. Clarify the behavior of servlets mapped to
+<<#a2115,See Specification of Mappings>>. Clarify the behavior of servlets mapped to
 the same url-pattern.
 
-link:servlet.html#a2181[See
-Programmatic Security], link:servlet.html#a2361[See Mapping
-@HttpConstraint and @HttpMethodConstraint to XML.] and
-link:servlet.html#a2472[See Combining Constraints]. Add
+<<#a2181,See Programmatic Security>>, <<#a2361,See Mapping @HttpConstraint and @HttpMethodConstraint to XML.>> and
+<<#a2472,See Combining Constraints>>. Add
 descriptions for role “*” and “**”.
 
-link:servlet.html#a2420[See Form
-Based Authentication]. Add status code 303.
+<<#a2420,See Form Based Authentication>>. Add status code 303.
 
-link:servlet.html#a2437[See Login
-Form Notes]. Add autocomplete=”off’.
+<<#a2437,See Login Form Notes>>. Add autocomplete=”off’.
 
-Add link:servlet.html#a2585[See
-Uncovered HTTP Protocol Methods].
+Add <<#a2585,See Uncovered HTTP Protocol Methods>>.
 
-link:servlet.html#a2674[See
-Deployment Descriptor]. Update the schema url.
+<<#a2674,See Deployment Descriptor>>. Update the schema url.
 
-link:servlet.html#a2926[See
-Propagation of Security Identity in EJB™ Calls]. Explicitly mentioned
+<<#a2926,See Propagation of Security Identity in EJB™ Calls>>. Explicitly mentioned
 the _Servlet.init_ and _Servlet.destroy_ .
 
-link:servlet.html#a3129[See Contexts
-and Dependency Injection for Java EE requirements]. Add
+<<#a3129,See Contexts and Dependency Injection for Java EE requirements>>. Add
 _HttpUpgradeHandler_ and add reference to Java EE 7 specification.
 
 Added generic in _ServletRequestWrapper_ ,
@@ -11587,7 +11502,7 @@ containers
 Added EJBs, PreDestroy, PeristenceContext,
 PersistenceContexts, PersistenceUnit, and PersistenceUnits with
 descriptions to the list of required Java EE cdontainer annotations in
-link:servlet.html#a2968[See Annotations and Resource Injection].
+<<#a2968,See Annotations and Resource Injection>>.
 
 [[a3242]]Updated Java Enterprise Edition Requirements
 
@@ -11656,8 +11571,7 @@ application.
 
 [[a3258]]Requirement for web.xml in web applications
 
-link:servlet.html#a1991[See Inclusion
-of a web.xml Deployment Descriptor] was added which removes requirement
+<<#a1991,See Inclusion of a web.xml Deployment Descriptor>> was added which removes requirement
 for Java EE compliant web applications. The section is as follows:
 
 A web application is NOT required to contain
@@ -11672,11 +11586,10 @@ Changes Since Servlet 2.4
 
 [[a3262]]Session Clarification
 
-Clarified link:servlet.html#a1099[See
-Session Scope] to allow for better support of session ids being used in
+Clarified <<#a1099,See Session Scope>> to allow for better support of session ids being used in
 more than one context. This was done to support the Portlet
 specification (JSR 168). Added the following paragraph at the end of
-link:servlet.html#a1099[See Session Scope]:
+<<#a1099,See Session Scope>>:
 
 “Additionally, sessions of a context must be
 resumable by requests into that context regardless of whether their
@@ -11684,7 +11597,7 @@ associated context was being accessed directly or as the target of a
 request dispatch at the time the sessions were created."
 
 Made the changes in
-link:servlet.html#a1786[See The Include Method] by replacing the
+<<#a1786,See The Include Method>> by replacing the
 following text:
 
 "It cannot set headers or call any method
@@ -11704,8 +11617,7 @@ response has been committed."
 
 [[a3269]]Filter All Dispatches
 
-Modified link:servlet.html#a1027[See
-Filters and the RequestDispatcher] to clarify a way to map a filter to
+Modified <<#a1027,See Filters and the RequestDispatcher>> to clarify a way to map a filter to
 all servlet dispatches by appending the following text to the end of the
 section:
 
@@ -11822,8 +11734,7 @@ following example:
 
 </filter-mapping>
 
-link:servlet.html#a968[See
-Configuration of Filters in a Web Application] was updated to clarify
+<<#a968,See Configuration of Filters in a Web Application>> was updated to clarify
 the cases where there are multiple mappings with the following text:
 
 "If a filter mapping contains both
@@ -11906,22 +11817,19 @@ token as described in HTTP 1.1 specification section 2.2.
 [[a3351]]Minimum J2SE Requirement
 
 Servlet 2.5 Containers now require J2SE 5.0
-as the minimum Java version. link:servlet.html#a362[See What is
-a Servlet Container?] was updated to reflect this requirement.
+as the minimum Java version. <<#a362,See What is a Servlet Container?>> was updated to reflect this requirement.
 
 [[a3353]]Annotations and Resource Injection
 
 Java EE technology compliant containers
 require annotations and resource injection on servlets, filters, and
-listeners. link:servlet.html#a2968[See Annotations and Resource
-Injection] describes the annotations and resource injection in further
+listeners. <<#a2968,See Annotations and Resource Injection>> describes the annotations and resource injection in further
 detail.
 
 [[a3355]]SRV.9.9 ("Error Handling") Requirement
 Removed
 
-link:servlet.html#a1913[See Request
-Attributes] defines the following requirement:
+<<#a1913,See Request Attributes>> defines the following requirement:
 
 If the location of the error handler is a
 servlet or a JSP page:
@@ -11952,13 +11860,12 @@ any session ID.
 Clarification
 
 The behavior in
-link:servlet.html#a906[See Closure of Response Object] the
+<<#a906,See Closure of Response Object>> the
 response's content length is set to 0 via
 response.setHeader("Content-Length", "0") and any subsequently
 setHeader() calls are ignored.
 
-link:servlet.html#a906[See Closure
-of Response Object] was updated to allow all headers to be set by
+<<#a906,See Closure of Response Object>> was updated to allow all headers to be set by
 changing:
 
 "The amount of content specified in the
@@ -11980,8 +11887,7 @@ getReader() is called there will be no effect.
 
 [[a3373]]Java Enterprise Edition Requirements
 
-link:servlet.html#a2882[See
-Requirements related to other Specifications] details all requirements
+<<#a2882,See Requirements related to other Specifications>> details all requirements
 of a Java EE container. Previously the requirements were mixed into each
 chapter.
 
@@ -11993,8 +11899,7 @@ fixes.
 
 [[a3377]]Synchronized Access Session Object Clarified
 
-link:servlet.html#a1117[See Threading
-Issues] was updated to clarify that access to the session object should
+<<#a1117,See Threading Issues>> was updated to clarify that access to the session object should
 be synchronized.
 
 === [[a3379]]
