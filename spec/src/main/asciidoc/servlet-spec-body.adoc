@@ -1,28 +1,18 @@
-:sectnums:
+:sectnums!:
 = Jakarta Servlet Specification, Version 5.0
 
 Copyright (c) 2015, 2020 Oracle and/or its affiliates. All rights reserved.
 
 Oracle and Java are registered trademarks of Oracle and/or its 
-affiliates. Other names may be trademarks of their respective owners. 
+affiliates. Other names may be trademarks of their respective owners.
 
-=== 
-
-image:servlet-1.png[image]
-
-Preface
-
-image:servlet-2.png[image]
+== Preface
 
 This document is the Java™ Servlet
 Specification, version 5.0. The standard for the Java Servlet API is
 described herein.
 
-=== 
-
-image:servlet-3.png[image]
-
-Additional Sources
+== Additional Sources
 
 The specification is intended to be a complete
 and clear explanation of Java Servlets, but if questions remain, the
@@ -48,11 +38,7 @@ should be consulted, and is the final arbiter of such issues.
 Comments and feedback are welcome, and will be
 used to improve future versions.
 
-=== 
-
-image:servlet-3.png[image]
-
-Who Should Read This Specification
+== Who Should Read This Specification
 
 The intended audience for this specification
 includes the following groups:
@@ -70,20 +56,12 @@ We emphasize that this specification is not a
 user’s guide for servlet developers and is not intended to be used as
 such.
 
-=== 
-
-image:servlet-3.png[image]
-
-API Reference
+== API Reference
 
 The full specifications of classes, interfaces,
 and method signatures that define the Java Servlet API, as well as their
 accompanying Javadoc™ documentation, is available online at
 _http://docs.oracle.com/javaee/_ .
-
-=== 
-
-image:servlet-3.png[image]
 
 Other Java Platform Specifications
 
@@ -107,11 +85,7 @@ These specifications may be found at the Java
 Platform, Enterprise Edition Web site: _http://docs.oracle.com/javaee/_
 .
 
-=== 
-
-image:servlet-3.png[image]
-
-[[a26]]Other Important References
+== [[a26]]Other Important References
 
 The following Internet specifications provide
 information relevant to the development and implementation of the Java
@@ -200,11 +174,7 @@ The key words "MUST", "MUST NOT", "REQUIRED",
 RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be
 interpreted as described in RFC2119.
 
-=== 
-
-image:servlet-3.png[image]
-
-Providing Feedback
+== Providing Feedback
 
 We welcome any and all feedback about this
 specification. Please e-mail your comments to
@@ -215,13 +185,7 @@ that we receive, you will not normally receive a reply from an engineer.
 However, each and every comment is read, evaluated, and archived by the
 specification team.
 
-
-
-=== 
-
-image:servlet-3.png[image]
-
-Expert Group members
+== Expert Group members
 
 Euigeun Chung (TmaxSoft, Inc)
 
@@ -241,11 +205,7 @@ Stuart Douglas (RedHat)
 
 Wenbo Zhu ( Google Inc.)
 
-=== 
-
-image:servlet-3.png[image]
-
-Acknowledgements
+== Acknowledgements
 
 Bill Shannon from Oracle has provided invaluable
 technical input to the specification. Ron Monzillo from Oracle has
@@ -259,13 +219,7 @@ suggested the initial design of the Mapping Discovery API in Servlet
 
 
 
-=== [[a74]]
-
-image:servlet-4.png[image]
-
-Contents
-
-image:servlet-5.png[image]
+=== [[a74]] Contents
 
 === link:servlet.html#a74[Contents ix]
 
@@ -1096,15 +1050,7 @@ Synchronized Access Session Object Clarified 213]
 {empty}link:servlet.html#a3379[A.10
 Changes Since Servlet 2.3 213]
 
-=== 
-
-=== [[a357]]
-
-image:servlet-6.png[image]
-
-Overview
-
-image:servlet-7.png[image]
+=== [[a357]] Overview
 
 === [[a358]]
 
@@ -1165,11 +1111,7 @@ container are not negatively impacted.
 Java SE 8 is the minimum version of the
 underlying Java platform with which servlet containers must be built.
 
-=== [[a368]]
-
-image:servlet-8.png[image]
-
-An Example
+=== [[a368]] An Example
 
 The following is a typical sequence of events:
 
@@ -1197,11 +1139,7 @@ Once the servlet has finished processing the
 request, the servlet container ensures that the response is properly
 flushed, and returns control back to the host Web server.
 
-=== [[a375]]
-
-image:servlet-8.png[image]
-
-Comparing Servlets with Other Technologies
+=== [[a375]] Comparing Servlets with Other Technologies
 
 In functionality, servlets provide a higher
 level abstraction than Common Gateway Interface (CGI) programs but a
