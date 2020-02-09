@@ -1042,10 +1042,7 @@ suggested the initial design of the Mapping Discovery API in Servlet
 
 === [[a357]] Overview
 
-=== [[a358]]
-
-
-[[a359]]What is a Servlet?
+=== [[a358]][[a359]]What is a Servlet?
 
 A servlet is a Java™ technology-based Web
 component, managed by a container, that generates dynamic content. Like
@@ -1057,10 +1054,7 @@ engines, are Web server extensions that provide servlet functionality.
 Servlets interact with Web clients via a request/response paradigm
 implemented by the servlet container.
 
-=== [[a361]]
-
-
-[[a362]]What is a Servlet Container?
+=== [[a361]][[a362]]What is a Servlet Container?
 
 The servlet container is a part of a Web
 server or application server that provides the network services over
@@ -1161,10 +1155,7 @@ Servlet containers and servlets deployed into them must meet additional
 requirements, described in the Java EE specification, for executing in a
 Java EE environment.
 
-=== [[a384]]
-
-
-[[a385]]Compatibility with Java Servlet Specification Version
+=== [[a384]][[a385]]Compatibility with Java Servlet Specification Version
 2.5
 
 === [[a386]]Processing annotations
@@ -2160,10 +2151,7 @@ be available to the servlet via the request object’s input stream. If
 the conditions are met, post form data will no longer be available for
 reading directly from the request object’s input stream.
 
-=== [[a572]]
-
-
-[[a573]]File upload
+=== [[a572]][[a573]]File upload
 
 Servlet container allows files to be uploaded
 when data is sent as _multipart/form-data_ .
@@ -2401,10 +2389,7 @@ considered only if the container has unpacked them from their containing
 JAR file when a call to _getRealPath()_ is made, and in this case MUST
 return the unpacked location.
 
-=== [[a648]]
-
-
-[[a649]]Non Blocking IO
+=== [[a648]][[a649]]Non Blocking IO
 
 Non-blocking request processing in the Web
 Container helps improve the ever increasing demand for improved Web
@@ -2471,10 +2456,7 @@ MUST be thrown. A subsequent call to _setReadListener_ in the scope of
 the current request is illegal and an _IllegalStateException_ MUST be
 thrown.
 
-=== [[a662]]
-
-
-[[a663]]HTTP/2 Server Push
+=== [[a662]][[a663]]HTTP/2 Server Push
 
 Server push is the most visible of the
 improvements in HTTP/2 to appear in the servlet API. All of the new
@@ -2613,10 +2595,7 @@ default locale for the servlet container and the _getLocales_ method
 must contain an enumeration of a single _Locale_ element of the default
 locale.
 
-=== [[a694]]
-
-
-[[a695]]Request data encoding
+=== [[a694]][[a695]]Request data encoding
 
 Currently, many browsers do not send a char
 encoding qualifier with the Content-Type header, leaving open the
@@ -2645,10 +2624,7 @@ must be called prior to parsing any post data or reading any input from
 the request. Calling this method once data has been read will not affect
 the encoding.
 
-=== [[a698]]
-
-
-[[a699]]Lifetime of the Request Object
+=== [[a698]][[a699]]Lifetime of the Request Object
 
 Each request object is valid only within the
 scope of a servlet’s _service_ method, or within the scope of a filter’s
@@ -2668,10 +2644,7 @@ In case of upgrade, the above is still true.
 
 
 
-=== [[a704]]
-
-
-[[a705]]Servlet Context
+=== [[a704]][[a705]]Servlet Context
 
 
 === [[a706]]
@@ -2729,10 +2702,7 @@ Application Developer to convey setup information. Typical examples are
 a Webmaster’s e-mail address, or the name of a system that holds
 critical data.
 
-=== [[a717]]
-
-
-[[a718]]Configuration methods
+=== [[a717]][[a718]]Configuration methods
 
 The following methods are added to
 _ServletContext_ since Servlet 3.0 to enable programmatic definition of
@@ -3135,10 +3105,7 @@ application can be accessed using the _getResourcePaths(String path)_
 method. The full details on the semantics of this method may be found in
 the API documentation in this specification.
 
-=== [[a817]]
-
-
-[[a818]]Multiple Hosts and Servlet Contexts
+=== [[a817]][[a818]]Multiple Hosts and Servlet Contexts
 
 Web servers may support multiple logical hosts
 sharing one IP address on a server. This capability is sometimes
@@ -3209,10 +3176,7 @@ information to be returned from the server to the client. In the HTTP
 protocol, this information is transmitted from the server to the client
 either by HTTP headers or the message body of the request.
 
-=== [[a831]]
-
-
-[[a832]]Buffering
+=== [[a831]][[a832]]Buffering
 
 A servlet container is allowed, but not
 required, to buffer output going to the client for efficiency purposes.
@@ -3274,10 +3238,7 @@ immediately flush the contents of a filled buffer to the client. If this
 is the first data that is sent to the client, the response is considered
 to be committed.
 
-=== [[a848]]
-
-
-[[a849]]Headers
+=== [[a848]][[a849]]Headers
 
 A servlet can set headers of an HTTP response
 via the following methods of the _HttpServletResponse_ interface:
@@ -3339,10 +3300,7 @@ X-Powered-By: Servlet/5.0
 X-Powered-By: Servlet/5.0 JSP/2.3 (GlassFish
 Server Open Source Edition 5.0 Java/Oracle Corporation/1.8)
 
-=== [[a866]]
-
-
-[[a867]]HTTP Trailer
+=== [[a866]][[a867]]HTTP Trailer
 
 HTTP trailer is a collection of special kind
 of HTTP headers that comes after the response body. Trailer is specified
@@ -3462,10 +3420,7 @@ committed), the data in the response buffer must be cleared and replaced
 with the data set by these methods. If the response is committed, these
 methods must throw an _IllegalStateException_ .
 
-=== [[a891]]
-
-
-[[a892]]Internationalization
+=== [[a891]][[a892]]Internationalization
 
 Servlets should set the locale and the
 character encoding of a response. The locale is set using the
@@ -3528,10 +3483,7 @@ types. Note that the character encoding cannot be communicated via HTTP
 headers if the servlet does not specify a content type; however, it is
 still used to encode text written via the servlet response’s writer.
 
-=== [[a905]]
-
-
-[[a906]]Closure of Response Object
+=== [[a905]][[a906]]Closure of Response Object
 
 When a response is closed, the container must
 immediately flush all remaining content in the response buffer to the
@@ -3552,10 +3504,7 @@ The _sendRedirect_ method is called.
 The _complete_ method on _AsyncContext_ is
 called.
 
-=== [[a913]]
-
-
-[[a914]]Lifetime of the Response Object
+=== [[a913]][[a914]]Lifetime of the Response Object
 
 Each response object is valid only within the
 scope of a servlet’s _service_ method, or within the scope of a filter’s
@@ -4129,10 +4078,7 @@ request dispatchers obtained by name or by path.
 
 === 
 
-=== [[a1069]]
-
-
-[[a1070]]Sessions
+=== [[a1069]][[a1070]]Sessions
 
 
 The Hypertext Transfer Protocol (HTTP) is by
@@ -4213,10 +4159,7 @@ HTTP session while servicing HTTP requests from clients that do not
 support the use of cookies. To fulfill this requirement, Web containers
 commonly support the URL rewriting mechanism.
 
-=== [[a1089]]
-
-
-[[a1090]]Creating a Session
+=== [[a1089]][[a1090]]Creating a Session
 
 A session is considered “new” when it is only
 a prospective session and has not been established. Because HTTP is a
@@ -4249,10 +4192,7 @@ _javax.servlet.http.HttpSession.getId()_ and can be changed after
 creation by invoking
 _javax.servlet.http.HttpServletRequest.changeSessionId()_ .
 
-=== [[a1098]]
-
-
-[[a1099]]Session Scope
+=== [[a1098]][[a1099]]Session Scope
 
  _HttpSession_ objects must be scoped at the
 application (or servlet context) level. The underlying mechanism, such
@@ -4298,10 +4238,7 @@ _HttpSession_ interface. The _valueUnbound_ method must be called after
 the object is no longer available via the _getAttribute_ method of the
 _HttpSession_ interface.
 
-=== [[a1109]]
-
-
-[[a1110]]Session Timeouts
+=== [[a1109]][[a1110]]Session Timeouts
 
 In the HTTP protocol, there is no explicit
 termination signal when a client is no longer active. This means that
@@ -4428,20 +4365,14 @@ session.
 
 === 
 
-=== [[a1135]]
-
-
-[[a1136]]Annotations and pluggability
+=== [[a1135]][[a1136]]Annotations and pluggability
 
 
 This chapter describes the use of annotations
 and other enhancements to enable pluggability of frameworks and
 libraries for use within a web application.
 
-=== [[a1138]]
-
-
-[[a1139]]Annotations and pluggability
+=== [[a1138]][[a1139]]Annotations and pluggability
 
 In a web application, classes using
 annotations will have their annotations processed only if they are
@@ -4776,10 +4707,7 @@ annotations. If ordering is important then look at the section for
 modularity of web.xml and ordering of _web.xml_ and _web-fragment.xml_
 below. The order can be specified in the deployment descriptor only.
 
-=== [[a1253]]
-
-
-[[a1254]]Pluggability
+=== [[a1253]][[a1254]]Pluggability
 
 === [[a1255]]Modularity of web.xml
 
@@ -6200,10 +6128,7 @@ names (with possible exclusions if fragment JAR files have been excluded
 from _absolute-ordering_ ), or _null_ if the application does not
 specify any absolute or relative ordering.
 
-=== [[a1743]]
-
-
-[[a1744]]Processing annotations and fragments
+=== [[a1743]][[a1744]]Processing annotations and fragments
 
 Web applications can include both annotations
 and the _web.xml_ / _web-fragment.xml_ deployment descriptors. If there
@@ -6249,10 +6174,7 @@ yes
 
 === 
 
-=== [[a1764]]
-
-
-[[a1765]]Dispatching Requests
+=== [[a1764]][[a1765]]Dispatching Requests
 
 
 When building a Web application, it is often
@@ -6354,10 +6276,7 @@ The Container Provider should ensure that the
 dispatch of the request to a target servlet occurs in the same thread of
 the same JVM as the original request.
 
-=== [[a1785]]
-
-
-[[a1786]]The Include Method
+=== [[a1785]][[a1786]]The Include Method
 
 The _include_ method of the
 _RequestDispatcher_ interface may be called at any time. The target
@@ -6420,10 +6339,7 @@ for that include.
 If the included servlet was obtained by using
 the _getNamedDispatcher_ method, these attributes must not be set.
 
-=== [[a1801]]
-
-
-[[a1802]]The Forward Method
+=== [[a1801]][[a1802]]The Forward Method
 
 The _forward_ method of the
 _RequestDispatcher_ interface may be called by the calling servlet only
@@ -6901,10 +6817,7 @@ application with a new version without restarting the container. When an
 application is replaced, the container should provide a robust method
 for preserving session data within that application.
 
-=== [[a1911]]
-
-
-[[a1912]]Error Handling
+=== [[a1911]][[a1912]]Error Handling
 
 === [[a1913]]Request Attributes
 
@@ -7200,10 +7113,7 @@ identified by a _<servlet>_ element that includes a _<load-on-startup>_
 element in the order defined by the load-on-startup element values, and
 call each servlet instance’s _init()_ method.
 
-=== [[a1990]]
-
-
-[[a1991]]Inclusion of a web.xml Deployment Descriptor
+=== [[a1990]][[a1991]]Inclusion of a web.xml Deployment Descriptor
 
 A web application is NOT required to contain a
 web.xml if it does NOT contain any Servlet, Filter, or Listener
@@ -7568,20 +7478,14 @@ determined indirectly using listeners and the _HttpSession_ API methods.
 
 === 
 
-=== [[a2101]]
-
-
-[[a2102]]Mapping Requests to Servlets
+=== [[a2101]][[a2102]]Mapping Requests to Servlets
 
 
 The mapping techniques described in
 this chapter are required for Web containers mapping client requests to
 servlets.link:#a3527[8]
 
-=== [[a2104]]
-
-
-[[a2105]]Use of URL Paths
+=== [[a2104]][[a2105]]Use of URL Paths
 
 Upon receipt of a client request, the Web
 container determines the Web application to which to forward it. The Web
@@ -7626,10 +7530,7 @@ implicit default servlet for serving content.
 The container must use case-sensitive string
 comparisons for matching.
 
-=== [[a2114]]
-
-
-[[a2115]]Specification of Mappings
+=== [[a2114]][[a2115]]Specification of Mappings
 
 In the Web application deployment descriptor,
 the following syntax is used to define mappings:
@@ -7741,10 +7642,7 @@ Note that in the case of _/catalog/index.html_
 and _/catalog/racecar.bop_ , the servlet mapped to “ _/catalog_ ” is not
 used because the match is not exact.
 
-=== [[a2160]]
-
-
-[[a2161]]Runtime Discovery of Mappings
+=== [[a2160]][[a2161]]Runtime Discovery of Mappings
 
 Every mapping that causes a Servlet to be
 activated, regardless of whether or not Servlet Filters are involved, is
@@ -7838,10 +7736,7 @@ the application that are requested by the client. The security model
 does not apply when a servlet uses the _RequestDispatcher_ to invoke a
 static resource or servlet using a _forward_ or an _include_ .
 
-=== [[a2180]]
-
-
-[[a2181]]Programmatic Security
+=== [[a2180]][[a2181]]Programmatic Security
 
 Programmatic security is used by security
 aware applications when declarative security alone is not sufficient to
@@ -9402,10 +9297,7 @@ loss of session information.
 
 === 
 
-=== [[a2643]]
-
-
-[[a2644]]Deployment Descriptor
+=== [[a2643]][[a2644]]Deployment Descriptor
 
 
 This chapter specifies the Java™ Servlet
@@ -9520,19 +9412,13 @@ unless otherwise specified, should begin with a leading _/_ .
 In elements whose value is an enumerated type,
 the value is case sensitive.
 
-=== [[a2673]]
-
-
-[[a2674]]Deployment Descriptor
+=== [[a2673]][[a2674]]Deployment Descriptor
 
 The deployment descriptor for this revision
 of the specification is available at
 _http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd_
 
-=== [[a2676]]
-
-
-[[a2677]]Deployment Descriptor Diagram
+=== [[a2676]][[a2677]]Deployment Descriptor Diagram
 
 This section illustrates the elements in
 deployment descriptor. Attributes are not shown in the diagrams. See
@@ -10292,10 +10178,7 @@ Application</display-name>
 
 === 
 
-=== [[a2881]]
-
-
-[[a2882]]Requirements related to other Specifications
+=== [[a2881]][[a2882]]Requirements related to other Specifications
 
 
 This chapter lists the requirements for web
@@ -10622,10 +10505,7 @@ The validation is recommended, but not required for the web containers
 and tools that are not part of a Java EE technology compliant
 implementation.
 
-=== [[a2967]]
-
-
-[[a2968]]Annotations and Resource Injection
+=== [[a2967]][[a2968]]Annotations and Resource Injection
 
 The Java Metadata specification (JSR-175),
 which is part of J2SE 5.0 and later versions, provides a means of
