@@ -1054,7 +1054,6 @@ Changes Since Servlet 2.3 213]
 
 === [[a358]]
 
-image:servlet-8.png[image]
 
 [[a359]]What is a Servlet?
 
@@ -1070,7 +1069,6 @@ implemented by the servlet container.
 
 === [[a361]]
 
-image:servlet-8.png[image]
 
 [[a362]]What is a Servlet Container?
 
@@ -1164,7 +1162,6 @@ available for the Java platform.
 
 === [[a382]]
 
-image:servlet-8.png[image]
 
 Relationship to Java Platform, Enterprise Edition
 
@@ -1176,7 +1173,6 @@ Java EE environment.
 
 === [[a384]]
 
-image:servlet-8.png[image]
 
 [[a385]]Compatibility with Java Servlet Specification Version
 2.5
@@ -1200,11 +1196,9 @@ specified.
 
 === [[a390]]
 
-image:servlet-9.png[image]
 
 The Servlet Interface
 
-image:servlet-10.png[image]
 
 The _Servlet_ interface is the central
 abstraction of the Java Servlet API. All servlets implement this
@@ -1216,7 +1210,6 @@ their servlets.
 
 === [[a392]]
 
-image:servlet-11.png[image]
 
 Request Handling Methods
 
@@ -1286,7 +1279,6 @@ resources.
 
 === [[a412]]
 
-image:servlet-11.png[image]
 
 Number of Instances
 
@@ -1331,7 +1323,6 @@ Interface is deprecated in this version of the specification.
 
 === [[a419]]
 
-image:servlet-11.png[image]
 
 Servlet Life Cycle
 
@@ -2112,11 +2103,9 @@ eligible for garbage collection.
 
 === [[a553]]
 
-image:servlet-13.png[image]
 
 The Request
 
-image:servlet-14.png[image]
 
 The request object encapsulates all
 information from the client request. In the HTTP protocol, this
@@ -2125,7 +2114,6 @@ headers and the message body of the request.
 
 === [[a555]]
 
-image:servlet-15.png[image]
 
 HTTP Protocol Parameters
 
@@ -2191,7 +2179,6 @@ reading directly from the request object’s input stream.
 
 === [[a572]]
 
-image:servlet-15.png[image]
 
 [[a573]]File upload
 
@@ -2237,7 +2224,6 @@ the _HttpServletReuqest.getInputStream_ .
 
 === [[a585]]
 
-image:servlet-15.png[image]
 
 Attributes
 
@@ -2268,7 +2254,6 @@ Specificationlink:#a3523[4] for package naming.
 
 === [[a592]]
 
-image:servlet-15.png[image]
 
 Headers
 
@@ -2306,7 +2291,6 @@ object, an _IllegalArgumentException_ is thrown.
 
 === [[a602]]
 
-image:servlet-15.png[image]
 
 Request Path Elements
 
@@ -2409,7 +2393,6 @@ Path Elements
 
 === [[a642]]
 
-image:servlet-15.png[image]
 
 Path Translation Methods
 
@@ -2437,7 +2420,6 @@ return the unpacked location.
 
 === [[a648]]
 
-image:servlet-15.png[image]
 
 [[a649]]Non Blocking IO
 
@@ -2509,7 +2491,6 @@ thrown.
 
 === [[a662]]
 
-image:servlet-15.png[image]
 
 [[a663]]HTTP/2 Server Push
 
@@ -2554,7 +2535,6 @@ cache.
 
 === [[a668]]
 
-image:servlet-15.png[image]
 
 Cookies
 
@@ -2573,7 +2553,6 @@ cookies helps mitigate certain kinds of cross-site scripting attacks.
 
 === [[a670]]
 
-image:servlet-15.png[image]
 
 SSL Attributes
 
@@ -2621,7 +2600,6 @@ and so on.
 
 === [[a687]]
 
-image:servlet-15.png[image]
 
 Internationalization
 
@@ -2656,7 +2634,6 @@ locale.
 
 === [[a694]]
 
-image:servlet-15.png[image]
 
 [[a695]]Request data encoding
 
@@ -2689,7 +2666,6 @@ the encoding.
 
 === [[a698]]
 
-image:servlet-15.png[image]
 
 [[a699]]Lifetime of the Request Object
 
@@ -2713,15 +2689,12 @@ In case of upgrade, the above is still true.
 
 === [[a704]]
 
-image:servlet-16.png[image]
 
 [[a705]]Servlet Context
 
-image:servlet-17.png[image]
 
 === [[a706]]
 
-image:servlet-18.png[image]
 
 Introduction to the ServletContext Interface
 
@@ -2741,7 +2714,6 @@ Web application associated with the _ServletContext_ .
 
 === [[a709]]
 
-image:servlet-18.png[image]
 
 Scope of a ServletContext Interface
 
@@ -2759,7 +2731,6 @@ only exist in one JVM.
 
 === [[a712]]
 
-image:servlet-18.png[image]
 
 Initialization Parameters
 
@@ -2779,7 +2750,6 @@ critical data.
 
 === [[a717]]
 
-image:servlet-18.png[image]
 
 [[a718]]Configuration methods
 
@@ -3117,7 +3087,6 @@ null.
 
 === [[a802]]
 
-image:servlet-18.png[image]
 
 Context Attributes
 
@@ -3147,7 +3116,6 @@ or set in an Enterprise JavaBeans™ component.
 
 === [[a810]]
 
-image:servlet-18.png[image]
 
 Resources
 
@@ -3190,7 +3158,6 @@ the API documentation in this specification.
 
 === [[a817]]
 
-image:servlet-18.png[image]
 
 [[a818]]Multiple Hosts and Servlet Contexts
 
@@ -3211,7 +3178,6 @@ information with the logical host.
 
 === [[a821]]
 
-image:servlet-18.png[image]
 
 Reloading Considerations
 
@@ -3255,11 +3221,9 @@ the servlet container.
 
 === [[a829]]
 
-image:servlet-19.png[image]
 
 The Response
 
-image:servlet-20.png[image]
 
 The response object encapsulates all
 information to be returned from the server to the client. In the HTTP
@@ -3268,7 +3232,6 @@ either by HTTP headers or the message body of the request.
 
 === [[a831]]
 
-image:servlet-21.png[image]
 
 [[a832]]Buffering
 
@@ -3334,7 +3297,6 @@ to be committed.
 
 === [[a848]]
 
-image:servlet-21.png[image]
 
 [[a849]]Headers
 
@@ -3400,7 +3362,6 @@ Server Open Source Edition 5.0 Java/Oracle Corporation/1.8)
 
 === [[a866]]
 
-image:servlet-21.png[image]
 
 [[a867]]HTTP Trailer
 
@@ -3426,7 +3387,6 @@ for the normative specification.
 
 === [[a872]]
 
-image:servlet-21.png[image]
 
 Non Blocking IO
 
@@ -3489,7 +3449,6 @@ _WriteListener_ in a thread safe manner.
 
 === [[a883]]
 
-image:servlet-21.png[image]
 
 Convenience Methods
 
@@ -3527,7 +3486,6 @@ methods must throw an _IllegalStateException_ .
 
 === [[a891]]
 
-image:servlet-21.png[image]
 
 [[a892]]Internationalization
 
@@ -3594,7 +3552,6 @@ still used to encode text written via the servlet response’s writer.
 
 === [[a905]]
 
-image:servlet-21.png[image]
 
 [[a906]]Closure of Response Object
 
@@ -3619,7 +3576,6 @@ called.
 
 === [[a913]]
 
-image:servlet-21.png[image]
 
 [[a914]]Lifetime of the Response Object
 
@@ -3641,11 +3597,9 @@ above may lead to non-deterministic behavior.
 
 === [[a918]]
 
-image:servlet-22.png[image]
 
 Filtering
 
-image:servlet-23.png[image]
 
 Filters are Java components that allow on the
 fly transformations of payload and header information in both the
@@ -3664,7 +3618,6 @@ references when reading this chapter.
 
 === [[a922]]
 
-image:servlet-24.png[image]
 
 What is a filter?
 
@@ -3723,7 +3676,6 @@ Caching filters
 
 === [[a943]]
 
-image:servlet-24.png[image]
 
 Main Concepts
 
@@ -4206,11 +4158,9 @@ request dispatchers obtained by name or by path.
 
 === [[a1069]]
 
-image:servlet-25.png[image]
 
 [[a1070]]Sessions
 
-image:servlet-26.png[image]
 
 The Hypertext Transfer Protocol (HTTP) is by
 design a stateless protocol. To build effective Web applications, it is
@@ -4225,7 +4175,6 @@ Application Developer in the nuances of any one approach.
 
 === [[a1073]]
 
-image:servlet-27.png[image]
 
 Session Tracking Mechanisms
 
@@ -4293,7 +4242,6 @@ commonly support the URL rewriting mechanism.
 
 === [[a1089]]
 
-image:servlet-27.png[image]
 
 [[a1090]]Creating a Session
 
@@ -4330,7 +4278,6 @@ _javax.servlet.http.HttpServletRequest.changeSessionId()_ .
 
 === [[a1098]]
 
-image:servlet-27.png[image]
 
 [[a1099]]Session Scope
 
@@ -4353,7 +4300,6 @@ request dispatch at the time the sessions were created.
 
 === [[a1103]]
 
-image:servlet-27.png[image]
 
 Binding Attributes into a Session
 
@@ -4381,7 +4327,6 @@ _HttpSession_ interface.
 
 === [[a1109]]
 
-image:servlet-27.png[image]
 
 [[a1110]]Session Timeouts
 
@@ -4408,7 +4353,6 @@ request must not be able to see that session.
 
 === [[a1113]]
 
-image:servlet-27.png[image]
 
 Last Accessed Times
 
@@ -4420,7 +4364,6 @@ first handled by the servlet container.
 
 === [[a1115]]
 
-image:servlet-27.png[image]
 
 Important Session Semantics
 
@@ -4515,11 +4458,9 @@ session.
 
 === [[a1135]]
 
-image:servlet-28.png[image]
 
 [[a1136]]Annotations and pluggability
 
-image:servlet-29.png[image]
 
 This chapter describes the use of annotations
 and other enhancements to enable pluggability of frameworks and
@@ -4527,7 +4468,6 @@ libraries for use within a web application.
 
 === [[a1138]]
 
-image:servlet-30.png[image]
 
 [[a1139]]Annotations and pluggability
 
@@ -4871,7 +4811,6 @@ below. The order can be specified in the deployment descriptor only.
 
 === [[a1253]]
 
-image:servlet-30.png[image]
 
 [[a1254]]Pluggability
 
@@ -6252,7 +6191,6 @@ loading delegation model.
 
 === [[a1737]]
 
-image:servlet-30.png[image]
 
 JSP container pluggability
 
@@ -6298,7 +6236,6 @@ specify any absolute or relative ordering.
 
 === [[a1743]]
 
-image:servlet-30.png[image]
 
 [[a1744]]Processing annotations and fragments
 
@@ -6348,11 +6285,9 @@ yes
 
 === [[a1764]]
 
-image:servlet-31.png[image]
 
 [[a1765]]Dispatching Requests
 
-image:servlet-32.png[image]
 
 When building a Web application, it is often
 useful to forward processing of a request to another servlet, or to
@@ -6365,7 +6300,6 @@ back to the servlet container.
 
 === [[a1768]]
 
-image:servlet-33.png[image]
 
 Obtaining a RequestDispatcher
 
@@ -6437,7 +6371,6 @@ duration of the _include_ or _forward_ call.
 
 === [[a1782]]
 
-image:servlet-33.png[image]
 
 Using a Request Dispatcher
 
@@ -6457,7 +6390,6 @@ the same JVM as the original request.
 
 === [[a1785]]
 
-image:servlet-33.png[image]
 
 [[a1786]]The Include Method
 
@@ -6524,7 +6456,6 @@ the _getNamedDispatcher_ method, these attributes must not be set.
 
 === [[a1801]]
 
-image:servlet-33.png[image]
 
 [[a1802]]The Forward Method
 
@@ -6601,7 +6532,6 @@ the _getNamedDispatcher_ method, these attributes must not be set.
 
 === [[a1821]]
 
-image:servlet-33.png[image]
 
 Error Handling
 
@@ -6614,7 +6544,6 @@ original exception, as it should not be propagated.
 
 === [[a1823]]
 
-image:servlet-33.png[image]
 
 Obtaining an AsyncContext
 
@@ -6626,7 +6555,6 @@ method or use one of the _dispatch_ methods described below.
 
 === [[a1825]]
 
-image:servlet-33.png[image]
 
 The Dispatch Method
 
@@ -6715,11 +6643,9 @@ called.
 
 === [[a1849]]
 
-image:servlet-34.png[image]
 
 Web Applications
 
-image:servlet-35.png[image]
 
 A Web application is a collection of servlets,
 HTML pages, classes, and other resources that make up a complete
@@ -6728,7 +6654,6 @@ on multiple containers from multiple vendors.
 
 === [[a1851]]
 
-image:servlet-36.png[image]
 
 Web Applications Within Web Servers
 
@@ -6752,7 +6677,6 @@ These rules are set out throughout this specification.
 
 === [[a1855]]
 
-image:servlet-36.png[image]
 
 Relationship to ServletContext
 
@@ -6763,7 +6687,6 @@ application.
 
 === [[a1857]]
 
-image:servlet-36.png[image]
 
 Elements of a Web Application
 
@@ -6785,7 +6708,6 @@ the above elements together
 
 === [[a1865]]
 
-image:servlet-36.png[image]
 
 Deployment Hierarchies
 
@@ -6797,7 +6719,6 @@ structure as a runtime representation.
 
 === [[a1867]]
 
-image:servlet-36.png[image]
 
 Directory Structure
 
@@ -6898,7 +6819,6 @@ _/WEB-INF/lib/catalog.jar!/META-INF/resources/catalog/moreOffers/books.html_
 
 === [[a1888]]
 
-image:servlet-36.png[image]
 
 Web Application Archive File
 
@@ -6918,7 +6838,6 @@ _SC_NOT_FOUND_ (404) response.
 
 === [[a1891]]
 
-image:servlet-36.png[image]
 
 Web Application Deployment Descriptor
 
@@ -7008,7 +6927,6 @@ returns.
 
 === [[a1909]]
 
-image:servlet-36.png[image]
 
 Replacing a Web Application
 
@@ -7019,7 +6937,6 @@ for preserving session data within that application.
 
 === [[a1911]]
 
-image:servlet-36.png[image]
 
 [[a1912]]Error Handling
 
@@ -7171,7 +7088,6 @@ is generated.
 
 === [[a1953]]
 
-image:servlet-36.png[image]
 
 Welcome Files
 
@@ -7284,7 +7200,6 @@ included in the _WEB-INF/lib_ directory of the web application.
 
 === [[a1981]]
 
-image:servlet-36.png[image]
 
 Web Application Environment
 
@@ -7299,7 +7214,6 @@ provide a warning.
 
 === [[a1984]]
 
-image:servlet-36.png[image]
 
 Web Application Deployment
 
@@ -7325,7 +7239,6 @@ call each servlet instance’s _init()_ method.
 
 === [[a1990]]
 
-image:servlet-36.png[image]
 
 [[a1991]]Inclusion of a web.xml Deployment Descriptor
 
@@ -7341,15 +7254,12 @@ require a web.xml to be present.
 
 === [[a1995]]
 
-image:servlet-37.png[image]
 
 Application Lifecycle Events
 
-image:servlet-38.png[image]
 
 === [[a1997]]
 
-image:servlet-39.png[image]
 
 Introduction
 
@@ -7361,7 +7271,6 @@ resources that the Web application uses.
 
 === [[a1999]]
 
-image:servlet-39.png[image]
 
 Event Listeners
 
@@ -7525,7 +7434,6 @@ notified and the database connection is closed.
 
 === [[a2063]]
 
-image:servlet-39.png[image]
 
 Listener Class Configuration
 
@@ -7569,7 +7477,6 @@ listeners being notified of application shutdown.
 
 === [[a2072]]
 
-image:servlet-39.png[image]
 
 Deployment Descriptor Example
 
@@ -7623,7 +7530,6 @@ a|
 
 === [[a2088]]
 
-image:servlet-39.png[image]
 
 Listener Instances and Threading
 
@@ -7641,7 +7547,6 @@ for the integrity of the data and should handle this case explicitly.
 
 === [[a2091]]
 
-image:servlet-39.png[image]
 
 Listener Exceptions
 
@@ -7674,7 +7579,6 @@ within the notification methods.
 
 === [[a2095]]
 
-image:servlet-39.png[image]
 
 Distributed Containers
 
@@ -7688,7 +7592,6 @@ JVM.
 
 === [[a2097]]
 
-image:servlet-39.png[image]
 
 Session Events
 
@@ -7705,11 +7608,9 @@ determined indirectly using listeners and the _HttpSession_ API methods.
 
 === [[a2101]]
 
-image:servlet-40.png[image]
 
 [[a2102]]Mapping Requests to Servlets
 
-image:servlet-41.png[image]
 
 {empty}The mapping techniques described in
 this chapter are required for Web containers mapping client requests to
@@ -7717,7 +7618,6 @@ servlets.link:#a3527[8]
 
 === [[a2104]]
 
-image:servlet-42.png[image]
 
 [[a2105]]Use of URL Paths
 
@@ -7766,7 +7666,6 @@ comparisons for matching.
 
 === [[a2114]]
 
-image:servlet-42.png[image]
 
 [[a2115]]Specification of Mappings
 
@@ -7882,7 +7781,6 @@ used because the match is not exact.
 
 === [[a2160]]
 
-image:servlet-42.png[image]
 
 [[a2161]]Runtime Discovery of Mappings
 
@@ -7908,11 +7806,9 @@ _ServletContext.getNamedDispatcher()_ . __
 
 === [[a2166]]
 
-image:servlet-43.png[image]
 
 Security
 
-image:servlet-44.png[image]
 
 Web applications are created by Application
 Developers who give, sell, or otherwise transfer the application to a
@@ -7930,7 +7826,6 @@ requirements of applications.
 
 === [[a2169]]
 
-image:servlet-45.png[image]
 
 Introduction
 
@@ -7963,7 +7858,6 @@ authorized to access it.
 
 === [[a2176]]
 
-image:servlet-45.png[image]
 
 Declarative Security
 
@@ -7987,7 +7881,6 @@ static resource or servlet using a _forward_ or an _include_ .
 
 === [[a2180]]
 
-image:servlet-45.png[image]
 
 [[a2181]]Programmatic Security
 
@@ -8091,7 +7984,6 @@ application and for which mappings must be defined.
 
 === [[a2206]]
 
-image:servlet-45.png[image]
 
 Programmatic Security Policy Configuration
 
@@ -8689,7 +8581,6 @@ the registration.
 
 === [[a2404]]
 
-image:servlet-45.png[image]
 
 Roles
 
@@ -8718,7 +8609,6 @@ same as a principal name to which the security role was mapped.
 
 === [[a2409]]
 
-image:servlet-45.png[image]
 
 Authentication
 
@@ -8915,7 +8805,6 @@ http://www.jcp.org/en/jsr/detail?id=196
 
 === [[a2453]]
 
-image:servlet-45.png[image]
 
 Server Tracking of Authentication Information
 
@@ -8942,7 +8831,6 @@ to the same security identity.
 
 === [[a2459]]
 
-image:servlet-45.png[image]
 
 Specifying Security Constraints
 
@@ -9510,7 +9398,6 @@ DENY may cause some applications to fail.
 
 === [[a2635]]
 
-image:servlet-45.png[image]
 
 Default Policies
 
@@ -9525,7 +9412,6 @@ _transport-guarantee_ ) on the HTTP method of the request.
 
 === [[a2637]]
 
-image:servlet-45.png[image]
 
 Login and Logout
 
@@ -9560,11 +9446,9 @@ loss of session information.
 
 === [[a2643]]
 
-image:servlet-46.png[image]
 
 [[a2644]]Deployment Descriptor
 
-image:servlet-47.png[image]
 
 This chapter specifies the Java™ Servlet
 Specification requirements for Web container support of deployment
@@ -9584,7 +9468,6 @@ _http://xmlns.jcp.org/xml/ns/javaee/_ >.
 
 === [[a2648]]
 
-image:servlet-48.png[image]
 
 Deployment Descriptor Elements
 
@@ -9618,7 +9501,6 @@ security-role, security-role-ref and run-as
 
 === [[a2661]]
 
-image:servlet-48.png[image]
 
 Rules for Processing the Deployment Descriptor
 
@@ -9682,7 +9564,6 @@ the value is case sensitive.
 
 === [[a2673]]
 
-image:servlet-48.png[image]
 
 [[a2674]]Deployment Descriptor
 
@@ -9692,7 +9573,6 @@ _http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd_
 
 === [[a2676]]
 
-image:servlet-48.png[image]
 
 [[a2677]]Deployment Descriptor Diagram
 
@@ -9710,7 +9590,6 @@ elements under this element can be in an arbitrary order.
 
 === [[a2681]]web-app Element Structure
 
-image:servlet-49.png[image]
 
 description Element
 
@@ -10266,7 +10145,6 @@ default response character encoding of the web application.
 
 === [[a2794]]
 
-image:servlet-48.png[image]
 
 Examples
 
@@ -10458,11 +10336,9 @@ Application</display-name>
 
 === [[a2881]]
 
-image:servlet-72.png[image]
 
 [[a2882]]Requirements related to other Specifications
 
-image:servlet-73.png[image]
 
 This chapter lists the requirements for web
 containers that are included in products that also include other Java
@@ -10476,7 +10352,6 @@ specification.
 
 === [[a2885]]
 
-image:servlet-74.png[image]
 
 Sessions
 
@@ -10486,7 +10361,6 @@ migrating other Java EE objects from one JVM to another.
 
 === [[a2887]]
 
-image:servlet-74.png[image]
 
 Web Applications
 
@@ -10612,7 +10486,6 @@ _@Resource(lookup=“java:global/myApp/myWebApp!ROOT”)_
 
 === [[a2924]]
 
-image:servlet-74.png[image]
 
 Security
 
@@ -10671,7 +10544,6 @@ is available for download at _http://www.jcp.org/en/jsr/detail?id=196_
 
 === [[a2937]]
 
-image:servlet-74.png[image]
 
 Deployment
 
@@ -10794,7 +10666,6 @@ implementation.
 
 === [[a2967]]
 
-image:servlet-74.png[image]
 
 [[a2968]]Annotations and Resource Injection
 
@@ -11295,11 +11166,9 @@ for Dependency Injection" of the Java EE 7 Platform specification.
 
 === [[a3133]]
 
-image:servlet-75.png[image]
 
 Change Log
 
-image:servlet-76.png[image]
 
 This document is the final release of the
 Java Servlet 5.0 Servlet specification developed under the Java
@@ -11307,7 +11176,6 @@ Community ProcessSM (JCP).
 
 === [[a3135]]
 
-image:servlet-77.png[image]
 
 Changes Since Servlet 3.1
 
@@ -11420,7 +11288,6 @@ See the corresponding javadoc.
 
 === [[a3159]]
 
-image:servlet-77.png[image]
 
 Changes since Servlet 3.0
 
@@ -11574,7 +11441,6 @@ Add the new _Part.getSubmittedFileName_ .
 
 === [[a3199]]
 
-image:servlet-77.png[image]
 
 Changes since Servlet 3.0 Proposed Final Draft
 
@@ -11594,7 +11460,6 @@ opposed to re-using the @RolesAllowed, @PermitAll, @DenyAll
 
 === [[a3204]]
 
-image:servlet-77.png[image]
 
 Changes since Servlet 3.0 Public Review
 
@@ -11623,7 +11488,6 @@ Clarified welcome files
 
 === [[a3213]]
 
-image:servlet-77.png[image]
 
 Changes since Servlet 3.0 EDR
 
@@ -11640,7 +11504,6 @@ fragments and annotations is described.
 
 === [[a3217]]
 
-image:servlet-77.png[image]
 
 Changes since Servlet 2.5 MR6
 
@@ -11661,7 +11524,6 @@ to get Response and ServletContext
 
 === [[a3223]]
 
-image:servlet-77.png[image]
 
 Changes since Servlet 2.5 MR 5
 
@@ -11724,7 +11586,6 @@ corrupted."
 
 === [[a3239]]
 
-image:servlet-77.png[image]
 
 Changes Since Servlet 2.5 MR 2
 
@@ -11814,7 +11675,6 @@ or JSP pages does not require a web.xml to be present.
 
 === [[a3261]]
 
-image:servlet-77.png[image]
 
 Changes Since Servlet 2.4
 
@@ -12147,7 +12007,6 @@ be synchronized.
 
 === [[a3379]]
 
-image:servlet-77.png[image]
 
 Changes Since Servlet 2.3
 
@@ -12426,15 +12285,12 @@ Login/logout description and methods added
 
 === 
 
-image:servlet-78.png[image]
 
 Glossary
 
-image:servlet-79.png[image]
 
 === 
 
-image:servlet-80.png[image]
 
 A
 
@@ -12460,7 +12316,6 @@ application in an open directory structure.
 
 === 
 
-image:servlet-80.png[image]
 
 D
 
@@ -12482,7 +12337,6 @@ the web application is deployed.
 
 === 
 
-image:servlet-80.png[image]
 
 P
 
@@ -12496,7 +12350,6 @@ depend on the authentication protocol.
 
 === 
 
-image:servlet-80.png[image]
 
 R
 
@@ -12515,7 +12368,6 @@ user, or group of users, in a security policy domain.
 
 === 
 
-image:servlet-80.png[image]
 
 S
 
@@ -12574,7 +12426,6 @@ Container Provider and server vendors to accomplish these tasks.
 
 === 
 
-image:servlet-80.png[image]
 
 U
 
@@ -12609,7 +12460,6 @@ between a URL-path and a given file system path.
 
 === 
 
-image:servlet-80.png[image]
 
 W
 
