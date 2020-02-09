@@ -1718,70 +1718,70 @@ convenience to dispatch the request and response used to initialize the
 an instance of `HttpServletRequest` , then the dispatch is to the URI
 returned by `HttpServletRequest.getRequestURI()` . Otherwise the
 dispatch is to the URI of the request when it was last dispatched by the
-container. The examples <<#a480,See>> ,
-<<#a485,See>> and
-<<#a492,See>> shown below demonstrate what the
+container. The examples <<#a480,CODE EXAMPLE 2-1>> ,
+<<#a485,CODE EXAMPLE 2-2>> and
+<<#a492,CODE EXAMPLE 2-3>> shown below demonstrate what the
 target URI of dispatch would be in the different cases.
 
 [[a480]]
-
-[width="100%",cols="100%",]
-|===
-|// REQUEST to /url/A
-|AsyncContext ac = request.startAsync();
-|...
-|ac.dispatch(); // ASYNC dispatch to /url/A
-|===
+.CODE EXAMPLE 2-1 
+[source,java]
+----
+// REQUEST to /url/A
+AsyncContext ac = request.startAsync();
+...
+ac.dispatch(); // ASYNC dispatch to /url/A
+----
 
 [[a485]]
+.CODE EXAMPLE 2-2
+[source,java]
+----
+// REQUEST to /url/A
 
-[width="100%",cols="100%",]
-|===
-|// REQUEST to /url/A
+// FORWARD to /url/B
 
-|// FORWARD to /url/B
-
-|request.getRequestDispatcher(“/url/B”).forward(request,
+request.getRequestDispatcher(“/url/B”).forward(request,
 response);
 
-|// Start async operation from within the
+// Start async operation from within the
 target of the FORWARD
 
-|AsyncContext ac = request.startAsync();
+AsyncContext ac = request.startAsync();
 
-|ac.dispatch(); // ASYNC dispatch to /url/A
-|===
+ac.dispatch(); // ASYNC dispatch to /url/A
+----
 
 [[a492]]
+.CODE EXAMPLE 2-3
+[source,java]
+----
+// REQUEST to /url/A
 
-[width="100%",cols="100%",]
-|===
-|// REQUEST to /url/A
+// FORWARD to /url/B
 
-|// FORWARD to /url/B
-
-|request.getRequestDispatcher(“/url/B”).forward(request,
+request.getRequestDispatcher(“/url/B”).forward(request,
 response);
 
-|// Start async operation from within the
+// Start async operation from within the
 target of the FORWARD
 
-|AsyncContext ac =
+AsyncContext ac =
 request.startAsync(request, response);
 
-|ac.dispatch(); // ASYNC dispatch to /url/B
-|===
+ac.dispatch(); // ASYNC dispatch to /url/B
+----
 
- _public void dispatch(ServletContext
-context, String path)_ - dispatches the request and response used to
+`public void dispatch(ServletContext context, String path)`::
+Dispatches the request and response used to
 initialize the `AsyncContext` to the resource with the given path in the
-given `ServletContext` .
-
+given `ServletContext`.
++
 For all the 3 variations of the `dispatch`
 methods defined above, calls to the methods returns immediately after
 passing the request and response objects to a container managed thread,
 on which the dispatch operation will be performed. The dispatcher type
-of the request is set to `ASYNC` . Unlike
+of the request is set to `ASYNC`.Unlike
 `RequestDispatcher.forward(ServletRequest, ServletResponse)` dispatches,
 the response buffer and headers will not be reset, and it is legal to
 dispatch even if the response has already been committed. Control over
@@ -1794,20 +1794,20 @@ dispatch that called `startAsync` has returned to the container, the
 following conditions must hold during that time between the invocation
 of `dispatch` and the return of control to the container:
 
-any `dispatch` invocations invoked during
+	. any `dispatch` invocations invoked during
 that time will not take effect until after the container-initiated
 dispatch has returned to the container.
 
-any _AsyncListener.onComplete(AsyncEvent),
+	. any _AsyncListener.onComplete(AsyncEvent),
 AsyncListener.onTimeout(AsyncEvent)_ and
 `AsyncListener.onError(AsyncEvent)` invocations will also be delayed
 until after the container-initiated dispatch has returned to the
 container.
 
-any calls to `request.isAsyncStarted()` must
+	. any calls to `request.isAsyncStarted()` must
 return `true` until after the container-initiated dispatch has returned
 to the container.
-
++
 There can be at most one asynchronous
 dispatch operation per asynchronous cycle, which is started by a call to
 one of the `ServletRequest.startAsync` methods. Any attempt to perform
@@ -1816,35 +1816,35 @@ cycle is illegal and will result in an `IllegalStateException` . If
 `startAsync` is subsequently called on the dispatched request, then any
 of the `dispatch` methods may be called with the same restriction as
 above.
-
++
 [[a505]] Any errors or exceptions
 that may occur during the execution of the `dispatch` methods MUST be
 caught and handled by the container as follows:
-
-invoke the
++
+	.. invoke the
 `AsyncListener.onError(AsyncEvent)` method for all instances of the
 `AsyncListener` registered with the `ServletRequest` for which the
 `AsyncContext` was created and make the `Throwable` available via the
 `AsyncEvent.getThrowable()` .
 
-If none of the listeners called
+	.. If none of the listeners called
 `AsyncContext.complete` or any of the `AsyncContext.dispatch` methods,
 then perform an error dispatch with a status code equal to
 `HttpServletResponse.SC_INTERNAL_SERVER_ERROR` and make the `Throwable`
 available as the value of the `RequestDispatcher.ERROR_EXCEPTION`
 request attribute.
 
-If no matching error page is found, or the
+	.. If no matching error page is found, or the
 error page does not call `AsyncContext.complete()` or any of the
 `AsyncContext.dispatch` methods, then the container MUST call
 `AsyncContext.complete` .
 
- _public boolean
-hasOriginalRequestAndResponse()_ - This method checks if the
+`public boolean hasOriginalRequestAndResponse()`::
+This method checks if the
 `AsyncContext` was initialized with the original request and response
 objects by calling `ServletRequest.startAsync()` or if it was
-initialized by calling _ServletRequest.startAsync(ServletRequest,
-ServletResponse)_ and neither the `ServletRequest` nor the
+initialized by calling `ServletRequest.startAsync(ServletRequest,
+ServletResponse)` and neither the `ServletRequest` nor the
 `ServletResponse` argument carried any application provided wrappers, in
 which case it returns `true` . If the `AsyncContext` was initialized
 with wrapped request and/or response objects using
@@ -1855,13 +1855,13 @@ determine whether any request and/or response wrappers that they added
 during their inbound invocation need to be preserved for the duration of
 the asynchronous operation or may be released.
 
- `public void start(Runnable r)` - This
-method causes the container to dispatch a thread, possibly from a
+`public void start(Runnable r)`::
+This method causes the container to dispatch a thread, possibly from a
 managed thread pool, to run the specified `Runnable` . The container may
 propagate appropriate contextual information to the `Runnable` .
 
- `public void complete()` - If
-`request.startAsync` is called then this method MUST be called to
+ `public void complete()`::
+ If `request.startAsync` is called then this method MUST be called to
 complete the async processing and commit and close the response. The
 `complete` method can be invoked by the container if the request is
 dispatched to a servlet that does not support async processing, or the
@@ -1878,88 +1878,88 @@ to the container, the following conditions must hold during that time
 between the invocation of `complete` and the return of control to the
 container:
 
-the behavior specified for `complete` will
+	. the behavior specified for `complete` will
 not take effect until after the container-initiated dispatch has
 returned to the container.
 
-any `AsyncListener.onComplete(AsyncEvent)`
+	. any `AsyncListener.onComplete(AsyncEvent)`
 invocations will also be delayed until after the container-initiated
 dispatch has returned to the container.
 
-any calls to `request.isAsyncStarted()` must
+	. any calls to `request.isAsyncStarted()` must
 return `true` until after the container-initiated dispatch has returned
 to the container.
 
 ===  `ServletRequestWrapper`
 
- _public boolean isWrapperFor(ServletRequest
-req)_ - Checks recursively if this wrapper wraps the given
-`ServletRequest` and returns `true` if it does, else it returns `false`
+`public boolean isWrapperFor(ServletRequest req)`::
+Checks recursively if this wrapper wraps the given
+`ServletRequest` and returns `true` if it does, else it returns `false`.
 
 ===  `ServletResponseWrapper`
 
- _public boolean isWrapperFor(ServletResponse
-res)_ - Checks recursively if this wrapper wraps the given
-`ServletResponse` and returns `true` if it does, else it returns `false`
-.
+`public boolean isWrapperFor(ServletResponse res)`::
+Checks recursively if this wrapper wraps the given
+`ServletResponse` and returns `true` if it does, else it returns `false`.
 
 ===  `AsyncListener`
 
- `public void onComplete(AsyncEvent event)` -
+ `public void onComplete(AsyncEvent event)`::
 Is used to notify the listener of completion of the asynchronous
 operation started on the `ServletRequest` .
 
- `public void onTimeout(AsyncEvent event)` -
+ `public void onTimeout(AsyncEvent event)`::
 Is used to notify the listener of a time out of the asynchronous
 operation started on the `ServletRequest` .
 
- `public void onError(AsyncEvent event)` - Is
-used to notify the listener that the asynchronous operation has failed
+ `public void onError(AsyncEvent event)`::
+Is used to notify the listener that the asynchronous operation has failed
 to complete.
 
- `public void onStartAsync(AsyncEvent event)`
-- Is used to notify the listener that a new asynchronous cycle is being
+ `public void onStartAsync(AsyncEvent event)`::
+Is used to notify the listener that a new asynchronous cycle is being
 initiated via a call to one of the `ServletRequest.startAsync` methods.
 The `AsyncContext` corresponding to the asynchronous operation that is
 being reinitialized may be obtained by calling
 `AsyncEvent.getAsyncContext` on the given event.
-
++
 In the event that an
 asynchronous operation times out, the container must run through the
 following steps:
-
-Invoke the `AsyncListener.onTimeout` method
++
+	* Invoke the `AsyncListener.onTimeout` method
 on all the `AsyncListener` instances registered with the
 `ServletRequest` on which the asynchronous operation was initiated.
 
-If none of the listeners called
+	* If none of the listeners called
 `AsyncContext.complete()` or any of the `AsyncContext.dispatch` methods,
 perform an error dispatch with a status code equal to
 `HttpServletResponse.SC_INTERNAL_SERVER_ERROR` .
 
-If no matching error page was found, or the
+	* If no matching error page was found, or the
 error page did not call `AsyncContext.complete()` or any of the
 `AsyncContext.dispatch` methods, the container MUST call
 `AsyncContext.complete()` .
 
-If an exception is thrown while invoking
+	* If an exception is thrown while invoking
 methods in an `AsyncListener` , it is logged and will not affect the
 invocation of any other `AsyncListeners` .
 
-Async processing in JSP would not be
+	* Async processing in JSP would not be
 supported by default as it is used for content generation and async
 processing would have to be done before the content generation. It is up
 to the container how to handle this case. Once all the async activities
 are done, a dispatch to the JSP page using the `AsyncContext.dispatch`
 can be used for generating content.
 
-Figure 2-1 shown below is a diagram depicting
+	* Figure 2-1 shown below is a diagram depicting
 the state transitions for various asynchronous operations.
 
 
 
 === State transition diagram for asynchronous operations
 
+.Figure 2-1
 image:servlet-12.png[image]
 
 
