@@ -1168,9 +1168,6 @@ supported in that configuration, unless _metadata-complete_ is
 specified.
 
 
-
-=== 
-
 === [[a390]] The Servlet Interface
 
 
@@ -2057,9 +2054,6 @@ servlet container must release the servlet instance so that it is
 eligible for garbage collection.
 
 
-
-=== 
-
 === [[a553]] The Request
 
 
@@ -2596,11 +2590,6 @@ _startAsync_ has not been called outside the scope described above is
 not recommended as it may have indeterminate results.
 
 In case of upgrade, the above is still true.
-
-=== 
-
-
-
 === [[a704]] Servlet Context
 
 
@@ -3101,9 +3090,6 @@ not visible to the servlet contexts of other Web applications running on
 the servlet container.
 
 
-
-=== 
-
 === [[a829]] The Response
 
 
@@ -3448,9 +3434,6 @@ references to response objects for which _startAsync_ on the
 corresponding request has not been called, outside the scope described
 above may lead to non-deterministic behavior.
 
-
-
-=== 
 
 === [[a918]] Filtering
 
@@ -3996,9 +3979,6 @@ Filter being invoked on request dispatcher forward() calls for all
 request dispatchers obtained by name or by path.
 
 
-
-=== 
-
 === [[a1069]] Sessions
 
 
@@ -4270,9 +4250,6 @@ of the same session. For maximum portability, the Developer should
 always assume that all windows of a client are participating in the same
 session.
 
-
-
-=== 
 
 === [[a1135]] Annotations and pluggability
 
@@ -6077,9 +6054,6 @@ no
 yes
 
 
-
-=== 
-
 === [[a1764]] Dispatching Requests
 
 
@@ -6411,9 +6385,6 @@ dispatched servlet via the _getAttribute_ method on the request object.
 Note that these attributes must always reflect the information in the
 original request even under the situation that multiple dispatches are
 called.
-
-=== 
-
 === [[a1849]] Web Applications
 
 
@@ -6977,9 +6948,6 @@ an application containing only static files or JSP pages does not
 require a web.xml to be present.
 
 
-
-=== 
-
 === [[a1995]] Application Lifecycle Events
 
 
@@ -7303,9 +7271,6 @@ application called the _invalidate_ method. The distinction may be
 determined indirectly using listeners and the _HttpSession_ API methods.
 
 
-
-=== 
-
 === [[a2101]] Mapping Requests to Servlets
 
 
@@ -7486,9 +7451,6 @@ Please see sections <<#a1790,See Included Request Parameters>><<#a1809,See Forwa
 forwarded request parameters, the _HttpServletMapping_ is not available
 for servlets that have been obtained with a call to
 _ServletContext.getNamedDispatcher()_ . __
-
-=== 
-
 === [[a2166]] Security
 
 
@@ -9092,9 +9054,6 @@ object that was created prior to login occurring so that there is no
 loss of session information.
 
 
-
-=== 
-
 === [[a2643]] Deployment Descriptor
 
 
@@ -9964,9 +9923,6 @@ Application</display-name>
 </web-app>
 
 
-
-=== 
-
 === [[a2881]] Requirements related to other Specifications
 
 
@@ -10773,9 +10729,6 @@ Filters, Listeners and HttpUpgradeHandlers MUST support CDI injection
 and the use of interceptors as described in Section EE.5.24, "Support
 for Dependency Injection" of the Java EE 7 Platform specification.
 
-
-
-=== 
 
 === [[a3133]] Change Log
 
@@ -11804,16 +11757,10 @@ Login/logout description and methods added
 
 
 
-=== 
+=== Glossary
 
 
-Glossary
-
-
-=== 
-
-
-A
+=== A
 
  _Application Developer_
 
@@ -11835,10 +11782,7 @@ other supporting libraries and files for the web application. The output
 of the Application Assembler is a web application archive or a web
 application in an open directory structure.
 
-=== 
-
-
-D
+=== D
 
  _Deployer_
 
@@ -11856,10 +11800,7 @@ mapping the security roles defined by the Application Developer to the
 user groups and accounts that exist in the operational environment where
 the web application is deployed.
 
-=== 
-
-
-P
+=== P
 
  _principal_
 
@@ -11869,10 +11810,7 @@ by a _principal name_ and authenticated by using _authentication data_ .
 The content and format of the principal name and the authentication data
 depend on the authentication protocol.
 
-=== 
-
-
-R
+=== R
 
  _role (development)_
 
@@ -11887,10 +11825,7 @@ An abstract notion used by an Application
 Developer in an application that can be mapped by the Deployer to a
 user, or group of users, in a security policy domain.
 
-=== 
-
-
-S
+=== S
 
  _security policy domain_
 
@@ -11945,10 +11880,7 @@ contracts for system management and administration. The administrator
 typically uses runtime monitoring and management tools provided by the
 Container Provider and server vendors to accomplish these tasks.
 
-=== 
-
-
-U
+=== U
 
  _uniform resource locator (URL)_
 
@@ -11980,10 +11912,7 @@ portion of the URL. The server is responsible for determining the
 meaning of the hierarchical structure. There is no correspondence
 between a URL-path and a given file system path.
 
-=== 
-
-
-W
+=== W
 
  _web application_
 
