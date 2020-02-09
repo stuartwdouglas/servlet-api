@@ -144,7 +144,7 @@ Authentication
 RFC 7301 Transport Layer Security (TLS)
 Application-Layer Protocol Negotiation Extension (ALPN)
 
-{empty}RFC 7168 The Hyper Text Coffee Pot
+RFC 7168 The Hyper Text Coffee Pot
 Control Protocol for Tea Ef (HTCPCP-TEA)link:#a3520[1]
 
 RFC 6585 Additional HTTP Status Codes
@@ -225,819 +225,819 @@ suggested the initial design of the Mapping Discovery API in Servlet
 
 === <<#a357,Overview>>
 
-{empty}<<#a358,1.1 What is a Servlet?>>
+<<#a358,1.1 What is a Servlet?>>
 
-{empty}<<#a361,1.2 What is a Servlet Container?>>
+<<#a361,1.2 What is a Servlet Container?>>
 
-{empty}<<#a368,1.3 An Example>>
+<<#a368,1.3 An Example>>
 
-{empty}<<#a375,1.4 Comparing Servlets with Other Technologies>>
+<<#a375,1.4 Comparing Servlets with Other Technologies>>
 
-{empty}<<#a382,1.5 Relationship to Java Platform, Enterprise Edition>>
+<<#a382,1.5 Relationship to Java Platform, Enterprise Edition>>
 
-{empty}<<#a384,1.6 Compatibility with Java Servlet Specification Version 2.5>>
+<<#a384,1.6 Compatibility with Java Servlet Specification Version 2.5>>
 
-{empty}<<#a386,1.6.1 Processing annotations>>
+<<#a386,1.6.1 Processing annotations>>
 
 === <<#a390,The Servlet Interface>>
 
-{empty}<<#a392,2.1 Request Handling Methods>>
+<<#a392,2.1 Request Handling Methods>>
 
-{empty}<<#a397,2.1.1 HTTP Specific Request Handling Methods>>
+<<#a397,2.1.1 HTTP Specific Request Handling Methods>>
 
-{empty}<<#a407,2.1.2 Additional Methods>>
+<<#a407,2.1.2 Additional Methods>>
 
-{empty}<<#a410,2.1.3 Conditional GET Support>>
+<<#a410,2.1.3 Conditional GET Support>>
 
-{empty}<<#a412,2.2 Number of Instances>>
+<<#a412,2.2 Number of Instances>>
 
-{empty}<<#a416,2.2.1 Note About The Single Thread Model>>
+<<#a416,2.2.1 Note About The Single Thread Model>>
 
-{empty}<<#a419,2.3 Servlet Life Cycle>>
+<<#a419,2.3 Servlet Life Cycle>>
 
-{empty}<<#a421,2.3.1 Loading and Instantiation>>
+<<#a421,2.3.1 Loading and Instantiation>>
 
-{empty}<<#a425,2.3.2 Initialization>>
+<<#a425,2.3.2 Initialization>>
 
-{empty}<<#a427,2.3.2.1 Error Conditions on Initialization>>
+<<#a427,2.3.2.1 Error Conditions on Initialization>>
 
-{empty}<<#a430,2.3.2.2 Tool Considerations>>
+<<#a430,2.3.2.2 Tool Considerations>>
 
-{empty}<<#a432,2.3.3 Request Handling>>
+<<#a432,2.3.3 Request Handling>>
 
-{empty}<<#a436,2.3.3.1 Multithreading Issues>>
+<<#a436,2.3.3.1 Multithreading Issues>>
 
-{empty}<<#a440,2.3.3.2 Exceptions During Request Handling>>
+<<#a440,2.3.3.2 Exceptions During Request Handling>>
 
-{empty}<<#a446,2.3.3.3 Asynchronous processing>>
-
-
-{empty}<<#a534,2.3.3.4 Thread Safety>>
+<<#a446,2.3.3.3 Asynchronous processing>>
 
 
-{empty}<<#a537,2.3.3.5 Upgrade Processing>>
+<<#a534,2.3.3.4 Thread Safety>>
 
 
-{empty}<<#a545,2.3.4 End of Service>>
+<<#a537,2.3.3.5 Upgrade Processing>>
+
+
+<<#a545,2.3.4 End of Service>>
 
 
 === <<#a553,The Request>>
 
 
-{empty}<<#a555,3.1 HTTP Protocol Parameters>>
+<<#a555,3.1 HTTP Protocol Parameters>>
 
 
-{empty}<<#a565,3.1.1 When Parameters Are Available>>
+<<#a565,3.1.1 When Parameters Are Available>>
 
 
-{empty}<<#a572,3.2 File upload>>
+<<#a572,3.2 File upload>>
 
 
-{empty}<<#a585,3.3 Attributes>>
+<<#a585,3.3 Attributes>>
 
 
-{empty}<<#a592,3.4 Headers>>
+<<#a592,3.4 Headers>>
 
 
-{empty}<<#a602,3.5 Request Path Elements>>
+<<#a602,3.5 Request Path Elements>>
 
 
-{empty}<<#a642,3.6 Path Translation Methods>>
+<<#a642,3.6 Path Translation Methods>>
 
 
-{empty}<<#a648,3.7 Non Blocking IO>>
+<<#a648,3.7 Non Blocking IO>>
 
 
-{empty}<<#a662,3.8 HTTP/2 Server Push>>
+<<#a662,3.8 HTTP/2 Server Push>>
 
 
-{empty}<<#a668,3.9 Cookies>>
+<<#a668,3.9 Cookies>>
 
 
-{empty}<<#a670,3.10 SSL Attributes>>
+<<#a670,3.10 SSL Attributes>>
 
 
-{empty}<<#a687,3.11 Internationalization>>
+<<#a687,3.11 Internationalization>>
 
 
-{empty}<<#a694,3.12 Request data encoding>>
+<<#a694,3.12 Request data encoding>>
 
 
-{empty}<<#a698,3.13 Lifetime of the Request Object>>
+<<#a698,3.13 Lifetime of the Request Object>>
 
 
 === <<#a704,Servlet Context>>
 
 
-{empty}<<#a706,4.1 Introduction to the ServletContext Interface>>
+<<#a706,4.1 Introduction to the ServletContext Interface>>
 
 
-{empty}<<#a709,4.2 Scope of a ServletContext Interface>>
+<<#a709,4.2 Scope of a ServletContext Interface>>
 
 
-{empty}<<#a712,4.3 Initialization Parameters>>
+<<#a712,4.3 Initialization Parameters>>
 
 
-{empty}<<#a717,4.4 Configuration methods>>
+<<#a717,4.4 Configuration methods>>
 
 
-{empty}<<#a720,4.4.1 Programmatically adding and configuring Servlets>>
+<<#a720,4.4.1 Programmatically adding and configuring Servlets>>
 
 
-{empty}<<#a722,4.4.1.1 addServlet(String servletName, String className)>>
+<<#a722,4.4.1.1 addServlet(String servletName, String className)>>
 
 
-{empty}<<#a724,4.4.1.2 addServlet(String servletName, Servlet servlet)>>
+<<#a724,4.4.1.2 addServlet(String servletName, Servlet servlet)>>
 
 
-{empty}<<#a726,4.4.1.3 addServlet(String servletName, Class <? extends Servlet> servletClass)>>
+<<#a726,4.4.1.3 addServlet(String servletName, Class <? extends Servlet> servletClass)>>
 
 
-{empty}<<#a728,4.4.1.4 addJspFile(String servletName, String jspfile)>>
+<<#a728,4.4.1.4 addJspFile(String servletName, String jspfile)>>
 
 
-{empty}<<#a730,4.4.1.5 <T extends Servlet> T createServlet(Class<T> clazz)>>
+<<#a730,4.4.1.5 <T extends Servlet> T createServlet(Class<T> clazz)>>
 
 
-{empty}<<#a732,4.4.1.6 ServletRegistration getServletRegistration(String servletName)>>
+<<#a732,4.4.1.6 ServletRegistration getServletRegistration(String servletName)>>
 
 
-{empty}<<#a734,4.4.1.7 Map<String, ? extends ServletRegistration> getServletRegistrations()>>
+<<#a734,4.4.1.7 Map<String, ? extends ServletRegistration> getServletRegistrations()>>
 
 
-{empty}<<#a736,4.4.2 Programmatically adding and configuring Filters>>
+<<#a736,4.4.2 Programmatically adding and configuring Filters>>
 
 
-{empty}<<#a737,4.4.2.1 addFilter(String filterName, String className)>>
+<<#a737,4.4.2.1 addFilter(String filterName, String className)>>
 
 
-{empty}<<#a739,4.4.2.2 addFilter(String filterName, Filter filter)>>
+<<#a739,4.4.2.2 addFilter(String filterName, Filter filter)>>
 
 
-{empty}<<#a741,4.4.2.3 addFilter(String filterName, Class <? extends Filter> filterClass)>>
+<<#a741,4.4.2.3 addFilter(String filterName, Class <? extends Filter> filterClass)>>
 
 
-{empty}<<#a743,4.4.2.4 <T extends Filter> T createFilter(Class<T> clazz)>>
+<<#a743,4.4.2.4 <T extends Filter> T createFilter(Class<T> clazz)>>
 
 
-{empty}<<#a745,4.4.2.5 FilterRegistration getFilterRegistration(String filterName)>>
+<<#a745,4.4.2.5 FilterRegistration getFilterRegistration(String filterName)>>
 
 
-{empty}<<#a747,4.4.2.6 Map<String, ? extends FilterRegistration> getFilterRegistrations()>>
+<<#a747,4.4.2.6 Map<String, ? extends FilterRegistration> getFilterRegistrations()>>
 
 
-{empty}<<#a749,4.4.3 Programmatically adding and configuring Listeners>>
+<<#a749,4.4.3 Programmatically adding and configuring Listeners>>
 
 
-{empty}<<#a750,4.4.3.1 void addListener(String className)>>
+<<#a750,4.4.3.1 void addListener(String className)>>
 
 
-{empty}<<#a759,4.4.3.2 <T extends EventListener> void addListener(T t)>>
+<<#a759,4.4.3.2 <T extends EventListener> void addListener(T t)>>
 
 
-{empty}<<#a768,4.4.3.3 void addListener(Class <? extends EventListener> listenerClass)>>
+<<#a768,4.4.3.3 void addListener(Class <? extends EventListener> listenerClass)>>
 
 
-{empty}<<#a777,4.4.3.4 <T extends EventListener> void createListener(Class<T> clazz)>>
+<<#a777,4.4.3.4 <T extends EventListener> void createListener(Class<T> clazz)>>
 
 
-{empty}<<#a786,4.4.3.5 Annotation processing requirements for programmatically added Servlets, Filters and Listeners>>
+<<#a786,4.4.3.5 Annotation processing requirements for programmatically added Servlets, Filters and Listeners>>
 
 
-{empty}<<#a791,4.4.4 Programmatically configuring session time out>>
+<<#a791,4.4.4 Programmatically configuring session time out>>
 
 
-{empty}<<#a795,4.4.5 Programmatically configuring character encoding>>
+<<#a795,4.4.5 Programmatically configuring character encoding>>
 
 
-{empty}<<#a802,4.5 Context Attributes>>
+<<#a802,4.5 Context Attributes>>
 
 
-{empty}<<#a808,4.5.1 Context Attributes in a Distributed Container>>
+<<#a808,4.5.1 Context Attributes in a Distributed Container>>
 
 
-{empty}<<#a810,4.6 Resources>>
+<<#a810,4.6 Resources>>
 
 
-{empty}<<#a817,4.7 Multiple Hosts and Servlet Contexts>>
+<<#a817,4.7 Multiple Hosts and Servlet Contexts>>
 
 
-{empty}<<#a821,4.8 Reloading Considerations>>
+<<#a821,4.8 Reloading Considerations>>
 
 
-{empty}<<#a824,4.8.1 Temporary Working Directories>>
+<<#a824,4.8.1 Temporary Working Directories>>
 
 
 === <<#a829,The Response>>
 
 
-{empty}<<#a831,5.1 Buffering>>
+<<#a831,5.1 Buffering>>
 
 
-{empty}<<#a848,5.2 Headers>>
+<<#a848,5.2 Headers>>
 
 
-{empty}<<#a866,5.3 HTTP Trailer>>
+<<#a866,5.3 HTTP Trailer>>
 
 
-{empty}<<#a872,5.4 Non Blocking IO>>
+<<#a872,5.4 Non Blocking IO>>
 
 
-{empty}<<#a883,5.5 Convenience Methods>>
+<<#a883,5.5 Convenience Methods>>
 
 
-{empty}<<#a891,5.6 Internationalization>>
+<<#a891,5.6 Internationalization>>
 
 
-{empty}<<#a905,5.7 Closure of Response Object>>
+<<#a905,5.7 Closure of Response Object>>
 
 
-{empty}<<#a913,5.8 Lifetime of the Response Object>>
+<<#a913,5.8 Lifetime of the Response Object>>
 
 
 === <<#a918,Filtering>>
 
 
-{empty}<<#a922,6.1 What is a filter?>>
+<<#a922,6.1 What is a filter?>>
 
 
-{empty}<<#a932,6.1.1 Examples of Filtering Components>>
+<<#a932,6.1.1 Examples of Filtering Components>>
 
 
-{empty}<<#a943,6.2 Main Concepts>>
+<<#a943,6.2 Main Concepts>>
 
 
-{empty}<<#a946,6.2.1 Filter Lifecycle>>
+<<#a946,6.2.1 Filter Lifecycle>>
 
 
-{empty}<<#a962,6.2.2 Wrapping Requests and Responses>>
+<<#a962,6.2.2 Wrapping Requests and Responses>>
 
 
-{empty}<<#a966,6.2.3 Filter Environment>>
+<<#a966,6.2.3 Filter Environment>>
 
 
-{empty}<<#a968,6.2.4 Configuration of Filters in a Web Application>>
+<<#a968,6.2.4 Configuration of Filters in a Web Application>>
 
 
-{empty}<<#a1027,6.2.5 Filters and the RequestDispatcher>>
+<<#a1027,6.2.5 Filters and the RequestDispatcher>>
 
 
 === <<#a1069,Sessions>>
 
 
-{empty}<<#a1073,7.1 Session Tracking Mechanisms>>
+<<#a1073,7.1 Session Tracking Mechanisms>>
 
 
-{empty}<<#a1075,7.1.1 Cookies>>
+<<#a1075,7.1.1 Cookies>>
 
 
-{empty}<<#a1080,7.1.2 SSL Sessions>>
+<<#a1080,7.1.2 SSL Sessions>>
 
 
-{empty}<<#a1082,7.1.3 URL Rewriting>>
+<<#a1082,7.1.3 URL Rewriting>>
 
 
-{empty}<<#a1087,7.1.4 Session Integrity>>
+<<#a1087,7.1.4 Session Integrity>>
 
 
-{empty}<<#a1089,7.2 Creating a Session>>
+<<#a1089,7.2 Creating a Session>>
 
 
-{empty}<<#a1098,7.3 Session Scope>>
+<<#a1098,7.3 Session Scope>>
 
 
-{empty}<<#a1103,7.4 Binding Attributes into a Session>>
+<<#a1103,7.4 Binding Attributes into a Session>>
 
 
-{empty}<<#a1109,7.5 Session Timeouts>>
+<<#a1109,7.5 Session Timeouts>>
 
 
-{empty}<<#a1113,7.6 Last Accessed Times>>
+<<#a1113,7.6 Last Accessed Times>>
 
 
-{empty}<<#a1115,7.7 Important Session Semantics>>
+<<#a1115,7.7 Important Session Semantics>>
 
 
-{empty}<<#a1117,7.7.1 Threading Issues>>
+<<#a1117,7.7.1 Threading Issues>>
 
 
-{empty}<<#a1119,7.7.2 Distributed Environments>>
+<<#a1119,7.7.2 Distributed Environments>>
 
 
-{empty}<<#a1131,7.7.3 Client Semantics>>
+<<#a1131,7.7.3 Client Semantics>>
 
 
 === <<#a1135,Annotations and pluggability>>
 
 
-{empty}<<#a1138,8.1 Annotations and pluggability>>
+<<#a1138,8.1 Annotations and pluggability>>
 
 
-{empty}<<#a1196,8.1.1 @WebServlet>>
+<<#a1196,8.1.1 @WebServlet>>
 
 
-{empty}<<#a1215,8.1.2 @WebFilter>>
+<<#a1215,8.1.2 @WebFilter>>
 
 
-{empty}<<#a1227,8.1.3 @WebInitParam>>
+<<#a1227,8.1.3 @WebInitParam>>
 
 
-{empty}<<#a1229,8.1.4 @WebListener>>
+<<#a1229,8.1.4 @WebListener>>
 
 
-{empty}<<#a1247,8.1.5 @MultipartConfig>>
+<<#a1247,8.1.5 @MultipartConfig>>
 
 
-{empty}<<#a1249,8.1.6 Other annotations / conventions>>
+<<#a1249,8.1.6 Other annotations / conventions>>
 
 
-{empty}<<#a1253,8.2 Pluggability>>
+<<#a1253,8.2 Pluggability>>
 
 
-{empty}<<#a1255,8.2.1 Modularity of web.xml>>
+<<#a1255,8.2.1 Modularity of web.xml>>
 
 
-{empty}<<#a1279,8.2.2 Ordering of web.xml and web-fragment.xml>>
+<<#a1279,8.2.2 Ordering of web.xml and web-fragment.xml>>
 
 
-{empty}<<#a1418,8.2.3 Assembling the descriptor from web.xml, web-fragment.xml and annotations>>
+<<#a1418,8.2.3 Assembling the descriptor from web.xml, web-fragment.xml and annotations>>
 
 
-{empty}<<#a1716,8.2.4 Shared libraries / runtimes pluggability>>
+<<#a1716,8.2.4 Shared libraries / runtimes pluggability>>
 
 
-{empty}<<#a1737,8.3 JSP container pluggability>>
+<<#a1737,8.3 JSP container pluggability>>
 
 
-{empty}<<#a1743,8.4 Processing annotations and fragments>>
+<<#a1743,8.4 Processing annotations and fragments>>
 
 
 === <<#a1764,Dispatching Requests>>
 
 
-{empty}<<#a1768,9.1 Obtaining a RequestDispatcher>>
+<<#a1768,9.1 Obtaining a RequestDispatcher>>
 
 
-{empty}<<#a1776,9.1.1 Query Strings in Request Dispatcher Paths>>
+<<#a1776,9.1.1 Query Strings in Request Dispatcher Paths>>
 
 
-{empty}<<#a1782,9.2 Using a Request Dispatcher>>
+<<#a1782,9.2 Using a Request Dispatcher>>
 
 
-{empty}<<#a1785,9.3 The Include Method>>
+<<#a1785,9.3 The Include Method>>
 
 
-{empty}<<#a1790,9.3.1 Included Request Parameters>>
+<<#a1790,9.3.1 Included Request Parameters>>
 
 
-{empty}<<#a1801,9.4 The Forward Method>>
+<<#a1801,9.4 The Forward Method>>
 
 
-{empty}<<#a1807,9.4.1 Query String>>
+<<#a1807,9.4.1 Query String>>
 
 
-{empty}<<#a1809,9.4.2 Forwarded Request Parameters>>
+<<#a1809,9.4.2 Forwarded Request Parameters>>
 
 
-{empty}<<#a1821,9.5 Error Handling>>
+<<#a1821,9.5 Error Handling>>
 
 
-{empty}<<#a1823,9.6 Obtaining an AsyncContext>>
+<<#a1823,9.6 Obtaining an AsyncContext>>
 
 
-{empty}<<#a1825,9.7 The Dispatch Method>>
+<<#a1825,9.7 The Dispatch Method>>
 
 
-{empty}<<#a1835,9.7.1 Query String>>
+<<#a1835,9.7.1 Query String>>
 
 
-{empty}<<#a1837,9.7.2 Dispatched Request Parameters>>
+<<#a1837,9.7.2 Dispatched Request Parameters>>
 
 
 === <<#a1849,Web Applications>>
 
 
-{empty}<<#a1851,10.1 Web Applications Within Web Servers>>
+<<#a1851,10.1 Web Applications Within Web Servers>>
 
 
-{empty}<<#a1855,10.2 Relationship to ServletContext>>
+<<#a1855,10.2 Relationship to ServletContext>>
 
 
-{empty}<<#a1857,10.3 Elements of a Web Application>>
+<<#a1857,10.3 Elements of a Web Application>>
 
 
-{empty}<<#a1865,10.4 Deployment Hierarchies>>
+<<#a1865,10.4 Deployment Hierarchies>>
 
 
-{empty}<<#a1867,10.5 Directory Structure>>
+<<#a1867,10.5 Directory Structure>>
 
 
-{empty}<<#a1876,10.5.1 Example of Application Directory Structure>>
+<<#a1876,10.5.1 Example of Application Directory Structure>>
 
 
-{empty}<<#a1888,10.6 Web Application Archive File>>
+<<#a1888,10.6 Web Application Archive File>>
 
 
-{empty}<<#a1891,10.7 Web Application Deployment Descriptor>>
+<<#a1891,10.7 Web Application Deployment Descriptor>>
 
 
-{empty}<<#a1901,10.7.1 Dependencies On Extensions>>
+<<#a1901,10.7.1 Dependencies On Extensions>>
 
 
-{empty}<<#a1907,10.7.2 Web Application Class Loader>>
+<<#a1907,10.7.2 Web Application Class Loader>>
 
 
-{empty}<<#a1909,10.8 Replacing a Web Application>>
+<<#a1909,10.8 Replacing a Web Application>>
 
 
-{empty}<<#a1911,10.9 Error Handling>>
+<<#a1911,10.9 Error Handling>>
 
 
-{empty}<<#a1913,10.9.1 Request Attributes>>
+<<#a1913,10.9.1 Request Attributes>>
 
 
-{empty}<<#a1936,10.9.2 Error Pages>>
+<<#a1936,10.9.2 Error Pages>>
 
 
-{empty}<<#a1951,10.9.3 Error Filters>>
+<<#a1951,10.9.3 Error Filters>>
 
 
-{empty}<<#a1953,10.10 Welcome Files>>
+<<#a1953,10.10 Welcome Files>>
 
 
-{empty}<<#a1981,10.11 Web Application Environment>>
+<<#a1981,10.11 Web Application Environment>>
 
 
-{empty}<<#a1984,10.12 Web Application Deployment>>
+<<#a1984,10.12 Web Application Deployment>>
 
 
-{empty}<<#a1990,10.13 Inclusion of a web.xml Deployment Descriptor>>
+<<#a1990,10.13 Inclusion of a web.xml Deployment Descriptor>>
 
 
 === <<#a1995,Application Lifecycle Events>>
 
 
-{empty}<<#a1997,11.1 Introduction>>
+<<#a1997,11.1 Introduction>>
 
 
-{empty}<<#a1999,11.2 Event Listeners>>
+<<#a1999,11.2 Event Listeners>>
 
 
-{empty}<<#a2004,11.2.1 Event Types and Listener Interfaces>>
+<<#a2004,11.2.1 Event Types and Listener Interfaces>>
 
 
-{empty}<<#a2058,11.2.2 An Example of Listener Use>>
+<<#a2058,11.2.2 An Example of Listener Use>>
 
 
-{empty}<<#a2063,11.3 Listener Class Configuration>>
+<<#a2063,11.3 Listener Class Configuration>>
 
 
-{empty}<<#a2064,11.3.1 Provision of Listener Classes>>
+<<#a2064,11.3.1 Provision of Listener Classes>>
 
 
-{empty}<<#a2066,11.3.2 Deployment Declarations>>
+<<#a2066,11.3.2 Deployment Declarations>>
 
 
-{empty}<<#a2068,11.3.3 Listener Registration>>
+<<#a2068,11.3.3 Listener Registration>>
 
 
-{empty}<<#a2070,11.3.4 Notifications At Shutdown>>
+<<#a2070,11.3.4 Notifications At Shutdown>>
 
 
-{empty}<<#a2072,11.4 Deployment Descriptor Example>>
+<<#a2072,11.4 Deployment Descriptor Example>>
 
 
-{empty}<<#a2088,11.5 Listener Instances and Threading>>
+<<#a2088,11.5 Listener Instances and Threading>>
 
 
-{empty}<<#a2091,11.6 Listener Exceptions>>
+<<#a2091,11.6 Listener Exceptions>>
 
 
-{empty}<<#a2095,11.7 Distributed Containers>>
+<<#a2095,11.7 Distributed Containers>>
 
 
-{empty}<<#a2097,11.8 Session Events>>
+<<#a2097,11.8 Session Events>>
 
 
 === <<#a2101,Mapping Requests to Servlets>>
 
 
-{empty}<<#a2104,12.1 Use of URL Paths>>
+<<#a2104,12.1 Use of URL Paths>>
 
 
-{empty}<<#a2114,12.2 Specification of Mappings>>
+<<#a2114,12.2 Specification of Mappings>>
 
 
-{empty}<<#a2123,12.2.1 Implicit Mappings>>
+<<#a2123,12.2.1 Implicit Mappings>>
 
 
-{empty}<<#a2126,12.2.2 Example Mapping Set>>
+<<#a2126,12.2.2 Example Mapping Set>>
 
 
-{empty}<<#a2160,12.3 Runtime Discovery of Mappings>>
+<<#a2160,12.3 Runtime Discovery of Mappings>>
 
 
-{empty}<<#a2163,12.3.1 Runtime Discovery of Servlet Mappings>>
+<<#a2163,12.3.1 Runtime Discovery of Servlet Mappings>>
 
 
 === <<#a2166,Security>>
 
 
-{empty}<<#a2169,13.1 Introduction>>
+<<#a2169,13.1 Introduction>>
 
 
-{empty}<<#a2176,13.2 Declarative Security>>
+<<#a2176,13.2 Declarative Security>>
 
 
-{empty}<<#a2180,13.3 Programmatic Security>>
+<<#a2180,13.3 Programmatic Security>>
 
 
-{empty}<<#a2206,13.4 Programmatic Security Policy Configuration>>
+<<#a2206,13.4 Programmatic Security Policy Configuration>>
 
 
-{empty}<<#a2208,13.4.1 @ServletSecurity Annotation>>
+<<#a2208,13.4.1 @ServletSecurity Annotation>>
 
 
-{empty}<<#a2287,13.4.1.1 Examples>>
+<<#a2287,13.4.1.1 Examples>>
 
 
-{empty}<<#a2323,13.4.1.2 Mapping @ServletSecurity to security-constraint>>
+<<#a2323,13.4.1.2 Mapping @ServletSecurity to security-constraint>>
 
 
-{empty}<<#a2361,13.4.1.3 Mapping @HttpConstraint and @HttpMethodConstraint to XML.>>
+<<#a2361,13.4.1.3 Mapping @HttpConstraint and @HttpMethodConstraint to XML.>>
 
 
-{empty}<<#a2395,13.4.2 setServletSecurity of ServletRegistration.Dynamic>>
+<<#a2395,13.4.2 setServletSecurity of ServletRegistration.Dynamic>>
 
 
-{empty}<<#a2404,13.5 Roles>>
+<<#a2404,13.5 Roles>>
 
 
-{empty}<<#a2409,13.6 Authentication>>
+<<#a2409,13.6 Authentication>>
 
 
-{empty}<<#a2415,13.6.1 HTTP Basic Authentication>>
+<<#a2415,13.6.1 HTTP Basic Authentication>>
 
 
-{empty}<<#a2418,13.6.2 HTTP Digest Authentication>>
+<<#a2418,13.6.2 HTTP Digest Authentication>>
 
 
-{empty}<<#a2420,13.6.3 Form Based Authentication>>
+<<#a2420,13.6.3 Form Based Authentication>>
 
 
-{empty}<<#a2437,13.6.3.1 Login Form Notes>>
+<<#a2437,13.6.3.1 Login Form Notes>>
 
 
-{empty}<<#a2447,13.6.4 HTTPS Client Authentication>>
+<<#a2447,13.6.4 HTTPS Client Authentication>>
 
 
-{empty}<<#a2449,13.6.5 Additional Container Authentication Mechanisms>>
+<<#a2449,13.6.5 Additional Container Authentication Mechanisms>>
 
 
-{empty}<<#a2453,13.7 Server Tracking of Authentication Information>>
+<<#a2453,13.7 Server Tracking of Authentication Information>>
 
 
-{empty}<<#a2459,13.8 Specifying Security Constraints>>
+<<#a2459,13.8 Specifying Security Constraints>>
 
 
-{empty}<<#a2472,13.8.1 Combining Constraints>>
+<<#a2472,13.8.1 Combining Constraints>>
 
 
-{empty}<<#a2477,13.8.2 Example>>
+<<#a2477,13.8.2 Example>>
 
 
-{empty}<<#a2581,13.8.3 Processing Requests>>
+<<#a2581,13.8.3 Processing Requests>>
 
 
-{empty}<<#a2585,13.8.4 Uncovered HTTP Protocol Methods>>
+<<#a2585,13.8.4 Uncovered HTTP Protocol Methods>>
 
 
-{empty}<<#a2622,13.8.4.1 Rules for Security Constraint Configuration>>
+<<#a2622,13.8.4.1 Rules for Security Constraint Configuration>>
 
 
-{empty}<<#a2627,13.8.4.2 Handling Uncovered HTTP Methods>>
+<<#a2627,13.8.4.2 Handling Uncovered HTTP Methods>>
 
 
-{empty}<<#a2635,13.9 Default Policies>>
+<<#a2635,13.9 Default Policies>>
 
 
-{empty}<<#a2637,13.10 Login and Logout>>
+<<#a2637,13.10 Login and Logout>>
 
 
 === <<#a2643,Deployment Descriptor>>
 
 
-{empty}<<#a2648,14.1 Deployment Descriptor Elements>>
+<<#a2648,14.1 Deployment Descriptor Elements>>
 
 
-{empty}<<#a2661,14.2 Rules for Processing the Deployment Descriptor>>
+<<#a2661,14.2 Rules for Processing the Deployment Descriptor>>
 
 
-{empty}<<#a2673,14.3 Deployment Descriptor>>
+<<#a2673,14.3 Deployment Descriptor>>
 
 
-{empty}<<#a2676,14.4 Deployment Descriptor Diagram>>
+<<#a2676,14.4 Deployment Descriptor Diagram>>
 
 
-{empty}<<#a2794,14.5 Examples>>
+<<#a2794,14.5 Examples>>
 
 
-{empty}<<#a2796,14.5.1 A Basic Example>>
+<<#a2796,14.5.1 A Basic Example>>
 
 
-{empty}<<#a2836,14.5.2 An Example of Security>>
+<<#a2836,14.5.2 An Example of Security>>
 
 
 === <<#a2881,Requirements related to other Specifications>>
 
 
-{empty}<<#a2885,15.1 Sessions>>
+<<#a2885,15.1 Sessions>>
 
 
-{empty}<<#a2887,15.2 Web Applications>>
+<<#a2887,15.2 Web Applications>>
 
 
-{empty}<<#a2888,15.2.1 Web Application Class Loader>>
+<<#a2888,15.2.1 Web Application Class Loader>>
 
 
-{empty}<<#a2890,15.2.2 Web Application Environment>>
+<<#a2890,15.2.2 Web Application Environment>>
 
 
-{empty}<<#a2905,15.2.3 JNDI Name for Web Module Context Root URL>>
+<<#a2905,15.2.3 JNDI Name for Web Module Context Root URL>>
 
 
-{empty}<<#a2924,15.3 Security>>
+<<#a2924,15.3 Security>>
 
 
-{empty}<<#a2926,15.3.1 Propagation of Security Identity in EJB™ Calls>>
+<<#a2926,15.3.1 Propagation of Security Identity in EJB™ Calls>>
 
 
-{empty}<<#a2933,15.3.2 Container Authorization Requirements>>
+<<#a2933,15.3.2 Container Authorization Requirements>>
 
 
-{empty}<<#a2935,15.3.3 Container Authentication Requirements>>
+<<#a2935,15.3.3 Container Authentication Requirements>>
 
 
-{empty}<<#a2937,15.4 Deployment>>
+<<#a2937,15.4 Deployment>>
 
 
-{empty}<<#a2939,15.4.1 Deployment Descriptor Elements>>
+<<#a2939,15.4.1 Deployment Descriptor Elements>>
 
 
-{empty}<<#a2948,15.4.2 Packaging and Deployment of JAX-WS Components>>
+<<#a2948,15.4.2 Packaging and Deployment of JAX-WS Components>>
 
 
-{empty}<<#a2965,15.4.3 Rules for Processing the Deployment Descriptor>>
+<<#a2965,15.4.3 Rules for Processing the Deployment Descriptor>>
 
 
-{empty}<<#a2967,15.5 Annotations and Resource Injection>>
+<<#a2967,15.5 Annotations and Resource Injection>>
 
 
-{empty}<<#a2997,15.5.1 @DeclareRoles>>
+<<#a2997,15.5.1 @DeclareRoles>>
 
 
-{empty}<<#a3015,15.5.2 @EJB Annotation>>
+<<#a3015,15.5.2 @EJB Annotation>>
 
 
-{empty}<<#a3021,15.5.3 @EJBs Annotation>>
+<<#a3021,15.5.3 @EJBs Annotation>>
 
 
-{empty}<<#a3030,15.5.4 @Resource Annotation>>
+<<#a3030,15.5.4 @Resource Annotation>>
 
 
-{empty}<<#a3043,15.5.5 @PersistenceContext Annotation>>
+<<#a3043,15.5.5 @PersistenceContext Annotation>>
 
 
-{empty}<<#a3050,15.5.6 @PersistenceContexts Annotation>>
+<<#a3050,15.5.6 @PersistenceContexts Annotation>>
 
 
-{empty}<<#a3052,15.5.7 @PersistenceUnit Annotation>>
+<<#a3052,15.5.7 @PersistenceUnit Annotation>>
 
 
-{empty}<<#a3059,15.5.8 @PersistenceUnits Annotation>>
+<<#a3059,15.5.8 @PersistenceUnits Annotation>>
 
 
-{empty}<<#a3061,15.5.9 @PostConstruct Annotation>>
+<<#a3061,15.5.9 @PostConstruct Annotation>>
 
 
-{empty}<<#a3072,15.5.10 @PreDestroy Annotation>>
+<<#a3072,15.5.10 @PreDestroy Annotation>>
 
 
-{empty}<<#a3083,15.5.11 @Resources Annotation>>
+<<#a3083,15.5.11 @Resources Annotation>>
 
 
-{empty}<<#a3096,15.5.12 @RunAs Annotation>>
+<<#a3096,15.5.12 @RunAs Annotation>>
 
 
-{empty}<<#a3121,15.5.13 @WebServiceRef Annotation>>
+<<#a3121,15.5.13 @WebServiceRef Annotation>>
 
 
-{empty}<<#a3127,15.5.14 @WebServiceRefs Annotation>>
+<<#a3127,15.5.14 @WebServiceRefs Annotation>>
 
 
-{empty}<<#a3129,15.5.15 Contexts and Dependency Injection for Java EE requirements>>
+<<#a3129,15.5.15 Contexts and Dependency Injection for Java EE requirements>>
 
 
 === <<#a3133,Change Log>>
 
 
-{empty}<<#a3135,A.1 Changes Since Servlet 3.1>>
+<<#a3135,A.1 Changes Since Servlet 3.1>>
 
 
-{empty}<<#a3159,A.2 Changes since Servlet 3.0>>
+<<#a3159,A.2 Changes since Servlet 3.0>>
 
 
-{empty}<<#a3199,A.3 Changes since Servlet 3.0 Proposed Final Draft>>
+<<#a3199,A.3 Changes since Servlet 3.0 Proposed Final Draft>>
 
 
-{empty}<<#a3204,A.4 Changes since Servlet 3.0 Public Review>>
+<<#a3204,A.4 Changes since Servlet 3.0 Public Review>>
 
 
-{empty}<<#a3213,A.5 Changes since Servlet 3.0 EDR>>
+<<#a3213,A.5 Changes since Servlet 3.0 EDR>>
 
 
-{empty}<<#a3217,A.6 Changes since Servlet 2.5 MR6>>
+<<#a3217,A.6 Changes since Servlet 2.5 MR6>>
 
 
-{empty}<<#a3223,A.7 Changes since Servlet 2.5 MR 5>>
+<<#a3223,A.7 Changes since Servlet 2.5 MR 5>>
 
 
-{empty}<<#a3224,A.7.1 Clarify SRV 8.4 "The Forward Method">>
+<<#a3224,A.7.1 Clarify SRV 8.4 "The Forward Method">>
 
 
-{empty}<<#a3229,A.7.2 Update Deployment descriptor "http-method values allowed">>
+<<#a3229,A.7.2 Update Deployment descriptor "http-method values allowed">>
 
 
-{empty}<<#a3234,A.7.3 Clarify SRV 7.7.1 "Threading Issues">>
+<<#a3234,A.7.3 Clarify SRV 7.7.1 "Threading Issues">>
 
 
-{empty}<<#a3239,A.8 Changes Since Servlet 2.5 MR 2>>
+<<#a3239,A.8 Changes Since Servlet 2.5 MR 2>>
 
 
-{empty}<<#a3240,A.8.1 Updated Annotation Requirements for Java EE containers>>
+<<#a3240,A.8.1 Updated Annotation Requirements for Java EE containers>>
 
 
-{empty}<<#a3242,A.8.2 Updated Java Enterprise Edition Requirements>>
+<<#a3242,A.8.2 Updated Java Enterprise Edition Requirements>>
 
 
-{empty}<<#a3244,A.8.3 Clarified HttpServletRequest.getRequestURL()>>
+<<#a3244,A.8.3 Clarified HttpServletRequest.getRequestURL()>>
 
 
-{empty}<<#a3248,A.8.4 Removal of IllegalStateException from HttpSession.getId()>>
+<<#a3248,A.8.4 Removal of IllegalStateException from HttpSession.getId()>>
 
 
-{empty}<<#a3250,A.8.5 ServletContext.getContextPath()>>
+<<#a3250,A.8.5 ServletContext.getContextPath()>>
 
 
-{empty}<<#a3258,A.8.6 Requirement for web.xml in web applications>>
+<<#a3258,A.8.6 Requirement for web.xml in web applications>>
 
 
-{empty}<<#a3261,A.9 Changes Since Servlet 2.4>>
+<<#a3261,A.9 Changes Since Servlet 2.4>>
 
 
-{empty}<<#a3262,A.9.1 Session Clarification>>
+<<#a3262,A.9.1 Session Clarification>>
 
 
-{empty}<<#a3269,A.9.2 Filter All Dispatches>>
+<<#a3269,A.9.2 Filter All Dispatches>>
 
 
-{empty}<<#a3279,A.9.3 Multiple Occurrences of Servlet Mappings>>
+<<#a3279,A.9.3 Multiple Occurrences of Servlet Mappings>>
 
 
-{empty}<<#a3291,A.9.4 Multiple Occurrences Filter Mappings>>
+<<#a3291,A.9.4 Multiple Occurrences Filter Mappings>>
 
 
-{empty}<<#a3320,A.9.5 Support Alternative HTTP Methods with Authorization Constraints>>
+<<#a3320,A.9.5 Support Alternative HTTP Methods with Authorization Constraints>>
 
 
-{empty}<<#a3351,A.9.6 Minimum J2SE Requirement>>
+<<#a3351,A.9.6 Minimum J2SE Requirement>>
 
 
-{empty}<<#a3353,A.9.7 Annotations and Resource Injection>>
+<<#a3353,A.9.7 Annotations and Resource Injection>>
 
 
-{empty}<<#a3355,A.9.8 SRV.9.9 ("Error Handling") Requirement Removed>>
+<<#a3355,A.9.8 SRV.9.9 ("Error Handling") Requirement Removed>>
 
 
-{empty}<<#a3362,A.9.9 HttpServletRequest.isRequestedSessionIdValid() Clarification>>
+<<#a3362,A.9.9 HttpServletRequest.isRequestedSessionIdValid() Clarification>>
 
 
-{empty}<<#a3365,A.9.10 SRV.5.5 ("Closure of Response Object") Clarification>>
+<<#a3365,A.9.10 SRV.5.5 ("Closure of Response Object") Clarification>>
 
 
-{empty}<<#a3371,A.9.11 ServletRequest.setCharacterEncoding() Clarified>>
+<<#a3371,A.9.11 ServletRequest.setCharacterEncoding() Clarified>>
 
 
-{empty}<<#a3373,A.9.12 Java Enterprise Edition Requirements>>
+<<#a3373,A.9.12 Java Enterprise Edition Requirements>>
 
 
-{empty}<<#a3375,A.9.13 Servlet 2.4 MR Change Log Updates Added>>
+<<#a3375,A.9.13 Servlet 2.4 MR Change Log Updates Added>>
 
 
-{empty}<<#a3377,A.9.14 Synchronized Access Session Object Clarified>>
+<<#a3377,A.9.14 Synchronized Access Session Object Clarified>>
 
 
-{empty}<<#a3379,A.10 Changes Since Servlet 2.3>>
+<<#a3379,A.10 Changes Since Servlet 2.3>>
 
 
 === [[a357]] Overview
@@ -5316,7 +5316,7 @@ Configuration settings in web fragments are
 used to augment those specified in the main web.xml in such a way as if
 they had been specified in the same web.xml.
 
-{empty}The order in which configuration
+The order in which configuration
 settings of web fragments are added to those in the main web.xml is as
 specified above in <<#a1279,See Ordering of web.xml and web-fragment.xml>>
 
@@ -6661,7 +6661,7 @@ items:
 
 Servlets
 
-{empty}JSP™ Pageslink:#a3526[7]
+JSP™ Pageslink:#a3526[7]
 
 Utility Classes
 
@@ -7033,7 +7033,7 @@ error mechanism may be invoked. The default servlet and container will
 use the _setStatus_ method for 2xx and 3xx responses and will not invoke
 the error page mechanism.
 
-{empty}If the application is using
+If the application is using
 asynchronous operations as described in
 <<#a446,See Asynchronous processing>>, it is the
 application’s responsibility to handle all errors in application created
@@ -7574,7 +7574,7 @@ determined indirectly using listeners and the _HttpSession_ API methods.
 [[a2102]]Mapping Requests to Servlets
 
 
-{empty}The mapping techniques described in
+The mapping techniques described in
 this chapter are required for Web containers mapping client requests to
 servlets.link:#a3527[8]
 
@@ -8293,7 +8293,7 @@ _security-constraint_ element containing a _web-resource-collection_
 that contains no _http-method_ elements, and thus pertains to all HTTP
 methods.
 
-{empty}The following example depicts the
+The following example depicts the
 representation of a _@ServletSecurity_ annotation with no contained
 _@HttpMethodConstraint_ annotations as a single _security-constraint_
 element. The _url-pattern_ elements defined by the corresponding servlet
@@ -8337,7 +8337,7 @@ corresponds to another _security-constraint_ containing a
 _web-resource-collection_ containing an _http-method_ element naming the
 corresponding HTTP method.
 
-{empty}The following example depicts the
+The following example depicts the
 mapping of a _@ServletSecurity_ annotation with a single contained
 _@HttpMethodConstraint_ to two security-constraint elements. The
 _url-pattern_ elements defined by the corresponding servlet
@@ -9135,7 +9135,7 @@ the constraints that apply to the HTTP method at the _url-pattern_ .
 Both of the following rules must be satisfied for the request to be
 accepted and dispatched to the associated servlet.
 
-{empty}The characteristics of the connection
+The characteristics of the connection
 on which the request was received must satisfy at least one of the
 supported connection types defined by the constraints. If this rule is
 not satisfied, the container shall reject the request and redirect it to
@@ -11193,7 +11193,7 @@ _setSessionTimeout_ in _ServletContext_ . See javadoc,
 Add _addJspFile()_ in _ServletContext_ . See
 javadoc, <<#a728,See addJspFile(String servletName, String jspfile)>> and <<#a734,See Map<String, ? extends ServletRegistration> getServletRegistrations()>>.
 
-{empty}Add _request-character-encoding_ and
+Add _request-character-encoding_ and
 _response-character-encoding_ in the schema of _web.xml_ . See the
 corresponding descriptions of the elements in
 <<#a2790,See request-character-encoding Element>>
@@ -11834,12 +11834,12 @@ Removed
 If the location of the error handler is a
 servlet or a JSP page:
 
-{empty}[...]
+[...]
 
 The response setStatus method is disabled and
 ignored if called.
 
-{empty}[...]
+[...]
 
 The JSP 2.1 EG has asked that this
 requirement above be removed to allow JSP error pages to update the
